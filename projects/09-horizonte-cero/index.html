@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Horizonte Cero — Inmobiliaria de Lujo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Raleway:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Preloader -->
+  <div class="preloader"><div class="preloader-spinner"></div></div>
+
+  <!-- Navigation -->
+  <nav class="main-nav">
+    <div class="container">
+      <a href="index.html" class="nav-logo">Horizonte Cero</a>
+      <ul class="nav-links">
+        <li><a href="index.html" class="active">Inicio</a></li>
+        <li><a href="servicios.html">Servicios</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+      <button class="hamburger" aria-label="Abrir menú" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="reveal-item hero">
+    <div class="container">
+      <div class="hero-content">
+        <h1>Propiedades que desafían lo ordinario</h1>
+        <hr class="hero-divider">
+        <p>Descubra residencias exclusivas en los destinos más codiciados del mundo. Cada propiedad es una obra maestra de diseño, ubicación y estilo de vida.</p>
+        <a href="servicios.html" class="btn-gold">Explorar Catálogo</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Propiedades Destacadas -->
+  <section class="reveal-item section">
+    <div class="container">
+      <h2 class="section-title">Propiedades Destacadas</h2>
+      <hr class="section-line">
+
+      <div class="property-filter" style="margin-bottom: 3rem; text-align: center; font-family:var(--font-body);">
+        <span style="font-family:var(--font-display); font-size:0.95rem; color:var(--primary); margin-right:1rem; letter-spacing:1px; text-transform:uppercase;">Filtrar Destino:</span>
+        <select id="property-loc-filter" style="background:#1A1A1A; border:1px solid rgba(201,168,76,0.3); padding:0.5rem 1rem; color:#fff; font-family:var(--font-body); border-radius:0; outline:none; cursor:pointer;">
+          <option value="todos">Todos los Destinos</option>
+          <option value="italia">Costa Amalfitana, Italia</option>
+          <option value="dubai">Dubái</option>
+          <option value="eeuu">Beverly Hills, EE.UU.</option>
+        </select>
+      </div>
+      <div class="properties-grid">
+        <div class="property-card" data-loc="italia">
+          <div class="property-image" style="background:linear-gradient(135deg,#2a2318 0%,#1a1a1a 60%,#2f2820 100%)"></div>
+          <div class="property-info">
+            <h3>Villa Amalfi</h3>
+            <p class="property-location"><i data-lucide="map-pin"></i> Costa Amalfitana, Italia</p>
+            <p class="property-price">€ 12.500.000</p>
+            <a href="#" class="property-link">Ver Detalles <i data-lucide="arrow-right"></i></a>
+          </div>
+        </div>
+        <div class="property-card" data-loc="dubai">
+          <div class="property-image" style="background:linear-gradient(135deg,#1e2a2a 0%,#1a1a1a 60%,#1e2828 100%)"></div>
+          <div class="property-info">
+            <h3>Penthouse Dubái Marina</h3>
+            <p class="property-location"><i data-lucide="map-pin"></i> Dubái, Emiratos Árabes</p>
+            <p class="property-price">$ 28.000.000</p>
+            <a href="#" class="property-link">Ver Detalles <i data-lucide="arrow-right"></i></a>
+          </div>
+        </div>
+        <div class="property-card" data-loc="eeuu">
+          <div class="property-image" style="background:linear-gradient(135deg,#2a1e2a 0%,#1a1a1a 60%,#282028 100%)"></div>
+          <div class="property-info">
+            <h3>Mansión Beverly Hills</h3>
+            <p class="property-location"><i data-lucide="map-pin"></i> Los Ángeles, EE.UU.</p>
+            <p class="property-price">$ 45.000.000</p>
+            <a href="#" class="property-link">Ver Detalles <i data-lucide="arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Servicios Exclusivos -->
+  <section class="reveal-item section">
+    <div class="container">
+      <h2 class="section-title">Servicios Exclusivos</h2>
+      <hr class="section-line">
+      <div class="services-row">
+        <div class="service-item">
+          <div class="service-icon-circle">
+            <i data-lucide="gem"></i>
+          </div>
+          <h3>Propiedades Premium</h3>
+          <p>Acceso exclusivo a residencias fuera de mercado, penthouses de ultra lujo y villas privadas seleccionadas cuidadosamente para nuestros clientes.</p>
+        </div>
+        <div class="service-item">
+          <div class="service-icon-circle">
+            <i data-lucide="trending-up"></i>
+          </div>
+          <h3>Asesoría de Inversión</h3>
+          <p>Análisis de rentabilidad, proyecciones de mercado y estrategias fiscales diseñadas para maximizar el retorno de su inversión inmobiliaria.</p>
+        </div>
+        <div class="service-item">
+          <div class="service-icon-circle">
+            <i data-lucide="building"></i>
+          </div>
+          <h3>Desarrollos Exclusivos</h3>
+          <p>Participación en preventa de proyectos arquitectónicos de vanguardia, con acceso prioritario antes de que lleguen al mercado abierto.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Cifras -->
+  <section class="reveal-item section stats-section">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-item">
+          <h2>$2B+</h2>
+          <p>En Ventas Cerradas</p>
+        </div>
+        <div class="stat-item">
+          <h2>350+</h2>
+          <p>Propiedades Exclusivas</p>
+        </div>
+        <div class="stat-item">
+          <h2>15</h2>
+          <p>Países Operativos</p>
+        </div>
+        <div class="stat-item">
+          <h2>100%</h2>
+          <p>Confidencialidad</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonios -->
+  <section class="reveal-item section">
+    <div class="container">
+      <h2 class="section-title">Lo Que Dicen Nuestros Clientes</h2>
+      <hr class="section-line">
+      <div class="testimonial-block">
+        <div class="testimonial-quote">"</div>
+        <blockquote>Horizonte Cero no solo encontró nuestra propiedad soñada en la Riviera Francesa, sino que transformó todo el proceso en una experiencia impecable. Su discreción, conocimiento del mercado y atención personalizada superaron cualquier expectativa. Después de años buscando, encontramos nuestro hogar perfecto en semanas.</blockquote>
+        <p class="testimonial-author">— Alejandro & Camila Montero</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="gold-line-decor"></div>
+
+  <!-- Footer -->
+  <footer class="main-footer">
+    <div class="container footer-content">
+      <div class="footer-brand">
+        <h3>Horizonte Cero</h3>
+        <p>Inmobiliaria de Lujo</p>
+      </div>
+      <div class="footer-dev">
+        <span>Desarrollado por</span>
+        <a href="../index.html" class="footer-logo-link" aria-label="Ir a Blyp">
+          <img src="../blyp_logotipo.svg" alt="Blyp Logo" class="footer-logo">
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

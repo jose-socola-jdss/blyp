@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto | SerenoEspacio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500;700&family=Nunito+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Preloader -->
+  <div class="preloader"><div class="preloader-spinner"></div></div>
+
+
+  <!-- Minimal Header -->
+  <header class="main-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">
+        <i data-lucide="wind" style="width:24px; height:24px;"></i>
+        SerenoEspacio
+      </a>
+      <button class="hamburger-btn" aria-label="Menú">
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Fullscreen Navigation -->
+  <div class="fullscreen-nav">
+    <button class="close-btn">&times;</button>
+    <ul class="fullscreen-links">
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="servicios.html">Servicios</a></li>
+      <li><a href="contacto.html" class="active">Contacto</a></li>
+    </ul>
+  </div>
+
+  <!-- Page Banner -->
+  <section class="reveal-item page-banner">
+    <div class="container">
+      <h1>Comienza tu Camino</h1>
+      <p>Escríbenos para consultas sobre horarios, cupos para retiros o pases mensuales.</p>
+    </div>
+  </section>
+
+  <!-- Contact Section Form -->
+  <section class="reveal-item section">
+    <div class="container">
+      <div class="contact-zen-form">
+        <form id="contact-form">
+          <div class="form-group-zen">
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" required placeholder="Tu nombre completo">
+          </div>
+          <div class="form-group-zen">
+            <label for="email">Email</label>
+            <input type="email" id="email" required placeholder="Tu correo de contacto">
+          </div>
+          <div class="form-group-zen">
+            <label for="mensaje">¿Cuál es tu consulta?</label>
+            <textarea id="mensaje" rows="4" required placeholder="Escribe tu mensaje con tranquilidad..."></textarea>
+          </div>
+          <button type="submit" class="btn-zen-submit">Enviar Solicitud</button>
+        </form>
+
+        <div class="contact-info-zen">
+          <p><strong>Ubicación del Espacio:</strong> Av. Pocuro 2130, Providencia, Santiago.</p>
+          <p><strong>Email de Soporte:</strong> paz@serenoespacio.com</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="main-footer">
+    <div class="container">
+      <p>&copy; 2026 SerenoEspacio. Encuentra tu centro.</p>
+      <div class="footer-dev">
+        <span>Desarrollado por</span>
+        <a href="../index.html" class="footer-logo-link" aria-label="Ir a Blyp">
+          <img src="../blyp_logotipo.svg" alt="Blyp Logo" class="footer-logo">
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

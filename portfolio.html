@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html class="light" lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portafolio | Blyp</title>
+  <meta name="description" content="Descubre el portafolio de Blyp: sitios web diseñados con propósito, velocidad y una experiencia moderna potenciada por IA." />
+  <link rel="icon" type="image/svg+xml" href="blyp_favicon.svg" />
+  <link rel="stylesheet" href="assets/fonts/fonts.css" />
+  <link rel="stylesheet" href="assets/fonts/material-symbols.css" />
+  <script src="assets/vendor/tailwindcdn.js"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#0050d4",
+            "primary-dim": "#0046bb",
+            "primary-container": "#7b9cff",
+            "secondary-container": "#93dbff",
+            "tertiary-container": "#c0a0ff",
+            "surface": "#f5f6f7",
+            "surface-container-low": "#eff1f2",
+            "surface-container-lowest": "#ffffff",
+            "outline-variant": "#abadae",
+            "on-surface": "#2c2f30",
+            "on-surface-variant": "#595c5d",
+            "on-secondary-container": "#004d67",
+            "on-primary": "#f1f2ff"
+          },
+          fontFamily: {
+            headline: ["Plus Jakarta Sans", "sans-serif"],
+            body: ["Be Vietnam Pro", "sans-serif"]
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="assets/site.css" />
+</head>
+<body class="selection-brand bg-surface font-body text-on-surface overflow-x-hidden">
+  <div class="page-curtain" aria-hidden="true"></div>
+  <header class="site-header sticky top-0 z-50 w-full bg-white/70 backdrop-blur-md shadow-sm shadow-blue-500/5">
+    <nav class="site-nav max-w-7xl mx-auto px-4 sm:px-6 h-20 flex items-center justify-between gap-4">
+      <a href="index.html" class="inline-flex items-center" aria-label="Blyp">
+        <img src="blyp_logotipo.svg" alt="Blyp" class="h-8 w-auto sm:h-9 site-logo" />
+      </a>
+      <div class="hidden md:flex gap-10 items-center">
+        <a href="index.html" class="nav-link font-headline font-medium text-sm tracking-tight text-slate-600 hover:text-blue-500 transition-colors">Inicio</a>
+        <a href="portfolio.html" class="nav-link is-active font-headline text-sm tracking-tight">Portafolio</a>
+        <a href="contact.html" class="nav-link font-headline font-medium text-sm tracking-tight text-slate-600 hover:text-blue-500 transition-colors">Contacto</a>
+      </div>
+      <div class="flex items-center gap-3">
+        <a href="https://wa.me/51994883370" target="_blank" rel="noreferrer" class="button-premium hidden sm:inline-flex bg-gradient-to-r from-primary to-tertiary-container text-white px-6 lg:px-8 py-3 rounded-full font-headline font-bold text-sm hover:opacity-90 transition-all duration-300 active:scale-95">Escríbenos</a>
+        <button type="button" class="md:hidden inline-flex items-center justify-center w-11 h-11 rounded-full bg-surface-container-lowest text-on-surface" aria-expanded="false" aria-label="Abrir menú" aria-controls="mobile-menu" data-menu-toggle>
+          <span class="material-symbols-outlined">menu</span>
+        </button>
+      </div>
+    </nav>
+    <div id="mobile-menu" class="mobile-menu md:hidden px-4 pb-4" data-mobile-menu data-open="false">
+      <div class="glass-card rounded-[24px] p-4 shadow-lg">
+        <div class="flex flex-col gap-3 font-headline text-sm">
+          <a href="index.html" class="px-4 py-3 rounded-2xl bg-surface-container-low text-on-surface">Inicio</a>
+          <a href="portfolio.html" class="px-4 py-3 rounded-2xl bg-primary text-white font-bold">Portafolio</a>
+          <a href="contact.html" class="px-4 py-3 rounded-2xl bg-surface-container-low text-on-surface">Contacto</a>
+          <a href="https://wa.me/51994883370" target="_blank" rel="noreferrer" class="button-premium px-4 py-3 rounded-2xl bg-gradient-to-r from-primary to-tertiary-container text-white text-center font-bold">Escríbenos</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="relative bg-white pt-20 sm:pt-24 pb-14 sm:pb-16 overflow-hidden">
+      <div class="absolute inset-0 dot-grid opacity-40"></div>
+      <div class="relative max-w-7xl mx-auto px-4 sm:px-6 text-center">
+        <h1 data-reveal class="font-headline text-4xl sm:text-5xl md:text-6xl font-extrabold tracking-tight text-on-surface mb-6">Nuestro trabajo</h1>
+        <p data-reveal data-delay="90" class="text-lg md:text-xl text-on-surface-variant max-w-2xl mx-auto leading-relaxed">Una selección de sitios web creados para marcas que necesitan claridad, personalidad y una experiencia digital memorable.</p>
+      </div>
+    </section>
+
+    <section class="max-w-7xl mx-auto px-4 sm:px-6 py-12">
+      <div class="masonry-grid [column-gap:24px]">
+        <div data-reveal data-delay="0" class="masonry-item">
+          <article class="project-card relative group overflow-hidden rounded-2xl bg-surface-container-lowest shadow-blue-500/5 hover:shadow-2xl">
+            <img src="assets/images/portfolio/invest-in-latam.jpg" alt="Captura de la web de Invest in Latam." class="portfolio-card-image" />
+            <div class="overlay absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/40 to-transparent flex flex-col justify-end p-8 transition-opacity duration-300">
+              <span class="overlay-category text-[10px] tracking-[0.3em] font-bold text-white mb-2">INVERSIÓN INTERNACIONAL</span>
+              <h3 class="overlay-title font-headline text-2xl font-bold text-white mb-2">Invest in Latam</h3>
+              <p class="overlay-desc text-white/80 text-sm mb-6">Plataforma corporativa para atraer inversión, explicar oportunidades y transmitir confianza regional.</p>
+              <a href="https://investinlatam.es/" target="_blank" rel="noreferrer" class="overlay-cta button-premium inline-flex items-center justify-center bg-white text-primary font-bold px-6 py-3 rounded-full hover:bg-on-primary transition-colors text-sm">Ver sitio web <span class="ml-2">→</span></a>
+            </div>
+          </article>
+        </div>
+        <div data-reveal data-delay="40" class="masonry-item">
+          <article class="project-card relative group overflow-hidden rounded-2xl bg-surface-container-lowest shadow-blue-500/5 hover:shadow-2xl">
+            <img src="assets/images/portfolio/lumina-tueste.jpg" alt="Captura de la web de Lúmina Tueste." class="portfolio-card-image" />
+            <div class="overlay absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/40 to-transparent flex flex-col justify-end p-8 transition-opacity duration-300">
+              <span class="overlay-category text-[10px] tracking-[0.3em] font-bold text-white mb-2">CAFÉ DE ESPECIALIDAD</span>
+              <h3 class="overlay-title font-headline text-2xl font-bold text-white mb-2">Lúmina Tueste</h3>
+              <p class="overlay-desc text-white/80 text-sm mb-6">Marca sensorial de café con una home cuidada para producto, origen y ritual de consumo.</p>
+              <a href="https://lumina-tueste.vercel.app/" target="_blank" rel="noreferrer" class="overlay-cta button-premium inline-flex items-center justify-center bg-white text-primary font-bold px-6 py-3 rounded-full hover:bg-on-primary transition-colors text-sm">Ver sitio web <span class="ml-2">→</span></a>
+            </div>
+          </article>
+        </div>
+        <div data-reveal data-delay="80" class="masonry-item">
+          <article class="project-card relative group overflow-hidden rounded-2xl bg-surface-container-lowest shadow-blue-500/5 hover:shadow-2xl">
+            <img src="assets/images/portfolio/vitacubo.jpg" alt="Captura de la web de VitaCubo." class="portfolio-card-image" />
+            <div class="overlay absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/40 to-transparent flex flex-col justify-end p-8 transition-opacity duration-300">
+              <span class="overlay-category text-[10px] tracking-[0.3em] font-bold text-white mb-2">SALUD DIGITAL</span>
+              <h3 class="overlay-title font-headline text-2xl font-bold text-white mb-2">VitaCubo</h3>
+              <p class="overlay-desc text-white/80 text-sm mb-6">Clínica virtual 24/7 diseñada para explicar servicios, agilizar consultas y generar seguridad.</p>
+              <a href="https://vitacubo.vercel.app/" target="_blank" rel="noreferrer" class="overlay-cta button-premium inline-flex items-center justify-center bg-white text-primary font-bold px-6 py-3 rounded-full hover:bg-on-primary transition-colors text-sm">Ver sitio web <span class="ml-2">→</span></a>
+            </div>
+          </article>
+        </div>
+        <div data-reveal data-delay="120" class="masonry-item">
+          <article class="project-card relative group overflow-hidden rounded-2xl bg-surface-container-lowest shadow-blue-500/5 hover:shadow-2xl">
+            <img src="assets/images/portfolio/kognivia.jpg" alt="Captura de la web de Kognivia." class="portfolio-card-image" />
+            <div class="overlay absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/40 to-transparent flex flex-col justify-end p-8 transition-opacity duration-300">
+              <span class="overlay-category text-[10px] tracking-[0.3em] font-bold text-white mb-2">EDUCACIÓN TECNOLÓGICA</span>
+              <h3 class="overlay-title font-headline text-2xl font-bold text-white mb-2">Kognivia</h3>
+              <p class="overlay-desc text-white/80 text-sm mb-6">Academia digital orientada a habilidades del futuro, oferta formativa y conversión educativa.</p>
+              <a href="https://kognivia.vercel.app/" target="_blank" rel="noreferrer" class="overlay-cta button-premium inline-flex items-center justify-center bg-white text-primary font-bold px-6 py-3 rounded-full hover:bg-on-primary transition-colors text-sm">Ver sitio web <span class="ml-2">→</span></a>
+            </div>
+          </article>
+        </div>
+        <div data-reveal data-delay="0" class="masonry-item">
+          <article class="project-card relative group overflow-hidden rounded-2xl bg-surface-container-lowest shadow-blue-500/5 hover:shadow-2xl">
+            <img src="assets/images/portfolio/auralino.jpg" alt="Captura de la web de Aura & Lino." class="portfolio-card-image" />
+            <div class="overlay absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/40 to-transparent flex flex-col justify-end p-8 transition-opacity duration-300">
+              <span class="overlay-category text-[10px] tracking-[0.3em] font-bold text-white mb-2">MODA SOSTENIBLE</span>
+              <h3 class="overlay-title font-headline text-2xl font-bold text-white mb-2">Aura &amp; Lino</h3>
+              <p class="overlay-desc text-white/80 text-sm mb-6">Marca de moda con tono premium, narrativa consciente y énfasis en colección y valores.</p>
+              <a href="https://auralino.vercel.app/" target="_blank" rel="noreferrer" class="overlay-cta button-premium inline-flex items-center justify-center bg-white text-primary font-bold px-6 py-3 rounded-full hover:bg-on-primary transition-colors text-sm">Ver sitio web <span class="ml-2">→</span></a>
+            </div>
+          </article>
+        </div>
+        <div data-reveal data-delay="40" class="masonry-item">
+          <article class="project-card relative group overflow-hidden rounded-2xl bg-surface-container-lowest shadow-blue-500/5 hover:shadow-2xl">
+            <img src="assets/images/portfolio/nexoflow.jpg" alt="Captura de la web de NexoFlow." class="portfolio-card-image" />
+            <div class="overlay absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/40 to-transparent flex flex-col justify-end p-8 transition-opacity duration-300">
+              <span class="overlay-category text-[10px] tracking-[0.3em] font-bold text-white mb-2">SOFTWARE B2B</span>
+              <h3 class="overlay-title font-headline text-2xl font-bold text-white mb-2">NexoFlow</h3>
+              <p class="overlay-desc text-white/80 text-sm mb-6">Sistema operativo para proyectos con propuesta clara, integraciones visibles y foco comercial.</p>
+              <a href="https://nexoflow-pi.vercel.app/" target="_blank" rel="noreferrer" class="overlay-cta button-premium inline-flex items-center justify-center bg-white text-primary font-bold px-6 py-3 rounded-full hover:bg-on-primary transition-colors text-sm">Ver sitio web <span class="ml-2">→</span></a>
+            </div>
+          </article>
+        </div>
+        <div data-reveal data-delay="80" class="masonry-item">
+          <article class="project-card relative group overflow-hidden rounded-2xl bg-surface-container-lowest shadow-blue-500/5 hover:shadow-2xl">
+            <img src="assets/images/portfolio/valera-montes.jpg" alt="Captura de la web de Valera & Montes." class="portfolio-card-image" />
+            <div class="overlay absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/40 to-transparent flex flex-col justify-end p-8 transition-opacity duration-300">
+              <span class="overlay-category text-[10px] tracking-[0.3em] font-bold text-white mb-2">FIRMA LEGAL</span>
+              <h3 class="overlay-title font-headline text-2xl font-bold text-white mb-2">Valera &amp; Montes</h3>
+              <p class="overlay-desc text-white/80 text-sm mb-6">Sitio jurídico corporativo que prioriza autoridad, claridad de servicios y posicionamiento premium.</p>
+              <a href="https://valera-montes.vercel.app/" target="_blank" rel="noreferrer" class="overlay-cta button-premium inline-flex items-center justify-center bg-white text-primary font-bold px-6 py-3 rounded-full hover:bg-on-primary transition-colors text-sm">Ver sitio web <span class="ml-2">→</span></a>
+            </div>
+          </article>
+        </div>
+        <div data-reveal data-delay="120" class="masonry-item">
+          <article class="project-card relative group overflow-hidden rounded-2xl bg-surface-container-lowest shadow-blue-500/5 hover:shadow-2xl">
+            <img src="assets/images/portfolio/brisas-paramo.jpg" alt="Captura de la web de Brisas del Páramo." class="portfolio-card-image" />
+            <div class="overlay absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/40 to-transparent flex flex-col justify-end p-8 transition-opacity duration-300">
+              <span class="overlay-category text-[10px] tracking-[0.3em] font-bold text-white mb-2">ECO-LODGE</span>
+              <h3 class="overlay-title font-headline text-2xl font-bold text-white mb-2">Brisas del Páramo</h3>
+              <p class="overlay-desc text-white/80 text-sm mb-6">Experiencia de hospedaje sustentable con narrativa de destino, reservas y conexión con naturaleza.</p>
+              <a href="https://brisas-paramo.vercel.app/" target="_blank" rel="noreferrer" class="overlay-cta button-premium inline-flex items-center justify-center bg-white text-primary font-bold px-6 py-3 rounded-full hover:bg-on-primary transition-colors text-sm">Ver sitio web <span class="ml-2">→</span></a>
+            </div>
+          </article>
+        </div>
+        <div data-reveal data-delay="0" class="masonry-item">
+          <article class="project-card relative group overflow-hidden rounded-2xl bg-surface-container-lowest shadow-blue-500/5 hover:shadow-2xl">
+            <img src="assets/images/portfolio/serenoespacio.jpg" alt="Captura de la web de SerenoEspacio." class="portfolio-card-image" />
+            <div class="overlay absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/40 to-transparent flex flex-col justify-end p-8 transition-opacity duration-300">
+              <span class="overlay-category text-[10px] tracking-[0.3em] font-bold text-white mb-2">BIENESTAR INTEGRAL</span>
+              <h3 class="overlay-title font-headline text-2xl font-bold text-white mb-2">SerenoEspacio</h3>
+              <p class="overlay-desc text-white/80 text-sm mb-6">Marca de yoga con una interfaz calmada para clases, filosofía de marca y captación de alumnos.</p>
+              <a href="https://serenoespacio.vercel.app/" target="_blank" rel="noreferrer" class="overlay-cta button-premium inline-flex items-center justify-center bg-white text-primary font-bold px-6 py-3 rounded-full hover:bg-on-primary transition-colors text-sm">Ver sitio web <span class="ml-2">→</span></a>
+            </div>
+          </article>
+        </div>
+        <div data-reveal data-delay="40" class="masonry-item">
+          <article class="project-card relative group overflow-hidden rounded-2xl bg-surface-container-lowest shadow-blue-500/5 hover:shadow-2xl">
+            <img src="assets/images/portfolio/horizonte-cero.jpg" alt="Captura de la web de Horizonte Cero." class="portfolio-card-image" />
+            <div class="overlay absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/40 to-transparent flex flex-col justify-end p-8 transition-opacity duration-300">
+              <span class="overlay-category text-[10px] tracking-[0.3em] font-bold text-white mb-2">INMOBILIARIA DE LUJO</span>
+              <h3 class="overlay-title font-headline text-2xl font-bold text-white mb-2">Horizonte Cero</h3>
+              <p class="overlay-desc text-white/80 text-sm mb-6">Web inmobiliaria de alto ticket pensada para destacar propiedades y elevar percepción de marca.</p>
+              <a href="https://horizonte-cero.vercel.app/" target="_blank" rel="noreferrer" class="overlay-cta button-premium inline-flex items-center justify-center bg-white text-primary font-bold px-6 py-3 rounded-full hover:bg-on-primary transition-colors text-sm">Ver sitio web <span class="ml-2">→</span></a>
+            </div>
+          </article>
+        </div>
+        <div data-reveal data-delay="80" class="masonry-item">
+          <article class="project-card relative group overflow-hidden rounded-2xl bg-surface-container-lowest shadow-blue-500/5 hover:shadow-2xl">
+            <img src="assets/images/portfolio/epica-eventos.jpg" alt="Captura de la web de Épica Eventos." class="portfolio-card-image" />
+            <div class="overlay absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/40 to-transparent flex flex-col justify-end p-8 transition-opacity duration-300">
+              <span class="overlay-category text-[10px] tracking-[0.3em] font-bold text-white mb-2">EVENTOS CORPORATIVOS</span>
+              <h3 class="overlay-title font-headline text-2xl font-bold text-white mb-2">Épica Eventos</h3>
+              <p class="overlay-desc text-white/80 text-sm mb-6">Sitio para producción de eventos con presentación clara de propuestas, impacto y experiencia.</p>
+              <a href="https://epica-eventos.vercel.app/" target="_blank" rel="noreferrer" class="overlay-cta button-premium inline-flex items-center justify-center bg-white text-primary font-bold px-6 py-3 rounded-full hover:bg-on-primary transition-colors text-sm">Ver sitio web <span class="ml-2">→</span></a>
+            </div>
+          </article>
+        </div>
+        <div data-reveal data-delay="120" class="masonry-item">
+          <article class="project-card relative group overflow-hidden rounded-2xl bg-surface-container-lowest shadow-blue-500/5 hover:shadow-2xl">
+            <img src="assets/images/portfolio/trama-textura.jpg" alt="Captura de la web de Trama & Textura." class="portfolio-card-image" />
+            <div class="overlay absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/40 to-transparent flex flex-col justify-end p-8 transition-opacity duration-300">
+              <span class="overlay-category text-[10px] tracking-[0.3em] font-bold text-white mb-2">DECORACIÓN ARTESANAL</span>
+              <h3 class="overlay-title font-headline text-2xl font-bold text-white mb-2">Trama &amp; Textura</h3>
+              <p class="overlay-desc text-white/80 text-sm mb-6">E-commerce con estética cálida y narrativa de producto hecha para inspirar y convertir.</p>
+              <a href="https://trama-textura.vercel.app/" target="_blank" rel="noreferrer" class="overlay-cta button-premium inline-flex items-center justify-center bg-white text-primary font-bold px-6 py-3 rounded-full hover:bg-on-primary transition-colors text-sm">Ver sitio web <span class="ml-2">→</span></a>
+            </div>
+          </article>
+        </div>
+        <div data-reveal data-delay="0" class="masonry-item">
+          <article class="project-card relative group overflow-hidden rounded-2xl bg-surface-container-lowest shadow-blue-500/5 hover:shadow-2xl">
+            <img src="assets/images/portfolio/sebastian-varela.jpg" alt="Captura de la web de Sebastián Varela." class="portfolio-card-image" />
+            <div class="overlay absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/40 to-transparent flex flex-col justify-end p-8 transition-opacity duration-300">
+              <span class="overlay-category text-[10px] tracking-[0.3em] font-bold text-white mb-2">FOTOGRAFÍA ARTÍSTICA</span>
+              <h3 class="overlay-title font-headline text-2xl font-bold text-white mb-2">Sebastián Varela</h3>
+              <p class="overlay-desc text-white/80 text-sm mb-6">Portafolio visual para exhibir obra, estilo autoral y contacto profesional con presencia elegante.</p>
+              <a href="https://sebastian-varela.vercel.app/" target="_blank" rel="noreferrer" class="overlay-cta button-premium inline-flex items-center justify-center bg-white text-primary font-bold px-6 py-3 rounded-full hover:bg-on-primary transition-colors text-sm">Ver sitio web <span class="ml-2">→</span></a>
+            </div>
+          </article>
+        </div>
+        <div data-reveal data-delay="40" class="masonry-item">
+          <article class="project-card relative group overflow-hidden rounded-2xl bg-surface-container-lowest shadow-blue-500/5 hover:shadow-2xl">
+            <img src="assets/images/portfolio/horno-mila.jpg" alt="Captura de la web de El Horno de Mila." class="portfolio-card-image" />
+            <div class="overlay absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/40 to-transparent flex flex-col justify-end p-8 transition-opacity duration-300">
+              <span class="overlay-category text-[10px] tracking-[0.3em] font-bold text-white mb-2">PANADERÍA ARTESANAL</span>
+              <h3 class="overlay-title font-headline text-2xl font-bold text-white mb-2">El Horno de Mila</h3>
+              <p class="overlay-desc text-white/80 text-sm mb-6">Sitio gastronómico enfocado en tradición, frescura diaria y reservas con tono humano.</p>
+              <a href="https://horno-mila.vercel.app/" target="_blank" rel="noreferrer" class="overlay-cta button-premium inline-flex items-center justify-center bg-white text-primary font-bold px-6 py-3 rounded-full hover:bg-on-primary transition-colors text-sm">Ver sitio web <span class="ml-2">→</span></a>
+            </div>
+          </article>
+        </div>
+        <div data-reveal data-delay="80" class="masonry-item">
+          <article class="project-card relative group overflow-hidden rounded-2xl bg-surface-container-lowest shadow-blue-500/5 hover:shadow-2xl">
+            <img src="assets/images/portfolio/hierro-ferreo.jpg" alt="Captura de la web de Hierro Férreo." class="portfolio-card-image" />
+            <div class="overlay absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/40 to-transparent flex flex-col justify-end p-8 transition-opacity duration-300">
+              <span class="overlay-category text-[10px] tracking-[0.3em] font-bold text-white mb-2">CROSSFIT Y FUERZA</span>
+              <h3 class="overlay-title font-headline text-2xl font-bold text-white mb-2">Hierro Férreo</h3>
+              <p class="overlay-desc text-white/80 text-sm mb-6">Landing potente para captar alumnos, comunicar disciplina y reforzar comunidad de entrenamiento.</p>
+              <a href="https://hierro-ferreo.vercel.app/" target="_blank" rel="noreferrer" class="overlay-cta button-premium inline-flex items-center justify-center bg-white text-primary font-bold px-6 py-3 rounded-full hover:bg-on-primary transition-colors text-sm">Ver sitio web <span class="ml-2">→</span></a>
+            </div>
+          </article>
+        </div>
+        <div data-reveal data-delay="120" class="masonry-item">
+          <article class="project-card relative group overflow-hidden rounded-2xl bg-surface-container-lowest shadow-blue-500/5 hover:shadow-2xl">
+            <img src="assets/images/portfolio/raices-vivas.jpg" alt="Captura de la web de Raíces Vivas." class="portfolio-card-image" />
+            <div class="overlay absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/40 to-transparent flex flex-col justify-end p-8 transition-opacity duration-300">
+              <span class="overlay-category text-[10px] tracking-[0.3em] font-bold text-white mb-2">IMPACTO AMBIENTAL</span>
+              <h3 class="overlay-title font-headline text-2xl font-bold text-white mb-2">Raíces Vivas</h3>
+              <p class="overlay-desc text-white/80 text-sm mb-6">Fundación de reforestación con relato de impacto, métricas visibles y llamado claro a colaborar.</p>
+              <a href="https://raices-vivas.vercel.app/" target="_blank" rel="noreferrer" class="overlay-cta button-premium inline-flex items-center justify-center bg-white text-primary font-bold px-6 py-3 rounded-full hover:bg-on-primary transition-colors text-sm">Ver sitio web <span class="ml-2">→</span></a>
+            </div>
+          </article>
+        </div>
+        <div data-reveal data-delay="0" class="masonry-item">
+          <article class="project-card relative group overflow-hidden rounded-2xl bg-surface-container-lowest shadow-blue-500/5 hover:shadow-2xl">
+            <img src="assets/images/portfolio/arcobase.jpg" alt="Captura de la web de ArcoBase." class="portfolio-card-image" />
+            <div class="overlay absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/40 to-transparent flex flex-col justify-end p-8 transition-opacity duration-300">
+              <span class="overlay-category text-[10px] tracking-[0.3em] font-bold text-white mb-2">ARQUITECTURA</span>
+              <h3 class="overlay-title font-headline text-2xl font-bold text-white mb-2">ArcoBase</h3>
+              <p class="overlay-desc text-white/80 text-sm mb-6">Estudio brutalista con una web sobria para método, proyectos y posicionamiento visual distintivo.</p>
+              <a href="https://arcobase.vercel.app/" target="_blank" rel="noreferrer" class="overlay-cta button-premium inline-flex items-center justify-center bg-white text-primary font-bold px-6 py-3 rounded-full hover:bg-on-primary transition-colors text-sm">Ver sitio web <span class="ml-2">→</span></a>
+            </div>
+          </article>
+        </div>
+        <div data-reveal data-delay="40" class="masonry-item">
+          <article class="project-card relative group overflow-hidden rounded-2xl bg-surface-container-lowest shadow-blue-500/5 hover:shadow-2xl">
+            <img src="assets/images/portfolio/voltruta.jpg" alt="Captura de la web de VoltRuta." class="portfolio-card-image" />
+            <div class="overlay absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/40 to-transparent flex flex-col justify-end p-8 transition-opacity duration-300">
+              <span class="overlay-category text-[10px] tracking-[0.3em] font-bold text-white mb-2">MOVILIDAD ELÉCTRICA</span>
+              <h3 class="overlay-title font-headline text-2xl font-bold text-white mb-2">VoltRuta</h3>
+              <p class="overlay-desc text-white/80 text-sm mb-6">Propuesta tecnológica para carga inteligente con mensaje claro, innovación y visión de futuro.</p>
+              <a href="https://voltruta.vercel.app/" target="_blank" rel="noreferrer" class="overlay-cta button-premium inline-flex items-center justify-center bg-white text-primary font-bold px-6 py-3 rounded-full hover:bg-on-primary transition-colors text-sm">Ver sitio web <span class="ml-2">→</span></a>
+            </div>
+          </article>
+        </div>
+        <div data-reveal data-delay="80" class="masonry-item">
+          <article class="project-card relative group overflow-hidden rounded-2xl bg-surface-container-lowest shadow-blue-500/5 hover:shadow-2xl">
+            <img src="assets/images/portfolio/canis-fel.jpg" alt="Captura de la web de Canis & Fel." class="portfolio-card-image" />
+            <div class="overlay absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/40 to-transparent flex flex-col justify-end p-8 transition-opacity duration-300">
+              <span class="overlay-category text-[10px] tracking-[0.3em] font-bold text-white mb-2">CLÍNICA VETERINARIA</span>
+              <h3 class="overlay-title font-headline text-2xl font-bold text-white mb-2">Canis &amp; Fel</h3>
+              <p class="overlay-desc text-white/80 text-sm mb-6">Sitio cercano y profesional para servicios veterinarios, confianza familiar y atención especializada.</p>
+              <a href="https://canis-fel.vercel.app/" target="_blank" rel="noreferrer" class="overlay-cta button-premium inline-flex items-center justify-center bg-white text-primary font-bold px-6 py-3 rounded-full hover:bg-on-primary transition-colors text-sm">Ver sitio web <span class="ml-2">→</span></a>
+            </div>
+          </article>
+        </div>
+        <div data-reveal data-delay="120" class="masonry-item">
+          <article class="project-card relative group overflow-hidden rounded-2xl bg-surface-container-lowest shadow-blue-500/5 hover:shadow-2xl">
+            <img src="assets/images/portfolio/croma-digital.jpg" alt="Captura de la web de Croma Digital." class="portfolio-card-image" />
+            <div class="overlay absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/40 to-transparent flex flex-col justify-end p-8 transition-opacity duration-300">
+              <span class="overlay-category text-[10px] tracking-[0.3em] font-bold text-white mb-2">BRANDING CREATIVO</span>
+              <h3 class="overlay-title font-headline text-2xl font-bold text-white mb-2">Croma Digital</h3>
+              <p class="overlay-desc text-white/80 text-sm mb-6">Agencia de diseño experimental pensada para mostrar enfoque crítico, servicios y personalidad visual.</p>
+              <a href="https://croma-digital.vercel.app/" target="_blank" rel="noreferrer" class="overlay-cta button-premium inline-flex items-center justify-center bg-white text-primary font-bold px-6 py-3 rounded-full hover:bg-on-primary transition-colors text-sm">Ver sitio web <span class="ml-2">→</span></a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="max-w-7xl mx-auto px-4 sm:px-6 py-20 sm:py-24">
+      <div data-reveal class="bg-primary text-on-primary rounded-[32px] p-10 sm:p-12 md:p-20 text-center relative overflow-hidden">
+        <div class="absolute top-0 right-0 w-64 h-64 bg-white/10 rounded-full -mr-32 -mt-32 blur-3xl"></div>
+        <div class="relative z-10">
+          <h2 class="font-headline text-3xl md:text-5xl font-extrabold mb-8 max-w-3xl mx-auto leading-tight">¿Quieres que tu sitio web sea el próximo en esta lista?</h2>
+          <a href="contact.html" class="button-premium inline-flex items-center justify-center bg-white text-primary hover:bg-on-primary transition-all duration-300 px-10 py-5 rounded-full font-bold text-lg shadow-xl hover:scale-105">Hablemos de tu proyecto</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer bg-slate-50 w-full rounded-t-[32px] text-sm leading-relaxed">
+    <div class="flex flex-col md:flex-row justify-between items-center px-6 sm:px-8 py-12 max-w-7xl mx-auto gap-8">
+      <img src="blyp_logotipo.svg" alt="Blyp" class="h-8 w-auto" />
+      <div class="flex gap-6 sm:gap-8">
+        <a href="index.html" class="text-slate-500 hover:text-blue-600 underline-offset-4 hover:underline transition-all duration-300">Inicio</a>
+        <a href="portfolio.html" class="text-blue-600 font-semibold underline-offset-4 hover:underline transition-all duration-300">Portafolio</a>
+        <a href="contact.html" class="text-slate-500 hover:text-blue-600 underline-offset-4 hover:underline transition-all duration-300">Contacto</a>
+      </div>
+      <div class="text-slate-500">© <span data-current-year></span> Blyp. Todos los derechos reservados.</div>
+    </div>
+  </footer>
+
+  <script src="assets/site.js"></script>
+</body>
+</html>
+
+
+

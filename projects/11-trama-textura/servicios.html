@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nuestras Líneas de Diseño | Trama & Textura</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@500;700&family=Jost:wght@300;400;600&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Preloader -->
+  <div class="preloader"><div class="preloader-spinner"></div></div>
+
+
+  <!-- Navigation Header -->
+  <nav class="main-nav">
+    <div class="container nav-inner">
+      <a href="index.html" class="nav-logo">Trama & Textura</a>
+      <ul class="nav-links">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="servicios.html" class="active">Servicios</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+      <div class="nav-icons">
+        <button aria-label="Buscar"><i data-lucide="search"></i></button>
+        <button aria-label="Carrito de compras" style="position:relative; background:none; border:none; color:inherit; cursor:pointer;"><i data-lucide="shopping-cart"></i><span style="position:absolute; top:-5px; right:-5px; background:var(--clay); color:#fff; border-radius:50%; width:18px; height:18px; display:inline-flex; align-items:center; justify-content:center; font-size:0.7rem; font-weight:700; transition: transform 0.2s ease;" id="cart-badge">0</span></button>
+        <button class="hamburger" aria-label="Menú"><i data-lucide="menu"></i></button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Banner -->
+  <section class="reveal-item page-banner">
+    <div class="container">
+      <h1>Líneas y Servicios de Diseño</h1>
+      <p>Piezas exclusivas fabricadas éticamente y asesorías en decoración de espacios rústicos.</p>
+    </div>
+  </section>
+
+  <!-- Services Grid -->
+  <section class="reveal-item section">
+    <div class="container">
+      <div class="categories-grid">
+        <article class="service-card reveal-item" style="padding: 2.5rem;">
+          <div class="service-icon-circle"><i data-lucide="shopping-bag"></i></div>
+          <h3>Venta de Cerámica Artesanal</h3>
+          <p>Ofrecemos piezas únicas de vajilla, jarrones y macetas moldeadas y pintadas a mano en talleres locales de gres y arcilla.</p>
+        </article>
+
+        <article class="service-card reveal-item" style="padding: 2.5rem;">
+          <div class="service-icon-circle"><i data-lucide="scissors"></i></div>
+          <h3>Textilería en Telar</h3>
+          <p>Alfombras, mantas y fundas de cojín tejidas a mano por artesanas del sur del país, utilizando hilados de lana pura y tintes vegetales.</p>
+        </article>
+
+        <article class="service-card reveal-item" style="padding: 2.5rem;">
+          <div class="service-icon-circle"><i data-lucide="home"></i></div>
+          <h3>Asesoría en Interiorismo Rústico</h3>
+          <p>Ayudamos a curar y amoblar tus ambientes (hogar o comercial) incorporando texturas naturales y objetos artesanales que aportan calidez.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="main-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <h3>Trama & Textura</h3>
+        <p>Decoración de Interiores y Artesanía</p>
+      </div>
+      <div class="footer-dev">
+        <span>Desarrollado por</span>
+        <a href="../index.html" class="footer-logo-link" aria-label="Ir a Blyp">
+          <img src="../blyp_logotipo.svg" alt="Blyp Logo" class="footer-logo">
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hierro Férreo | Box de Crossfit & Fuerza Industrial</title>
+  <meta name="description" content="Entrenamiento de fuerza brutal en un espacio industrial real. Clases de halterofilia, powerlifting y crossfit.">
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Preloader -->
+  <div class="preloader"><div class="preloader-spinner"></div></div>
+
+
+  <!-- Navigation -->
+  <nav class="main-nav">
+    <div class="container nav-inner">
+      <a href="index.html" class="nav-logo">HIERRO FÉREO</a>
+      <ul class="nav-links">
+        <li><a href="index.html" class="active">Inicio</a></li>
+        <li><a href="servicios.html">Planes</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+        <li><a href="contacto.html" class="nav-cta">Clase Prueba</a></li>
+      </ul>
+      <button class="hamburger" aria-label="Menú">
+        <i data-lucide="menu"></i>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <h1>Forja tu carácter</h1>
+        <p>No vendemos espejos ni comodidad. Ofrecemos barras olímpicas, sudor y el método científico para destruir tus límites.</p>
+        <button class="btn-aggressive" onclick="window.location.href='servicios.html'">Unete al Clan</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Workout of the Day (WOD) -->
+  <section class="reveal-item section">
+    <div class="container">
+      <h2 class="section-title">WOD del Día</h2>
+      <div class="wod-container">
+
+        <div class="wod-level-tabs" style="display:flex; gap:1rem; margin-bottom:2rem; justify-content:center;">
+          <button class="btn-aggressive btn-level active" data-level="rookie" style="padding:0.5rem 1.5rem; font-size:1.1rem;">Rookie</button>
+          <button class="btn-aggressive btn-level" data-level="rx" style="padding:0.5rem 1.5rem; font-size:1.1rem;">Rx</button>
+          <button class="btn-aggressive btn-level" data-level="elite" style="padding:0.5rem 1.5rem; font-size:1.1rem;">Elite</button>
+        </div>
+        <div class="wod-header">
+          <h3>HURACÁN DEL LUNES</h3>
+          <span class="wod-date">HOY</span>
+        </div>
+        <div class="wod-block">
+          <h4>Fuerza (Strength)</h4>
+          <p>Back Squat 5x5 al 80% de 1RM. Descanso 2 minutos entre rondas.</p>
+        </div>
+        <div class="wod-block">
+          <h4>Acondicionamiento (Metcon)</h4>
+          <p>AMRAP 15 Minutos de: 10 Overhead Squats (40kg), 15 Toes-to-Bar, 20 Double Unders.</p>
+        </div>
+        <button class="btn-aggressive" id="switch-wod" style="padding: 0.5rem 1.5rem; font-size: 1.1rem;">Cambiar WOD</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Progress bars section -->
+  <section class="reveal-item section" style="background-color: #0F0F10;">
+    <div class="container">
+      <h2 class="section-title">Nuestras Metas Clave</h2>
+      <div class="stats-bars">
+        <div class="bar-group">
+          <div class="bar-label">
+            <span>Fuerza y Acondicionamiento</span>
+            <span>90%</span>
+          </div>
+          <div class="bar-bg">
+            <div class="bar-fill" data-value="90"></div>
+          </div>
+        </div>
+        <div class="bar-group">
+          <div class="bar-label">
+            <span>Técnica Halterofilia</span>
+            <span>75%</span>
+          </div>
+          <div class="bar-bg">
+            <div class="bar-fill" data-value="75"></div>
+          </div>
+        </div>
+        <div class="bar-group">
+          <div class="bar-label">
+            <span>Comunidad Activa</span>
+            <span>95%</span>
+          </div>
+          <div class="bar-bg">
+            <div class="bar-fill" data-value="95"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="main-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <h3>HIERRO FÉREO</h3>
+        <p>Centro de Alto Rendimiento Industrial</p>
+      </div>
+      <div class="footer-dev">
+        <span>Desarrollado por</span>
+        <a href="../index.html" class="footer-logo-link" aria-label="Ir a Blyp">
+          <img src="../blyp_logotipo.svg" alt="Blyp Logo" class="footer-logo">
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

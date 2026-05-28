@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto | El Horno de Mila</title>
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Preloader -->
+  <div class="preloader"><div class="preloader-spinner"></div></div>
+
+
+  <!-- Navigation -->
+  <nav class="main-nav">
+    <div class="container nav-container">
+      <a href="index.html" class="nav-logo brand-title">🥐 El Horno de Mila</a>
+      <ul class="nav-links">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="servicios.html">Menú</a></li>
+        <li><a href="contacto.html" class="active">Contacto</a></li>
+        <li><a href="contacto.html" class="nav-cta">Pedir Ahora</a></li>
+      </ul>
+      <button class="hamburger" aria-label="Menú">
+        <i data-lucide="menu"></i>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Page Banner -->
+  <section class="reveal-item page-banner">
+    <div class="container">
+      <h1>¡Charlemos un Rato!</h1>
+      <p>Envíanos un mensaje para consultas sobre pedidos, catering o alianzas.</p>
+    </div>
+  </section>
+
+  <!-- Contact Form -->
+  <section class="reveal-item section">
+    <div class="container">
+      <div class="form-card">
+        <form id="cozy-contact">
+          <div class="form-group">
+            <label for="name">Nombre</label>
+            <input type="text" id="name" required placeholder="Tu hermoso nombre">
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" required placeholder="tu@correo.com">
+          </div>
+          <div class="form-group">
+            <label for="msg">Mensaje</label>
+            <textarea id="msg" rows="5" required placeholder="¿En qué te podemos ayudar hoy?"></textarea>
+          </div>
+          <button type="submit" class="btn-cozy" style="width: 100%;">Enviar Mensaje</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="main-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <h3>El Horno de Mila</h3>
+        <p>Panadería Artesanal Auténtica</p>
+      </div>
+      <div class="footer-dev">
+        <span>Desarrollado por</span>
+        <a href="../index.html" class="footer-logo-link" aria-label="Ir a Blyp">
+          <img src="../blyp_logotipo.svg" alt="Blyp Logo" class="footer-logo">
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

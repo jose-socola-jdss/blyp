@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menú Completo | El Horno de Mila</title>
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Preloader -->
+  <div class="preloader"><div class="preloader-spinner"></div></div>
+
+
+  <!-- Navigation -->
+  <nav class="main-nav">
+    <div class="container nav-container">
+      <a href="index.html" class="nav-logo brand-title">🥐 El Horno de Mila</a>
+      <ul class="nav-links">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="servicios.html" class="active">Menú</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+        <li><a href="contacto.html" class="nav-cta">Pedir Ahora</a></li>
+      </ul>
+      <button class="hamburger" aria-label="Menú">
+        <i data-lucide="menu"></i>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Page Banner -->
+  <section class="reveal-item page-banner">
+    <div class="container">
+      <h1>Nuestras Delicias</h1>
+      <p>Elaborados diariamente con materias primas seleccionadas.</p>
+    </div>
+  </section>
+
+  <!-- Menu Cards Detail -->
+  <section class="reveal-item section">
+    <div class="container">
+      <div class="menu-grid">
+        <div class="menu-card">
+          <div class="menu-card-icon"><i data-lucide="droplet"></i></div>
+          <h3>Masas Madres</h3>
+          <p>Panes rústicos elaborados con harinas integrales, semillas tostadas y centeno.</p>
+        </div>
+        <div class="menu-card">
+          <div class="menu-card-icon"><i data-lucide="sparkles"></i></div>
+          <h3>Dulces & Pasteles</h3>
+          <p>Tartas de frutas frescas, croissants de chocolate belga y alfajores de almendra.</p>
+        </div>
+        <div class="menu-card">
+          <div class="menu-card-icon"><i data-lucide="calendar"></i></div>
+          <h3>Catering Casero</h3>
+          <p>Bocadillos salados, panes saborizados y tablas de pan integral para eventos especiales.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+  <!-- Interactive Bakery Order Calculator -->
+  <section class="reveal-item section order-calculator-section" style="background:#FFF; border-top:2px solid #F4EBE1;">
+    <div class="container">
+      <h2 class="section-title brand-title" style="text-align:center;">Calculador de Pedido</h2>
+      <p class="section-subtitle" style="text-align:center; color:#8C7B79; margin-bottom:3rem;">Añade tus delicias favoritas y calcula tu presupuesto de panadería.</p>
+      
+      <div class="bakery-calc-card" style="max-width:600px; margin:0 auto; padding:2.5rem; border:2px solid #F4EBE1; border-radius:20px; background:#FAF8F5; box-shadow:var(--shadow); font-family:var(--font-body);">
+        <div class="calc-row" style="display:flex; justify-content:between; align-items:center; margin-bottom:1.5rem; border-bottom:1px solid #EAE6DF; padding-bottom:1rem;">
+          <span style="font-weight:700; color:var(--primary);">Masa Madre ($6.00 / kg)</span>
+          <input type="number" id="qty-bread" min="0" max="20" value="0" style="margin-left:auto; width:80px; padding:0.5rem; border-radius:8px; border:2px solid #F4EBE1; outline:none; text-align:center;">
+        </div>
+        <div class="calc-row" style="display:flex; justify-content:between; align-items:center; margin-bottom:1.5rem; border-bottom:1px solid #EAE6DF; padding-bottom:1rem;">
+          <span style="font-weight:700; color:var(--primary);">Facturas ($1.50 / unidad)</span>
+          <input type="number" id="qty-croissant" min="0" max="50" value="0" style="margin-left:auto; width:80px; padding:0.5rem; border-radius:8px; border:2px solid #F4EBE1; outline:none; text-align:center;">
+        </div>
+        <div class="calc-row" style="display:flex; justify-content:between; align-items:center; margin-bottom:1.5rem; padding-bottom:1rem;">
+          <span style="font-weight:700; color:var(--primary);">Café Origen ($3.00 / taza)</span>
+          <input type="number" id="qty-coffee" min="0" max="20" value="0" style="margin-left:auto; width:80px; padding:0.5rem; border-radius:8px; border:2px solid #F4EBE1; outline:none; text-align:center;">
+        </div>
+        <div class="calc-summary" style="background:#FAF3E0; padding:1.5rem; border-radius:12px; text-align:center; margin-top:2rem;">
+          <h3 style="font-family:var(--font-display); color:var(--primary); font-size:1.2rem; margin-bottom:0.5rem;">Costo de tu Pedido</h3>
+          <span style="font-family:var(--font-display); font-size:2.5rem; color:var(--accent); font-weight:800;" id="bakery-total">$0.00</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="main-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <h3>El Horno de Mila</h3>
+        <p>Panadería Artesanal Auténtica</p>
+      </div>
+      <div class="footer-dev">
+        <span>Desarrollado por</span>
+        <a href="../index.html" class="footer-logo-link" aria-label="Ir a Blyp">
+          <img src="../blyp_logotipo.svg" alt="Blyp Logo" class="footer-logo">
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

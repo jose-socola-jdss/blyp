@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Croma Digital | Agencia de Branding & Diseño Experimental</title>
+  <meta name="description" content="Diseño web rebelde, branding de alto impacto e identidades visuales experimentales para marcas atrevidas.">
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Preloader -->
+  <div class="preloader"><div class="preloader-spinner"></div></div>
+
+
+  <!-- Navigation -->
+  <nav class="main-nav">
+    <div class="container nav-inner">
+      <a href="index.html" class="nav-logo">CROMA</a>
+      <ul class="nav-links">
+        <li><a href="index.html" class="active">Inicio</a></li>
+        <li><a href="servicios.html">Casos</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+      <button class="hamburger" aria-label="Menú">
+        <i data-lucide="menu"></i>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Marquee Banner -->
+  <div class="marquee-container">
+    <div class="marquee-content">
+      ✦ DISEÑO REBELDE ✦ BRANDING RADICAL ✦ CULTURA DIGITAL ✦ EXPERIMENTACIÓN VISUAL ✦ DISEÑO REBELDE ✦ 
+    </div>
+  </div>
+
+  <header class="hero">
+    <div class="container">
+      <h1>Crítica & Creativa</h1>
+      <p>Construimos marcas y productos digitales con alta dosis conceptual. Sin miedo a lo poco convencional, diseñamos para llamar la atención del mundo entero.</p>
+      <button class="btn-croma" onclick="window.location.href='servicios.html'">Ver Portafolio</button>
+    </div>
+  </header>
+
+  <!-- Palette Generator Section -->
+  <section class="reveal-item section" style="background-color: var(--bg); border-bottom: 2px solid #222; padding: 4rem 0;">
+    <div class="container">
+      <div class="palette-generator-widget" style="background:var(--cards); border:1px solid #222; padding:3rem 2rem; max-width:550px; margin:0 auto; text-align:center; font-family:var(--font-body);">
+        <h3 style="font-family:var(--font-display); color:var(--primary); font-size:1.3rem; margin-bottom:1rem;">Generador de Paleta Creativa</h3>
+        <p style="color:#8C8C9A; font-size:0.95rem; margin-bottom:1.5rem;">Crea paletas de neón aleatorias para tu marca digital.</p>
+        <div style="display:flex; gap:0.5rem; justify-content:center; margin-bottom:1.5rem;" id="palette-blocks">
+          <!-- Generated blocks -->
+        </div>
+        <button class="btn-croma" id="btn-generate-palette" style="padding:0.6rem 2rem; font-size:0.95rem;">Generar</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Case studies with hovers -->
+  <section class="reveal-item section">
+    <div class="container">
+      <h2 class="section-title">Estudios de Caso</h2>
+      <div class="cases-grid">
+        <div class="case-card reveal-item">
+          <h3>KRYPTON BRAND</h3>
+          <p>Identidad visual de criptomonedas con tipografías distorsionadas y animaciones interactivas.</p>
+        </div>
+        <div class="case-card reveal-item">
+          <h3>PLASTIK CO.</h3>
+          <p>E-commerce experimental basado en modelos 3D y layouts asimétricos con fondo negro.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Team geometric layout -->
+  <section class="reveal-item section">
+    <div class="container">
+      <h2 class="section-title">El Núcleo</h2>
+      <div class="team-grid">
+        <div class="team-card reveal-item">
+          <div class="team-avatar" style="background: url('https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=150&q=80') center/cover no-repeat;"></div>
+          <h3>Lucía Rossi</h3>
+          <p>Dirección Creativa</p>
+        </div>
+        <div class="team-card reveal-item">
+          <div class="team-avatar" style="background: url('https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=150&q=80') center/cover no-repeat;"></div>
+          <h3>Dante Varela</h3>
+          <p>Líder de Desarrollo</p>
+        </div>
+        <div class="team-card reveal-item">
+          <div class="team-avatar" style="background: url('https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&w=150&q=80') center/cover no-repeat;"></div>
+          <h3>Sofía Kogan</h3>
+          <p>Estratega de Marca</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="main-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <h3>CROMA DIGITAL</h3>
+        <p>Agencia Creativa Conceptual</p>
+      </div>
+      <div class="footer-dev">
+        <span>Desarrollado por</span>
+        <a href="../index.html" class="footer-logo-link" aria-label="Ir a Blyp">
+          <img src="../blyp_logotipo.svg" alt="Blyp Logo" class="footer-logo">
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

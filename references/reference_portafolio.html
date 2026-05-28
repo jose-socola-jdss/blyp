@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+
+<html class="light" lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Portafolio | Blyp - Nuestro Trabajo</title>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&amp;family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "on-primary-fixed-variant": "#00266e",
+              "primary-container": "#7b9cff",
+              "background": "#f5f6f7",
+              "secondary-container": "#93dbff",
+              "secondary-fixed": "#93dbff",
+              "surface-container-highest": "#dadddf",
+              "on-tertiary-container": "#3f008e",
+              "on-secondary": "#e5f5ff",
+              "on-error-container": "#570008",
+              "primary-dim": "#0046bb",
+              "surface-tint": "#0050d4",
+              "inverse-on-surface": "#9b9d9e",
+              "surface-container-high": "#e0e3e4",
+              "outline-variant": "#abadae",
+              "error-container": "#fb5151",
+              "surface-dim": "#d1d5d7",
+              "secondary-fixed-dim": "#78cef7",
+              "primary-fixed": "#7b9cff",
+              "on-surface": "#2c2f30",
+              "inverse-primary": "#618bff",
+              "tertiary-fixed-dim": "#b48fff",
+              "error": "#b31b25",
+              "on-secondary-fixed": "#00394c",
+              "on-error": "#ffefee",
+              "surface-container-low": "#eff1f2",
+              "surface-bright": "#f5f6f7",
+              "on-primary": "#f1f2ff",
+              "tertiary": "#702ae1",
+              "primary-fixed-dim": "#658eff",
+              "on-primary-container": "#001e5a",
+              "surface-container": "#e6e8ea",
+              "on-tertiary-fixed": "#200051",
+              "on-secondary-container": "#004d67",
+              "error-dim": "#9f0519",
+              "on-secondary-fixed-variant": "#005773",
+              "secondary-dim": "#005672",
+              "tertiary-fixed": "#c0a0ff",
+              "surface-variant": "#dadddf",
+              "outline": "#757778",
+              "surface": "#f5f6f7",
+              "on-tertiary": "#f8f0ff",
+              "inverse-surface": "#0c0f10",
+              "tertiary-dim": "#6411d5",
+              "secondary": "#006382",
+              "surface-container-lowest": "#ffffff",
+              "on-surface-variant": "#595c5d",
+              "on-primary-fixed": "#000000",
+              "primary": "#0050d4",
+              "tertiary-container": "#c0a0ff",
+              "on-tertiary-fixed-variant": "#4a00a4",
+              "on-background": "#2c2f30"
+            },
+            fontFamily: {
+              "headline": ["Plus Jakarta Sans"],
+              "body": ["Be Vietnam Pro"],
+              "label": ["Be Vietnam Pro"]
+            },
+            borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            vertical-align: middle;
+        }
+        .dot-grid {
+            background-image: radial-gradient(#d1d5d7 1px, transparent 1px);
+            background-size: 24px 24px;
+        }
+        .masonry-grid {
+            column-count: 1;
+            column-gap: 16px;
+        }
+        @media (min-width: 640px) { .masonry-grid { column-count: 2; } }
+        @media (min-width: 1024px) { .masonry-grid { column-count: 4; } }
+        
+        .masonry-item {
+            break-inside: avoid;
+            margin-bottom: 16px;
+        }
+
+        /* Hover Overlay Logic for Touch/Non-Touch */
+        @media (hover: hover) {
+            .project-card .overlay { opacity: 0; }
+            .project-card:hover .overlay { opacity: 1; }
+            .project-card:hover { transform: translateY(-8px); }
+        }
+        @media (hover: none) {
+            .project-card .overlay { opacity: 0.9; }
+        }
+    </style>
+</head>
+<body class="bg-surface font-body text-on-surface selection:bg-primary-container selection:text-on-primary-container">
+<!-- TopNavBar -->
+<header class="sticky top-0 z-50 w-full bg-white/70 backdrop-blur-md shadow-sm shadow-blue-500/5">
+<nav class="flex justify-between items-center max-w-7xl mx-auto px-6 h-20">
+<div class="text-2xl font-bold tracking-tighter text-slate-900">Blyp</div>
+<div class="hidden md:flex items-center gap-8 font-['Plus_Jakarta_Sans'] font-medium text-sm tracking-tight">
+<a class="text-slate-600 hover:text-blue-500 transition-colors" href="index.html">Inicio</a>
+<a class="text-blue-600 font-bold border-b-2 border-blue-600 pb-1" href="portfolio.html">Portafolio</a>
+<a class="text-slate-600 hover:text-blue-500 transition-colors" href="contacto.html">Contacto</a>
+</div>
+<a class="bg-primary text-on-primary px-6 py-2.5 rounded-full font-semibold hover:opacity-80 transition-all duration-300 active:scale-95" href="contacto.html">
+                Empezar
+            </a>
+</nav>
+</header>
+<main>
+<!-- Page Hero -->
+<section class="relative bg-white pt-24 pb-16 overflow-hidden">
+<div class="absolute inset-0 dot-grid opacity-40"></div>
+<div class="relative max-w-7xl mx-auto px-6 text-center">
+<h1 class="font-headline text-5xl md:text-6xl font-extrabold tracking-tight text-on-surface mb-6">
+                    Nuestro trabajo
+                </h1>
+<p class="font-body text-lg md:text-xl text-on-surface-variant max-w-2xl mx-auto leading-relaxed">
+                    Una mirada a los sitios web que hemos creado, cada uno diseñado con propósito.
+                </p>
+</div>
+</section>
+<!-- Portfolio Masonry Grid -->
+<section class="max-w-7xl mx-auto px-6 py-12">
+<div class="masonry-grid">
+<!-- Project 1: Sabores del Norte -->
+<div class="masonry-item">
+<div class="project-card relative group overflow-hidden rounded-2xl bg-surface-container-lowest transition-all duration-500 shadow-blue-500/5 hover:shadow-2xl">
+<img alt="Restaurante Sabores del Norte" class="w-full h-[600px] object-cover" data-alt="Modern restaurant interior with warm lighting and rustic wooden tables featuring gourmet Peruvian dishes in an elegant setup" src="https://lh3.googleusercontent.com/aida-public/AB6AXuARSXNOggxDI4X37_z1E11htIDdyUxYvQoMHsgE8t_OTWk6M6ydqw1_953utAaQVR6S8WEYZCdvdWxpCrSu-qYPAYMlLY6uOZCI6N2mKVGeT5wvkKOPVraFMwmLRr5vX1LMz91tkLLRHnHA7-XZNnLg4dKYoAKyPG9BuBcGk3a6juctcQ9IR66CxybyApqO5vEiUPaKZDHhOtxF2tVYRTcgFSBAzz9vtO7Ge6wDGyMWApY5RE9Yr4eKb6S5YFwqqfEnJoGYxtXvnds"/>
+<!-- Default Footer -->
+<div class="p-4 flex flex-col gap-1">
+<span class="inline-flex items-center self-start px-2.5 py-0.5 rounded-full text-xs font-semibold bg-secondary-container text-on-secondary-container">Restaurante</span>
+<h3 class="font-headline font-bold text-on-surface">Sabores del Norte</h3>
+</div>
+<!-- Hover Overlay -->
+<div class="overlay absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/40 to-transparent flex flex-col justify-end p-8 transition-opacity duration-300">
+<span class="text-[10px] tracking-widest font-bold text-white mb-2">RESTAURANTE</span>
+<h3 class="font-headline text-2xl font-bold text-white mb-2">Sabores del Norte</h3>
+<p class="text-white/80 text-sm mb-6 line-clamp-2">Experiencia digital gastronómica con reserva en línea integrada.</p>
+<a class="inline-flex items-center justify-center bg-white text-primary font-bold px-6 py-3 rounded-full hover:bg-on-primary transition-colors text-sm" href="#">
+                                Ver sitio web <span class="ml-2">→</span>
+</a>
+</div>
+</div>
+</div>
+<!-- Project 2: EstudioFit -->
+<div class="masonry-item">
+<div class="project-card relative group overflow-hidden rounded-2xl bg-surface-container-lowest transition-all duration-500 shadow-blue-500/5 hover:shadow-2xl">
+<img alt="EstudioFit" class="w-full h-[480px] object-cover" data-alt="Bright fitness studio with modern equipment and a person exercising in the background with soft natural window light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCjP_MLEw6hih1WCbDBNfFASyVHewa2NK3Yr5YmKbJB2DWJVSOed85ymmuz9AbmBBea-THaDkiR0gO7Np9Zywr2mwpDFntvLoive4Y4G_MgZqqk4gJKaFV-8WxtPUHY4YNrssqYBNq6pYJ1V1Z7a3_1Tr1kcb9YACUTEvYd0fFhTPaB4ThfNjSNYnU4eP8kZ1rCVAkYuwT5KSwSffzG7qcX3I_nV-xoeaxucJkXowgd4Gvih4YEEq2G9aMswYY25jYzuo5wT_HXR1Y"/>
+<div class="p-4 flex flex-col gap-1">
+<span class="inline-flex items-center self-start px-2.5 py-0.5 rounded-full text-xs font-semibold bg-secondary-container text-on-secondary-container">Salud y bienestar</span>
+<h3 class="font-headline font-bold text-on-surface">EstudioFit</h3>
+</div>
+<div class="overlay absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/40 to-transparent flex flex-col justify-end p-8 transition-opacity duration-300">
+<span class="text-[10px] tracking-widest font-bold text-white mb-2">SALUD Y BIENESTAR</span>
+<h3 class="font-headline text-2xl font-bold text-white mb-2">EstudioFit</h3>
+<p class="text-white/80 text-sm mb-6 line-clamp-2">Plataforma de bienestar integral con sistema de gestión de clases.</p>
+<a class="inline-flex items-center justify-center bg-white text-primary font-bold px-6 py-3 rounded-full hover:bg-on-primary transition-colors text-sm" href="#">
+                                Ver sitio web <span class="ml-2">→</span>
+</a>
+</div>
+</div>
+</div>
+<!-- Project 3: LegalPro Abogados -->
+<div class="masonry-item">
+<div class="project-card relative group overflow-hidden rounded-2xl bg-surface-container-lowest transition-all duration-500 shadow-blue-500/5 hover:shadow-2xl">
+<img alt="LegalPro Abogados" class="w-full h-[380px] object-cover" data-alt="Professional office setting with law books and a clean glass desk symbolizing legal authority and precision" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAhYcOBHhsjq6dKqUCC6b8fOf_RVM3GH8K1NEDw-YFmzS6JiEUYNz759ycixmShMmP0H1M4Og4jUcHOR8ZtBv2RCBefmoonEnUCug3n7bwKY0ELu6W_t_faxZuaZr6aqEjuUk23e-P1iMnqkN-l_Oh4FduBVM834_KxXoWM4NvD3D0fYTxupVjoh2CCrNGO2mcTcdYIR6gdH807gz0JGHRu2WghmqdvI8GBYyoQtdW2xo88_ErxY97Y5zefbOqtVroohv7Udn5kuHw"/>
+<div class="p-4 flex flex-col gap-1">
+<span class="inline-flex items-center self-start px-2.5 py-0.5 rounded-full text-xs font-semibold bg-secondary-container text-on-secondary-container">Servicios legales</span>
+<h3 class="font-headline font-bold text-on-surface">LegalPro Abogados</h3>
+</div>
+<div class="overlay absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/40 to-transparent flex flex-col justify-end p-8 transition-opacity duration-300">
+<span class="text-[10px] tracking-widest font-bold text-white mb-2">SERVICIOS LEGALES</span>
+<h3 class="font-headline text-2xl font-bold text-white mb-2">LegalPro Abogados</h3>
+<p class="text-white/80 text-sm mb-6 line-clamp-2">Diseño corporativo minimalista para una firma de abogados líder.</p>
+<a class="inline-flex items-center justify-center bg-white text-primary font-bold px-6 py-3 rounded-full hover:bg-on-primary transition-colors text-sm" href="#">
+                                Ver sitio web <span class="ml-2">→</span>
+</a>
+</div>
+</div>
+</div>
+<!-- Project 4: BioNatura Perú -->
+<div class="masonry-item">
+<div class="project-card relative group overflow-hidden rounded-2xl bg-surface-container-lowest transition-all duration-500 shadow-blue-500/5 hover:shadow-2xl">
+<img alt="BioNatura Perú" class="w-full h-[520px] object-cover" data-alt="Selection of organic skincare products with green leaves on a clean white background, studio photography" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCcTaJgCmIXmBo5sy8lbBOjyD2Ss0rYuR5amAZBwZwVg11hqXApR1PlJbkFxiZ1ipMUrx2-d1iG1aYKKOihvowkww_gym_CUSiGVGX82-9JMY19LVOulPsT_vCG33tkyCLSQ34LBYlDMXsw9Wv7WpH6fpnB5cLw68vUVpjKiBvuR1kcSRiEu6LMI9cdNOZUztZe_6zcfhp1yGakt7fVTXjMGoFIprreVD_YiioRB3yGH2qDIuRiY-gUjok_OklaoIR-Xl-J8mHt_JA"/>
+<div class="p-4 flex flex-col gap-1">
+<span class="inline-flex items-center self-start px-2.5 py-0.5 rounded-full text-xs font-semibold bg-secondary-container text-on-secondary-container">E-commerce</span>
+<h3 class="font-headline font-bold text-on-surface">BioNatura Perú</h3>
+</div>
+<div class="overlay absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/40 to-transparent flex flex-col justify-end p-8 transition-opacity duration-300">
+<span class="text-[10px] tracking-widest font-bold text-white mb-2">E-COMMERCE</span>
+<h3 class="font-headline text-2xl font-bold text-white mb-2">BioNatura Perú</h3>
+<p class="text-white/80 text-sm mb-6 line-clamp-2">Tienda virtual de productos orgánicos con checkout optimizado.</p>
+<a class="inline-flex items-center justify-center bg-white text-primary font-bold px-6 py-3 rounded-full hover:bg-on-primary transition-colors text-sm" href="#">
+                                Ver sitio web <span class="ml-2">→</span>
+</a>
+</div>
+</div>
+</div>
+<!-- Project 5: Constructora Vega -->
+<div class="masonry-item">
+<div class="project-card relative group overflow-hidden rounded-2xl bg-surface-container-lowest transition-all duration-500 shadow-blue-500/5 hover:shadow-2xl">
+<img alt="Constructora Vega" class="w-full h-[440px] object-cover" data-alt="Architecture blueprint and safety helmet on a construction site with sunlight hitting the documents" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCBI8jY3kAgYKzPJbcfGYMTfXrfUSkNIz7U-14IyX4-iKrT-9C2gKNmvLg1HeI9428183AMBSx6Hr_tmVVQZx1S0RxOYZjCyARaFHGp5Ass8A1WoiaBfwSssQENYnQlzP27gI2AZkGnByvH_3AF_NYBqm3BkuQ6aS1u-RmqnjZLw-y2mG8-Imfkp-305Lbr84In3F9-bZ-snjEETxxjr5mFvmcPZUcG-tKYg67NtOjifdGc60s5RnaM2unoHkP_ftG1T91cOxSdkcI"/>
+<div class="p-4 flex flex-col gap-1">
+<span class="inline-flex items-center self-start px-2.5 py-0.5 rounded-full text-xs font-semibold bg-secondary-container text-on-secondary-container">Construcción</span>
+<h3 class="font-headline font-bold text-on-surface">Constructora Vega</h3>
+</div>
+<div class="overlay absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/40 to-transparent flex flex-col justify-end p-8 transition-opacity duration-300">
+<span class="text-[10px] tracking-widest font-bold text-white mb-2">CONSTRUCCIÓN</span>
+<h3 class="font-headline text-2xl font-bold text-white mb-2">Constructora Vega</h3>
+<p class="text-white/80 text-sm mb-6 line-clamp-2">Portafolio de proyectos inmobiliarios de alta gama.</p>
+<a class="inline-flex items-center justify-center bg-white text-primary font-bold px-6 py-3 rounded-full hover:bg-on-primary transition-colors text-sm" href="#">
+                                Ver sitio web <span class="ml-2">→</span>
+</a>
+</div>
+</div>
+</div>
+<!-- Project 6: TechNow Academy -->
+<div class="masonry-item">
+<div class="project-card relative group overflow-hidden rounded-2xl bg-surface-container-lowest transition-all duration-500 shadow-blue-500/5 hover:shadow-2xl">
+<img alt="TechNow Academy" class="w-full h-[560px] object-cover" data-alt="Close up of hands typing on a glowing laptop keyboard in a dimly lit tech environment with blue neon accents" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC6UyLCE1-C8rXs9QvS0hJF9GDZUM_OqZfm2YAIGiMiT8tyQKSsimTMPtxvYvnhtKdSH_uCv8j2hCS4xPk4TMLOsWLRBPRI0aUceqk188UFzSbVHkqT3tU3O4SSROVeFuLhCI1u5JX5voRRtArCrUp7csH0NsbDHJQ6MV6fhj4ezwwpQq3fb7ynGqsapMFLJoGMreT22-hNZQ2yDaLt09eV4pbUNOJ4uyfRqzxoxehlxxPdmdqGWiFXaV7ThNDkB8ZoeqZornQ3mBs"/>
+<div class="p-4 flex flex-col gap-1">
+<span class="inline-flex items-center self-start px-2.5 py-0.5 rounded-full text-xs font-semibold bg-secondary-container text-on-secondary-container">Educación en línea</span>
+<h3 class="font-headline font-bold text-on-surface">TechNow Academy</h3>
+</div>
+<div class="overlay absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/40 to-transparent flex flex-col justify-end p-8 transition-opacity duration-300">
+<span class="text-[10px] tracking-widest font-bold text-white mb-2">EDUCACIÓN EN LÍNEA</span>
+<h3 class="font-headline text-2xl font-bold text-white mb-2">TechNow Academy</h3>
+<p class="text-white/80 text-sm mb-6 line-clamp-2">Plataforma de e-learning escalable con dashboard para estudiantes.</p>
+<a class="inline-flex items-center justify-center bg-white text-primary font-bold px-6 py-3 rounded-full hover:bg-on-primary transition-colors text-sm" href="#">
+                                Ver sitio web <span class="ml-2">→</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Footer CTA -->
+<section class="max-w-7xl mx-auto px-6 py-24">
+<div class="bg-primary text-on-primary rounded-[32px] p-12 md:p-20 text-center relative overflow-hidden">
+<div class="absolute top-0 right-0 w-64 h-64 bg-white/10 rounded-full -mr-32 -mt-32 blur-3xl"></div>
+<div class="relative z-10">
+<h2 class="font-headline text-3xl md:text-5xl font-extrabold mb-8 max-w-3xl mx-auto leading-tight">
+                        ¿Quieres que tu sitio web sea el próximo en esta lista?
+                    </h2>
+<a class="inline-flex items-center justify-center bg-white text-primary hover:bg-on-primary transition-all duration-300 px-10 py-5 rounded-full font-bold text-lg shadow-xl hover:scale-105" href="contacto.html">
+                        Hablemos de tu proyecto
+                    </a>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-slate-50 w-full rounded-t-[32px] font-body text-sm leading-relaxed">
+<div class="flex flex-col md:flex-row justify-between items-center px-8 py-12 max-w-7xl mx-auto gap-8">
+<div class="text-xl font-black text-slate-900">Blyp</div>
+<div class="flex gap-8">
+<a class="text-slate-500 hover:text-blue-600 underline-offset-4 hover:underline transition-all duration-300" href="index.html">Inicio</a>
+<a class="text-blue-600 font-semibold underline-offset-4 hover:underline transition-all duration-300" href="portfolio.html">Portafolio</a>
+<a class="text-slate-500 hover:text-blue-600 underline-offset-4 hover:underline transition-all duration-300" href="contacto.html">Contacto</a>
+</div>
+<div class="text-slate-500">
+                © 2025 Blyp. Todos los derechos reservados.
+            </div>
+</div>
+</footer>
+</body></html>

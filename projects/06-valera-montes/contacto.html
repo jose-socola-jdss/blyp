@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto | Valera & Montes</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,700;1,400&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Preloader -->
+  <div class="preloader"><div class="preloader-spinner"></div></div>
+
+
+  <!-- Top Utility Bar -->
+  <div class="utility-bar">
+    <div class="container utility-inner">
+      <a href="tel:+56223456789"><i data-lucide="phone"></i> +56 2 2345 6789</a>
+      <a href="mailto:contacto@valeramontes.com"><i data-lucide="mail"></i> contacto@valeramontes.com</a>
+    </div>
+  </div>
+
+  <!-- Main Navigation Header -->
+  <header class="main-nav-bar">
+    <div class="container nav-inner">
+      <a href="index.html" class="nav-logo">Valera & Montes<span>.</span></a>
+      <ul class="nav-links">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="servicios.html">Servicios</a></li>
+        <li><a href="contacto.html" class="active">Contacto</a></li>
+      </ul>
+      <button class="hamburger" aria-label="Menú">
+        <i data-lucide="menu"></i>
+      </button>
+    </div>
+  </header>
+
+  <!-- Page Banner -->
+  <section class="reveal-item page-banner">
+    <div class="container">
+      <h1>Contacto Confidencial</h1>
+      <p>Agende una cita preliminar con nuestros socios directores bajo estricto secreto profesional.</p>
+    </div>
+  </section>
+
+  <!-- Contact Grid -->
+  <section class="reveal-item section">
+    <div class="container">
+      <div class="contact-grid reveal-item">
+        <div class="formal-form-wrap">
+          <h2>Formulario de Consulta</h2>
+          <form id="contact-form">
+            <div class="form-group">
+              <label for="nombre">Nombre Completo / Empresa</label>
+              <input type="text" id="nombre" required placeholder="Ej. Corporación Andina S.A.">
+            </div>
+            <div class="form-group">
+              <label for="email">Correo Electrónico de Contacto</label>
+              <input type="email" id="email" required placeholder="Ej. representante@empresa.com">
+            </div>
+            <div class="form-group">
+              <label for="asunto">Materia de Interés</label>
+              <input type="text" id="asunto" required placeholder="Ej. Reestructuración societaria o Defensa de patentes">
+            </div>
+            <div class="form-group">
+              <label for="mensaje">Detalles de la Consulta</label>
+              <textarea id="mensaje" required placeholder="Describa brevemente la situación jurídica."></textarea>
+            </div>
+            <button type="submit" class="btn-gold" style="width: 100%;">Enviar Consulta Confidencial</button>
+          </form>
+        </div>
+
+        <div class="contact-info-side">
+          <div class="partners-list">
+            <h3>Socios Directores</h3>
+            
+            <div class="partner-item">
+              <h4>Ignacio Valera Montes</h4>
+              <p>Especialista en M&A y Derecho Corporativo.</p>
+              <p>ivalera@valeramontes.com</p>
+            </div>
+
+            <div class="partner-item">
+              <h4>Mariana Montes S.</h4>
+              <p>Litigio Civil y Arbitraje Comercial.</p>
+              <p>mmontes@valeramontes.com</p>
+            </div>
+
+            <div class="partner-item" style="border-top:1px solid #E0DDD6; padding-top: 1.5rem; margin-top: 1.5rem;">
+              <h4>Oficinas Centrales</h4>
+              <p>Av. Vitacura 2939, Oficina 901, Vitacura, Santiago.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="main-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <h3>Valera & Montes</h3>
+        <p>Firma Legal Corporativa</p>
+      </div>
+      <div class="footer-dev">
+        <span>Desarrollado por</span>
+        <a href="../index.html" class="footer-logo-link" aria-label="Ir a Blyp">
+          <img src="../blyp_logotipo.svg" alt="Blyp Logo" class="footer-logo">
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

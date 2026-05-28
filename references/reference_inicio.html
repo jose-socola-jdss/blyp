@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+
+<html class="light" lang="es">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>Blyp | Sitios web potenciados por IA</title>
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect" />
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Be+Vietnam+Pro:wght@300;400;500;600&amp;display=swap"
+    rel="stylesheet" />
+  <!-- Material Symbols -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+    rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+    rel="stylesheet" />
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "on-primary-fixed-variant": "#00266e",
+            "primary-container": "#7b9cff",
+            "background": "#f5f6f7",
+            "secondary-container": "#93dbff",
+            "secondary-fixed": "#93dbff",
+            "surface-container-highest": "#dadddf",
+            "on-tertiary-container": "#3f008e",
+            "on-secondary": "#e5f5ff",
+            "on-error-container": "#570008",
+            "primary-dim": "#0046bb",
+            "surface-tint": "#0050d4",
+            "inverse-on-surface": "#9b9d9e",
+            "surface-container-high": "#e0e3e4",
+            "outline-variant": "#abadae",
+            "error-container": "#fb5151",
+            "surface-dim": "#d1d5d7",
+            "secondary-fixed-dim": "#78cef7",
+            "primary-fixed": "#7b9cff",
+            "on-surface": "#2c2f30",
+            "inverse-primary": "#618bff",
+            "tertiary-fixed-dim": "#b48fff",
+            "error": "#b31b25",
+            "on-secondary-fixed": "#00394c",
+            "on-error": "#ffefee",
+            "surface-container-low": "#eff1f2",
+            "surface-bright": "#f5f6f7",
+            "on-primary": "#f1f2ff",
+            "tertiary": "#702ae1",
+            "primary-fixed-dim": "#658eff",
+            "on-primary-container": "#001e5a",
+            "surface-container": "#e6e8ea",
+            "on-tertiary-fixed": "#200051",
+            "on-secondary-container": "#004d67",
+            "error-dim": "#9f0519",
+            "on-secondary-fixed-variant": "#005773",
+            "secondary-dim": "#005672",
+            "tertiary-fixed": "#c0a0ff",
+            "surface-variant": "#dadddf",
+            "outline": "#757778",
+            "surface": "#f5f6f7",
+            "on-tertiary": "#f8f0ff",
+            "inverse-surface": "#0c0f10",
+            "tertiary-dim": "#6411d5",
+            "secondary": "#006382",
+            "surface-container-lowest": "#ffffff",
+            "on-surface-variant": "#595c5d",
+            "on-primary-fixed": "#000000",
+            "primary": "#0050d4",
+            "tertiary-container": "#c0a0ff",
+            "on-tertiary-fixed-variant": "#4a00a4",
+            "on-background": "#2c2f30"
+          },
+          fontFamily: {
+            "headline": ["Plus Jakarta Sans"],
+            "body": ["Be Vietnam Pro"],
+            "label": ["Be Vietnam Pro"]
+          },
+          borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" },
+        },
+      },
+    }
+  </script>
+  <style>
+    body {
+      font-family: 'Be Vietnam Pro', sans-serif;
+      background-color: #f5f6f7;
+      color: #2c2f30;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4 {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+    }
+
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+    }
+
+    .glass-card {
+      background: rgba(255, 255, 255, 0.7);
+      backdrop-filter: blur(20px);
+    }
+
+    .cloud-shadow {
+      box-shadow: 0 10px 40px -10px rgba(44, 47, 48, 0.04);
+    }
+
+    .step-connector {
+      background-image: linear-gradient(to right, #0050d4 33%, rgba(255, 255, 255, 0) 0%);
+      background-position: bottom;
+      background-size: 12px 2px;
+      background-repeat: repeat-x;
+    }
+
+    .hero-gradient {
+      background: linear-gradient(135deg, #ffffff 0%, #eff1f2 100%);
+    }
+  </style>
+</head>
+
+<body class="selection:bg-primary-container selection:text-on-primary-container">
+  <!-- TopNavBar from JSON -->
+  <header class="sticky top-0 z-50 w-full bg-white/70 backdrop-blur-md shadow-sm shadow-blue-500/5">
+    <nav class="flex justify-between items-center max-w-7xl mx-auto px-6 h-20">
+      <div class="text-2xl font-bold tracking-tighter text-slate-900">Blyp</div>
+      <div class="hidden md:flex gap-10">
+        <a class="font-['Plus_Jakarta_Sans'] font-bold text-sm tracking-tight text-blue-600 border-b-2 border-blue-600 pb-1"
+          href="index.html">Inicio</a>
+        <a class="font-['Plus_Jakarta_Sans'] font-medium text-sm tracking-tight text-slate-600 hover:text-blue-500 transition-colors"
+          href="portfolio.html">Portafolio</a>
+        <a class="font-['Plus_Jakarta_Sans'] font-medium text-sm tracking-tight text-slate-600 hover:text-blue-500 transition-colors"
+          href="contact.html">Contacto</a>
+      </div>
+      <a class="bg-primary text-on-primary px-8 py-3 rounded-full font-headline font-bold text-sm hover:opacity-80 transition-all duration-300 active:scale-95"
+        href="contact.html">Empezar</a>
+    </nav>
+  </header>
+  <main>
+    <!-- Hero Section -->
+    <section class="hero-gradient relative overflow-hidden pt-20 pb-32">
+      <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+        <div class="z-10 text-left">
+          <span
+            class="inline-block py-1.5 px-4 rounded-full bg-primary-container/20 text-primary font-label font-semibold text-xs tracking-wider uppercase mb-6">Potenciado
+            por IA</span>
+          <h1 class="text-5xl lg:text-7xl font-extrabold tracking-tighter text-on-surface mb-8 leading-[1.1]">
+            Creamos sitios web con <span
+              class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-tertiary">Inteligencia
+              Artificial</span>
+          </h1>
+          <p class="text-lg lg:text-xl text-on-surface-variant font-body leading-relaxed max-w-xl mb-12">
+            En Blyp combinamos tecnología de IA y diseño estratégico para lanzar sitios web rápidos, atractivos y
+            orientados a resultados para tu negocio.
+          </p>
+          <div class="flex flex-wrap gap-4">
+            <a class="bg-gradient-to-br from-primary to-primary-dim text-white px-10 py-5 rounded-full font-headline font-bold hover:scale-[1.02] transition-transform duration-300 shadow-xl shadow-primary/20"
+              href="portfolio.html">
+              Ver nuestro trabajo
+            </a>
+            <a class="border-2 border-outline-variant/30 text-on-surface px-10 py-5 rounded-full font-headline font-bold hover:bg-surface-container-low transition-colors duration-300"
+              href="contact.html">
+              Contáctanos
+            </a>
+          </div>
+        </div>
+        <div class="relative group">
+          <div class="absolute inset-0 bg-primary/5 rounded-[40px] blur-3xl transform -rotate-6"></div>
+          <div class="relative glass-card border border-white/40 rounded-[32px] p-4 shadow-2xl">
+            <img alt="Blyp Abstract Visual" class="rounded-[24px] w-full aspect-[4/3] object-cover"
+              data-alt="Modern abstract 3D composition with translucent spheres, glowing geometric lines, and a futuristic glass interface mockup in soft blue tones"
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuA4y17QWmDEGyF3busGrYemd65GMh8rmPnwhjEgtrAKM45KU4l2SgaePgiKV_FBvYkP15EcZI0oXCH4TD1QK5mk0mVOLcitHWRl93x-zF6V84g24WlA99RMy7CtZVlCa0rWMsLK7d_pHv-P9FJsBmoX0_51ktvr9lwcafJSEn9vPXzwZRFYE-8vAvinozS7bGeUbz1yte2Dh5llt8mmWmWObGV6z02azdKpdnEEi1ECz2R9xTo7W6iOWFy55VbkXZHa6nQPHdXR0dw" />
+            <div
+              class="absolute -bottom-8 -left-8 glass-card p-6 rounded-2xl cloud-shadow hidden md:block max-w-[200px]">
+              <div class="flex items-center gap-3 mb-2">
+                <div class="w-10 h-10 rounded-full bg-secondary-container flex items-center justify-center">
+                  <span class="material-symbols-outlined text-on-secondary-container" data-icon="bolt">bolt</span>
+                </div>
+                <span class="font-headline font-bold text-sm">Velocidad IA</span>
+              </div>
+              <p class="text-[10px] text-on-surface-variant leading-tight">Optimización automática de rendimiento en
+                tiempo real.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Section 2: What We Do -->
+    <section class="py-32 bg-surface">
+      <div class="max-w-7xl mx-auto px-6">
+        <div class="text-center max-w-3xl mx-auto mb-20">
+          <h2 class="text-4xl font-extrabold tracking-tight text-on-surface mb-6">Lo que hacemos por ti</h2>
+          <p class="text-on-surface-variant font-body">Utilizamos las herramientas más avanzadas del mercado para que tu
+            presencia digital no tenga límites.</p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <!-- Card 1 -->
+          <div
+            class="bg-surface-container-lowest p-10 rounded-[24px] cloud-shadow transition-all duration-300 hover:-translate-y-2 border border-outline-variant/5">
+            <div class="w-14 h-14 bg-primary/5 rounded-2xl flex items-center justify-center mb-8">
+              <span class="material-symbols-outlined text-primary text-3xl" data-icon="neurology">neurology</span>
+            </div>
+            <h3 class="text-xl font-bold mb-4">Desarrollo con IA</h3>
+            <p class="text-on-surface-variant text-sm leading-relaxed">Código limpio generado y optimizado por
+              algoritmos inteligentes para máxima eficiencia.</p>
+          </div>
+          <!-- Card 2 -->
+          <div
+            class="bg-surface-container-lowest p-10 rounded-[24px] cloud-shadow transition-all duration-300 hover:-translate-y-2 border border-outline-variant/5">
+            <div class="w-14 h-14 bg-primary/5 rounded-2xl flex items-center justify-center mb-8">
+              <span class="material-symbols-outlined text-primary text-3xl" data-icon="tactic">tactic</span>
+            </div>
+            <h3 class="text-xl font-bold mb-4">Diseño estratégico</h3>
+            <p class="text-on-surface-variant text-sm leading-relaxed">No solo es estética; diseñamos experiencias que
+              guían al usuario hacia la conversión.</p>
+          </div>
+          <!-- Card 3 -->
+          <div
+            class="bg-surface-container-lowest p-10 rounded-[24px] cloud-shadow transition-all duration-300 hover:-translate-y-2 border border-outline-variant/5">
+            <div class="w-14 h-14 bg-primary/5 rounded-2xl flex items-center justify-center mb-8">
+              <span class="material-symbols-outlined text-primary text-3xl" data-icon="smartphone">smartphone</span>
+            </div>
+            <h3 class="text-xl font-bold mb-4">Mobile-first y veloz</h3>
+            <p class="text-on-surface-variant text-sm leading-relaxed">Velocidad de carga instantánea en cualquier
+              dispositivo. Tu negocio siempre disponible.</p>
+          </div>
+          <!-- Card 4 -->
+          <div
+            class="bg-surface-container-lowest p-10 rounded-[24px] cloud-shadow transition-all duration-300 hover:-translate-y-2 border border-outline-variant/5">
+            <div class="w-14 h-14 bg-primary/5 rounded-2xl flex items-center justify-center mb-8">
+              <span class="material-symbols-outlined text-primary text-3xl"
+                data-icon="support_agent">support_agent</span>
+            </div>
+            <h3 class="text-xl font-bold mb-4">Soporte continuo</h3>
+            <p class="text-on-surface-variant text-sm leading-relaxed">Estamos contigo después del lanzamiento para
+              asegurar que tu sitio siga creciendo.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Section 3: How It Works -->
+    <section class="py-32 bg-surface-container-low">
+      <div class="max-w-7xl mx-auto px-6">
+        <div class="text-center mb-24">
+          <h2 class="text-4xl font-extrabold tracking-tight text-on-surface">Proceso de 3 pasos</h2>
+        </div>
+        <div class="relative grid grid-cols-1 md:grid-cols-3 gap-16">
+          <!-- Dashed line for desktop -->
+          <div
+            class="hidden md:block absolute top-12 left-[15%] right-[15%] h-0.5 border-t-2 border-dashed border-outline-variant/30">
+          </div>
+          <!-- Step 1 -->
+          <div class="relative z-10 flex flex-col items-center text-center">
+            <div
+              class="w-24 h-24 bg-surface-container-lowest rounded-full flex items-center justify-center cloud-shadow mb-8 font-headline font-black text-2xl text-primary border-4 border-white">
+              01</div>
+            <h3 class="text-xl font-bold mb-4">Descubrimiento</h3>
+            <p class="text-on-surface-variant font-body px-4">Analizamos tus objetivos y definimos la estrategia
+              perfecta para tu nicho.</p>
+          </div>
+          <!-- Step 2 -->
+          <div class="relative z-10 flex flex-col items-center text-center">
+            <div
+              class="w-24 h-24 bg-surface-container-lowest rounded-full flex items-center justify-center cloud-shadow mb-8 font-headline font-black text-2xl text-primary border-4 border-white">
+              02</div>
+            <h3 class="text-xl font-bold mb-4">Diseño y desarrollo</h3>
+            <p class="text-on-surface-variant font-body px-4">Utilizamos IA para prototipar y construir tu sitio en
+              tiempo récord.</p>
+          </div>
+          <!-- Step 3 -->
+          <div class="relative z-10 flex flex-col items-center text-center">
+            <div
+              class="w-24 h-24 bg-surface-container-lowest rounded-full flex items-center justify-center cloud-shadow mb-8 font-headline font-black text-2xl text-primary border-4 border-white">
+              03</div>
+            <h3 class="text-xl font-bold mb-4">Lanzamiento y crecimiento</h3>
+            <p class="text-on-surface-variant font-body px-4">Desplegamos tu sitio y optimizamos para posicionarte
+              frente a tus clientes.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Section 4: Why Blyp -->
+    <section class="py-32 bg-surface">
+      <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
+        <div>
+          <h2 class="text-5xl font-extrabold tracking-tight text-on-surface mb-8 leading-[1.2]">
+            ¿Por qué elegir <span class="text-primary italic">Blyp</span> para tu próximo proyecto?
+          </h2>
+          <p class="text-on-surface-variant text-lg leading-relaxed mb-8">
+            No somos una agencia convencional. Somos un laboratorio de innovación digital que prioriza la velocidad y la
+            efectividad mediante el uso inteligente de la tecnología.
+          </p>
+          <div class="w-24 h-1 bg-primary-container rounded-full"></div>
+        </div>
+        <div class="space-y-6">
+          <div
+            class="flex items-start gap-4 p-6 bg-surface-container-lowest rounded-2xl border-l-4 border-primary cloud-shadow">
+            <span class="material-symbols-outlined text-primary mt-1" data-icon="check_circle" data-weight="fill"
+              style="font-variation-settings: 'FILL' 1;">check_circle</span>
+            <div>
+              <p class="font-headline font-bold text-on-surface">Reducción del 60% en tiempos de entrega</p>
+            </div>
+          </div>
+          <div
+            class="flex items-start gap-4 p-6 bg-surface-container-lowest rounded-2xl border-l-4 border-primary/40 cloud-shadow">
+            <span class="material-symbols-outlined text-primary mt-1" data-icon="check_circle" data-weight="fill"
+              style="font-variation-settings: 'FILL' 1;">check_circle</span>
+            <div>
+              <p class="font-headline font-bold text-on-surface">Sitios optimizados para SEO desde el día 1</p>
+            </div>
+          </div>
+          <div
+            class="flex items-start gap-4 p-6 bg-surface-container-lowest rounded-2xl border-l-4 border-primary/40 cloud-shadow">
+            <span class="material-symbols-outlined text-primary mt-1" data-icon="check_circle" data-weight="fill"
+              style="font-variation-settings: 'FILL' 1;">check_circle</span>
+            <div>
+              <p class="font-headline font-bold text-on-surface">Arquitectura escalable preparada para el futuro</p>
+            </div>
+          </div>
+          <div
+            class="flex items-start gap-4 p-6 bg-surface-container-lowest rounded-2xl border-l-4 border-primary/40 cloud-shadow">
+            <span class="material-symbols-outlined text-primary mt-1" data-icon="check_circle" data-weight="fill"
+              style="font-variation-settings: 'FILL' 1;">check_circle</span>
+            <div>
+              <p class="font-headline font-bold text-on-surface">Diseño adaptativo exclusivo para tu marca</p>
+            </div>
+          </div>
+          <div
+            class="flex items-start gap-4 p-6 bg-surface-container-lowest rounded-2xl border-l-4 border-primary/40 cloud-shadow">
+            <span class="material-symbols-outlined text-primary mt-1" data-icon="check_circle" data-weight="fill"
+              style="font-variation-settings: 'FILL' 1;">check_circle</span>
+            <div>
+              <p class="font-headline font-bold text-on-surface">Infraestructura de hosting global de alta velocidad</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Section 5: CTA Banner -->
+    <section class="max-w-7xl mx-auto px-6 mb-32">
+      <div
+        class="bg-gradient-to-br from-primary to-primary-dim rounded-[48px] p-12 lg:p-24 text-center relative overflow-hidden shadow-2xl shadow-primary/30">
+        <!-- Decorative elements -->
+        <div
+          class="absolute top-0 right-0 w-64 h-64 bg-white/10 rounded-full -translate-y-1/2 translate-x-1/2 blur-3xl">
+        </div>
+        <div
+          class="absolute bottom-0 left-0 w-96 h-96 bg-tertiary/20 rounded-full translate-y-1/2 -translate-x-1/2 blur-3xl">
+        </div>
+        <div class="relative z-10">
+          <h2 class="text-4xl lg:text-6xl font-extrabold text-white mb-8 tracking-tight">¿Listo para lanzar tu sitio
+            web?</h2>
+          <p class="text-on-primary font-body text-lg lg:text-xl mb-12 max-w-2xl mx-auto opacity-90">Únete a las
+            empresas que ya están transformando su presencia digital con el poder de la Inteligencia Artificial.</p>
+          <a class="inline-flex items-center gap-3 bg-white text-primary px-12 py-6 rounded-full font-headline font-extrabold text-lg hover:scale-105 transition-transform duration-300"
+            href="contact.html">
+            Iniciar una conversación
+            <span class="material-symbols-outlined" data-icon="arrow_forward">arrow_forward</span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+  <!-- Footer from JSON -->
+  <footer class="bg-slate-50 w-full rounded-t-[32px]">
+    <div class="flex flex-col md:flex-row justify-between items-center px-8 py-12 max-w-7xl mx-auto gap-8">
+      <div class="flex flex-col gap-4 items-center md:items-start">
+        <div class="text-xl font-black text-slate-900">Blyp</div>
+        <p class="font-['Be_Vietnam_Pro'] text-sm leading-relaxed text-slate-500 max-w-xs text-center md:text-left">
+          Construyendo el futuro de la web con precisión y creatividad.
+        </p>
+      </div>
+      <div class="flex gap-8">
+        <a class="font-['Be_Vietnam_Pro'] text-sm font-semibold text-blue-600 underline-offset-4 hover:underline transition-all duration-300"
+          href="index.html">Inicio</a>
+        <a class="font-['Be_Vietnam_Pro'] text-sm text-slate-500 hover:text-blue-600 underline-offset-4 hover:underline transition-all duration-300"
+          href="portfolio.html">Portafolio</a>
+        <a class="font-['Be_Vietnam_Pro'] text-sm text-slate-500 hover:text-blue-600 underline-offset-4 hover:underline transition-all duration-300"
+          href="contact.html">Contacto</a>
+      </div>
+      <div class="text-slate-500 font-['Be_Vietnam_Pro'] text-sm">
+        © 2025 Blyp. Todos los derechos reservados.
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>

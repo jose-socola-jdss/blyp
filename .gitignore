@@ -1,0 +1,6 @@
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Ignore nested Git repositories inside project samples
+**/.git/

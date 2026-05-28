@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SerenoEspacio | Yoga y Bienestar Integral</title>
+  <meta name="description" content="Encuentra tu centro. Clases de yoga, meditación y retiros para restaurar el equilibrio interior.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500;700&family=Nunito+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Preloader -->
+  <div class="preloader"><div class="preloader-spinner"></div></div>
+
+
+  <!-- Minimal Header -->
+  <header class="main-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">
+        <i data-lucide="wind" style="width:24px; height:24px;"></i>
+        SerenoEspacio
+      </a>
+      <button class="hamburger-btn" aria-label="Menú">
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Fullscreen Navigation -->
+  <div class="fullscreen-nav">
+    <button class="close-btn">&times;</button>
+    <ul class="fullscreen-links">
+      <li><a href="index.html" class="active">Inicio</a></li>
+      <li><a href="servicios.html">Servicios</a></li>
+      <li><a href="contacto.html">Contacto</a></li>
+    </ul>
+  </div>
+
+  <!-- Hero Section -->
+  <section class="reveal-item hero">
+    <div class="container">
+      <h1>Encuentra tu centro</h1>
+      <p>Clases guiadas de yoga, meditación y talleres de respiración conscientes pensados para restaurar tu paz y claridad mental.</p>
+      
+
+      <div class="breathing-controls" style="margin-bottom:2rem; text-align:center;">
+        <span style="font-size:0.9rem; text-transform:uppercase; letter-spacing:1px; color:#7B68AE; font-weight:700; display:block; margin-bottom:0.75rem;">Ritmo de Respiración</span>
+        <div class="breathing-buttons" style="display:flex; justify-content:center; gap:0.5rem; flex-wrap:wrap;">
+          <button class="btn-breath active" data-pace="6" style="background:transparent; border:1px solid #7B68AE; color:#7B68AE; padding:0.4rem 1rem; border-radius:20px; font-family:var(--font-body); font-weight:700; cursor:pointer;">Relajación (6s)</button>
+          <button class="btn-breath" data-pace="4" style="background:transparent; border:1px solid #7B68AE; color:#7B68AE; padding:0.4rem 1rem; border-radius:20px; font-family:var(--font-body); font-weight:700; cursor:pointer;">Enfoque (4s)</button>
+          <button class="btn-breath" data-pace="3" style="background:transparent; border:1px solid #7B68AE; color:#7B68AE; padding:0.4rem 1rem; border-radius:20px; font-family:var(--font-body); font-weight:700; cursor:pointer;">Energía (3s)</button>
+        </div>
+      </div>
+      <div class="breathing-circle-wrap">
+        <div class="breathing-circle"></div>
+      </div>
+
+      <div class="scroll-indicator">
+        <i data-lucide="chevron-down" style="width: 32px; height: 32px;"></i>
+      </div>
+    </div>
+  </section>
+
+  <!-- Philosophy Section -->
+  <section class="reveal-item section">
+    <div class="container">
+      <h2>Nuestra Filosofía</h2>
+      
+      <div class="philosophy-item">
+        <span class="ph-num">01</span>
+        <div class="ph-content">
+          <h3>Presencia Absoluta</h3>
+          <p>Aprende a habitar el momento presente, silenciando el ruido del entorno para reconectar con tu esencia y sensaciones físicas corporales.</p>
+        </div>
+      </div>
+
+      <div class="philosophy-item">
+        <span class="ph-num">02</span>
+        <div class="ph-content">
+          <h3>Equilibrio Activo</h3>
+          <p>Integración de cuerpo, mente y respiración a través de secuencias de asanas fluidas y alineación postural consciente.</p>
+        </div>
+      </div>
+
+      <div class="philosophy-item">
+        <span class="ph-num">03</span>
+        <div class="ph-content">
+          <h3>Conexión Profunda</h3>
+          <p>Despierta un estado superior de conciencia y empatía hacia ti mismo y el entorno natural que te rodea.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Horario Table Section -->
+  <section class="reveal-item section" style="background-color: #f7f5fa;">
+    <div class="container">
+      <h2>Horario de Clases</h2>
+      
+      <div class="schedule-table-wrap">
+        <table class="schedule-table">
+          <thead>
+            <tr>
+              <th>Bloque</th>
+              <th>Lunes</th>
+              <th>Miércoles</th>
+              <th>Viernes</th>
+              <th>Sábado</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Mañana</strong></td>
+              <td class="class-active">Vinyasa Flow</td>
+              <td>Meditación</td>
+              <td class="class-active">Vinyasa Flow</td>
+              <td class="class-active">Hatha Yoga</td>
+            </tr>
+            <tr>
+              <td><strong>Tarde</strong></td>
+              <td>Hatha Yoga</td>
+              <td class="class-active">Yin Yoga</td>
+              <td>Hatha Yoga</td>
+              <td class="class-active">Taller Respiración</td>
+            </tr>
+            <tr>
+              <td><strong>Noche</strong></td>
+              <td class="class-active">Meditación</td>
+              <td class="class-active">Yin Yoga</td>
+              <td class="class-active">Meditación</td>
+              <td>Cerrado</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonial Section -->
+  <section class="reveal-item section">
+    <div class="container">
+      <div class="testimonial-text">
+        "Practicar en SerenoEspacio ha transformado mi rutina diaria. Encontré un lugar de absoluto silencio y contención donde puedo relajar mi mente."
+        <div style="font-size:1.1rem; font-weight:700; margin-top:2rem; color:var(--primary); font-style:normal;">
+          - Sofía L. - Miembro desde 2022
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="main-footer">
+    <div class="container">
+      <p>&copy; 2026 SerenoEspacio. Encuentra tu centro.</p>
+      <div class="footer-dev">
+        <span>Desarrollado por</span>
+        <a href="../index.html" class="footer-logo-link" aria-label="Ir a Blyp">
+          <img src="../blyp_logotipo.svg" alt="Blyp Logo" class="footer-logo">
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

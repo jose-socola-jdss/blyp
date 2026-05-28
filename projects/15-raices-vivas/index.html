@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Raíces Vivas | Fundación para la Reforestación & Conservación</title>
+  <meta name="description" content="Raíces Vivas restaura ecosistemas degradados plantando árboles nativos junto a las comunidades locales.">
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Preloader -->
+  <div class="preloader"><div class="preloader-spinner"></div></div>
+
+
+  <!-- Navigation -->
+  <nav class="main-nav">
+    <div class="container nav-inner">
+      <a href="index.html" class="nav-logo">Raíces Vivas</a>
+      <ul class="nav-links">
+        <li><a href="index.html" class="active">Inicio</a></li>
+        <li><a href="servicios.html">Proyectos</a></li>
+        <li><a href="contacto.html">Donar</a></li>
+        <li><a href="contacto.html" class="nav-cta">Donar Ahora</a></li>
+      </ul>
+      <button class="hamburger" aria-label="Menú">
+        <i data-lucide="menu"></i>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="hero">
+    <div class="container">
+      <h1>Dando vida a los bosques del futuro</h1>
+      <p>Trabajamos de la mano con comunidades locales y ciencia ambiental para restaurar bosques nativos y combatir la crisis climática.</p>
+      
+
+      <div class="interactive-offset-calculator" style="background:var(--cards); border-radius:var(--radius); box-shadow:var(--shadow); padding:2rem; max-width:550px; margin:0 auto 3rem; text-align:center; font-family:var(--font-body);">
+        <h3 style="font-family:var(--font-display); color:var(--primary); font-size:1.4rem; margin-bottom:1rem;">Simula tu Aporte</h3>
+        <p style="color:#558B2F; margin-bottom:1.5rem;">Desliza para calcular cuánta absorción de CO₂ patrocinas al año.</p>
+        <input type="range" id="tree-range" min="1" max="100" value="10" style="width:100%; accent-color:var(--primary); margin-bottom:1.5rem;">
+        <div style="background:#E8F5E9; padding:1rem; border-radius:8px; font-weight:700;">
+          <span id="trees-count-val">10</span> árboles = <span id="co2-offset-val" style="color:var(--primary);">220 kg de CO₂/año</span>
+        </div>
+      </div>
+      <div class="counter-container">
+        <span class="counter-num">1.245.892</span>
+        <span class="counter-label">Árboles Plantados y Protegidos</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- Progress of key goals -->
+  <section class="reveal-item section" style="background-color: #E8F5E9;">
+    <div class="container">
+      <h2 class="section-title">Campañas en Curso</h2>
+      <div class="goals-grid">
+        <div class="goal-card reveal-item">
+          <h3>Bosque Seco Tropical</h3>
+          <p>Restauración del hábitat crítico en ecosistemas altamente fragmentados.</p>
+          <div class="goal-progress-wrap">
+            <div class="goal-meta">
+              <span>Meta: 10k árboles</span>
+              <span>78%</span>
+            </div>
+            <div class="progress-bg">
+              <div class="progress-bar" data-value="78"></div>
+            </div>
+          </div>
+        </div>
+        <div class="goal-card reveal-item">
+          <h3>Corredor del Jaguar</h3>
+          <p>Creación de pasos de fauna y plantación de especies nativas frutales.</p>
+          <div class="goal-progress-wrap">
+            <div class="goal-meta">
+              <span>Meta: 25k árboles</span>
+              <span>45%</span>
+            </div>
+            <div class="progress-bg">
+              <div class="progress-bar" data-value="45"></div>
+            </div>
+          </div>
+        </div>
+        <div class="goal-card reveal-item">
+          <h3>Reforestación Andina</h3>
+          <p>Protección de cuencas de agua de alta montaña sembrando Polylepis.</p>
+          <div class="goal-progress-wrap">
+            <div class="goal-meta">
+              <span>Meta: 15k árboles</span>
+              <span>90%</span>
+            </div>
+            <div class="progress-bg">
+              <div class="progress-bar" data-value="90"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Impact in Numbers -->
+  <section class="reveal-item section">
+    <div class="container">
+      <h2 class="section-title">Nuestro Impacto Social</h2>
+      <div class="impact-grid">
+        <div class="impact-card reveal-item">
+          <h3>350+</h3>
+          <p>Familias rurales beneficiadas económicamente</p>
+        </div>
+        <div class="impact-card reveal-item">
+          <h3>1.200h</h3>
+          <p>De educación ambiental en escuelas</p>
+        </div>
+        <div class="impact-card reveal-item">
+          <h3>85%</h3>
+          <p>Tasa de supervivencia de plantones</p>
+        </div>
+        <div class="impact-card reveal-item">
+          <h3>14</h3>
+          <p>Especies arbóreas nativas recuperadas</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Active Project Locations -->
+  <section class="reveal-item section" style="background-color: #F1F8E9;">
+    <div class="container">
+      <h2 class="section-title">Zonas de Actuación</h2>
+      <div class="projects-box">
+        <div class="map-illustration">
+          <div class="map-pin-mock p1"></div>
+          <div class="map-pin-mock p2"></div>
+          <div class="map-pin-mock p3"></div>
+        </div>
+        <div class="projects-list">
+          <h3>Nodos Activos</h3>
+          <div class="project-item">
+            <h4>Nodo Norte — Cuencas Fluviales</h4>
+            <p>Plantación de especies riparias para estabilizar taludes y purificar agua.</p>
+          </div>
+          <div class="project-item">
+            <h4>Nodo Central — Alta Montaña</h4>
+            <p>Recuperación de microcuencas hídricas críticas para suministro comunitario.</p>
+          </div>
+          <div class="project-item">
+            <h4>Nodo Sur — Selva Húmeda</h4>
+            <p>Reforestación asociativa en agroforestería con pequeños agricultores.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="main-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <h3>Raíces Vivas</h3>
+        <p>Restauración Ecológica Participativa</p>
+      </div>
+      <div class="footer-dev">
+        <span>Desarrollado por</span>
+        <a href="../index.html" class="footer-logo-link" aria-label="Ir a Blyp">
+          <img src="../blyp_logotipo.svg" alt="Blyp Logo" class="footer-logo">
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

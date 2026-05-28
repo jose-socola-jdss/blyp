@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto y Reservas | Brisas del Páramo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,700;1,400&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Preloader -->
+  <div class="preloader"><div class="preloader-spinner"></div></div>
+
+
+  <!-- Navigation -->
+  <nav class="main-nav scrolled">
+    <div class="container nav-inner">
+      <a href="index.html" class="nav-logo">
+        🌿 Brisas del Páramo
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="servicios.html">Servicios</a></li>
+        <li><a href="contacto.html" class="active">Contacto</a></li>
+        <li><a href="contacto.html" class="btn-book">Ver Disponibilidad</a></li>
+      </ul>
+      <button class="hamburger" aria-label="Menú">
+        <i data-lucide="menu"></i>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Page Banner -->
+  <section class="reveal-item page-banner">
+    <div class="container">
+      <h1>Contacto y Ubicación</h1>
+      <p>Ponte en contacto con nuestro equipo de reservas para organizar tu visita.</p>
+    </div>
+    <div class="page-banner-wave"></div>
+  </section>
+
+  <!-- Contact Section Grid -->
+  <section class="reveal-item section">
+    <div class="container">
+      <div class="contact-grid reveal-item">
+        <div class="natural-form-wrap">
+          <h2>Ficha de Reserva</h2>
+          <form id="contact-form">
+            <div class="form-group">
+              <label for="nombre">Nombre Completo</label>
+              <input type="text" id="nombre" required placeholder="Ej. Camila Silva">
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" required placeholder="Ej. camila@correo.com">
+            </div>
+            <div class="form-group">
+              <label for="fechas">Fechas de Interés</label>
+              <input type="text" id="fechas" required placeholder="Ej. Del 12 al 15 de Noviembre">
+            </div>
+            <div class="form-group">
+              <label for="mensaje">Requerimientos Especiales</label>
+              <textarea id="mensaje" required placeholder="Indica si requieres alimentación especial, tours específicos o tinajas de agua caliente."></textarea>
+            </div>
+            <button type="submit" class="btn-book" style="width: 100%; border: none; border-radius:12px; padding: 0.95rem;">Enviar Solicitud</button>
+          </form>
+        </div>
+
+        <div class="contact-illustration-side">
+          <div class="mountain-illustration-wrap">
+            <h3>Cómo Llegar</h3>
+            <p>Estamos ubicados en el km 42 de la ruta cordillerana, a solo 1.5 horas de Santiago. Recomendamos vehículos con tracción 4x2 o 4x4.</p>
+            <div class="mountains-container">
+              <div class="mtn mtn-1"></div>
+              <div class="mtn mtn-2"></div>
+              <div class="mtn mtn-3"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+  <!-- Interactive Stay Booking & Carbon Offset Calculator -->
+  <section class="reveal-item section eco-calculator-section" style="background:#FFF; border-top:1px solid #E2EFE9;">
+    <div class="container">
+      <h2 class="section-title">Calculadora de Impacto Ecológico</h2>
+      <p class="section-subtitle" style="text-align:center; color:#1B4332; margin-bottom:3rem;">Calcula el impacto ambiental positivo de tu estadía en nuestro lodge.</p>
+      
+      <div class="eco-calc-card" style="max-width:600px; margin:0 auto; padding:2.5rem; border:2px solid #52B788; border-radius:20px; background:#F1FAEE; box-shadow:0 10px 30px rgba(0,0,0,0.02);">
+        <div class="form-group" style="margin-bottom:1.5rem;">
+          <label style="font-weight:700; color:var(--primary); display:block; margin-bottom:0.5rem;">Noches de Estadía</label>
+          <input type="number" id="stay-nights" min="1" max="30" value="3" style="width:100%; padding:0.8rem; border-radius:10px; border:1px solid #C8E6C9; outline:none; font-family:var(--font-body); font-size:1.05rem;">
+        </div>
+        <div class="eco-summary" style="background:#E8F5E9; padding:1.5rem; border-radius:12px; text-align:center; margin-top:2rem; border:1px dashed #2D6A4F;">
+          <h3 style="color:#2D6A4F; font-size:1.15rem; margin-bottom:0.5rem;">Tu Contribución Ambiental</h3>
+          <p style="font-size:1.4rem; font-weight:700; color:#1B4332; margin-bottom:0.5rem;" id="carbon-offset">60 kg de CO₂ compensados</p>
+          <p style="font-size:0.9rem; color:#2D6A4F;" id="eco-trees">Equivalente a patrocinar la siembra de 3 árboles nativos.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="main-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <h3>Brisas del Páramo</h3>
+        <p>Eco-Lodge & Santuario de Montaña</p>
+      </div>
+      <div class="footer-dev">
+        <span>Desarrollado por</span>
+        <a href="../index.html" class="footer-logo-link" aria-label="Ir a Blyp">
+          <img src="../blyp_logotipo.svg" alt="Blyp Logo" class="footer-logo">
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

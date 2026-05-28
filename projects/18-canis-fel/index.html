@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Canis & Fel | Clínica Veterinaria & Cuidado de Mascotas</title>
+  <meta name="description" content="Atención médica veterinaria con cariño para perros y gatos. Vacunas, urgencias y peluquería canina.">
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Preloader -->
+  <div class="preloader"><div class="preloader-spinner"></div></div>
+
+
+  <!-- Navigation -->
+  <nav class="main-nav">
+    <div class="container nav-container">
+      <a href="index.html" class="nav-logo">🐾 Canis & Fel</a>
+      <ul class="nav-links">
+        <li><a href="index.html" class="active">Inicio</a></li>
+        <li><a href="servicios.html">Servicios</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+        <li><a href="contacto.html" class="nav-cta">Agendar</a></li>
+      </ul>
+      <button class="hamburger" aria-label="Menú">
+        <i data-lucide="menu"></i>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="hero container">
+    <div class="hero-text">
+      <h1>Cuidamos a quienes te aman</h1>
+      <p>Sabemos que tu mascota es parte de la familia. Ofrecemos medicina preventiva y de urgencia con un equipo que ama a los animales tanto como tú.</p>
+      <a href="servicios.html" class="btn-playful" style="margin-bottom: 2rem;">Explorar Servicios</a>
+
+      <!-- Interactive Pet Age conversion Calculator -->
+      <div class="pet-age-calculator" style="background:var(--cards); border:3px solid #EAF5EA; border-radius:var(--radius); padding:2rem; max-width:450px; text-align:center; font-family:var(--font-body); box-shadow:var(--shadow); margin-top: 2rem;">
+        <h3 style="font-family:var(--font-display); color:var(--primary); font-size:1.3rem; margin-bottom:1rem;">Calculadora de Edad</h3>
+        <p style="color:#5C768D; font-size:0.95rem; margin-bottom:1.5rem;">Descubre cuántos años humanos tiene tu compañero.</p>
+        
+        <div style="display:flex; gap:1rem; margin-bottom:1.5rem; justify-content:center; flex-wrap:wrap;">
+          <select id="pet-type" style="padding:0.5rem 1rem; border-radius:20px; border:2px solid #EAF5EA; outline:none; font-family:var(--font-body); cursor:pointer;">
+            <option value="perro">Perro</option>
+            <option value="gato">Gato</option>
+          </select>
+          <input type="number" id="pet-age" value="2" min="1" max="25" style="width:80px; padding:0.5rem; border-radius:20px; border:2px solid #EAF5EA; text-align:center; outline:none; font-family:var(--font-body);">
+        </div>
+        <div style="background:#FAF8FF; padding:1rem; border-radius:20px; font-weight:700; border:1px dashed var(--secondary);">
+          <span style="font-size:1.2rem; color:var(--text);" id="pet-human-years">Equivale a: 24 años humanos</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-graphic">
+      <div class="pet-blob">
+        <i data-lucide="heart"></i>
+      </div>
+    </div>
+  </header>
+
+  <!-- Playful Cards Services -->
+  <section class="reveal-item section">
+    <div class="container">
+      <h2 class="section-title">Nuestros Servicios Principales</h2>
+      <p class="section-subtitle">Acompañando a tus mascotas en cada etapa de su vida.</p>
+      
+      <div class="playful-grid">
+        <div class="playful-card">
+          <div class="playful-card-icon"><i data-lucide="stethoscope"></i></div>
+          <h3>Consulta Médica</h3>
+          <p>Diagnósticos precisos, vacunación obligatoria y chequeos generales completos.</p>
+        </div>
+        <div class="playful-card">
+          <div class="playful-card-icon"><i data-lucide="scissors"></i></div>
+          <h3>Estética Canina</h3>
+          <p>Baños terapéuticos, corte de pelo según raza y cuidado higiénico delicado.</p>
+        </div>
+        <div class="playful-card">
+          <div class="playful-card-icon"><i data-lucide="shield-alert"></i></div>
+          <h3>Urgencias 24/7</h3>
+          <p>Equipados para atender cirugías y emergencias a cualquier hora del día.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Tips Section -->
+  <section class="reveal-item section" style="background-color: #EAF5EA;">
+    <div class="container">
+      <h2 class="section-title">El Consejo Saludable</h2>
+      <p class="section-subtitle">Pequeñas acciones diarias que hacen felices a tus compañeros.</p>
+      
+      <div class="tips-slider">
+        <div class="tip-content">
+          <p>"Mantén las vacunas al día y realiza un chequeo veterinario cada seis meses."</p>
+          <span class="tip-author">— Dra. Marta González, Directora Médica</span>
+        </div>
+        <button class="btn-playful" id="next-tip" style="margin-top: 2rem; padding: 0.5rem 1.5rem;">Siguiente Consejo</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="main-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <h3>Canis & Fel</h3>
+        <p>Centro Integral de Cuidado Animal</p>
+      </div>
+      <div class="footer-dev">
+        <span>Desarrollado por</span>
+        <a href="../index.html" class="footer-logo-link" aria-label="Ir a Blyp">
+          <img src="../blyp_logotipo.svg" alt="Blyp Logo" class="footer-logo">
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

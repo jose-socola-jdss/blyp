@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto y Cotizaciones | Épica Eventos</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=Work+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Preloader -->
+  <div class="preloader"><div class="preloader-spinner"></div></div>
+
+
+  <!-- Navigation Header -->
+  <nav class="main-nav">
+    <div class="container nav-inner">
+      <a href="index.html" class="nav-logo">Épica Eventos</a>
+      <ul class="nav-links">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="servicios.html">Servicios</a></li>
+        <li><a href="contacto.html" class="active">Contacto</a></li>
+        <li><a href="contacto.html" class="nav-cta">Cotizar</a></li>
+      </ul>
+      <button class="hamburger" aria-label="Menú">
+        <i data-lucide="menu"></i>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Page Banner -->
+  <section class="reveal-item page-banner">
+    <div class="container">
+      <h1>Hablemos de tu Próximo Evento</h1>
+      <p>Cuéntanos tus requerimientos y nuestro equipo creativo te propondrá una idea sin costo.</p>
+    </div>
+  </section>
+
+  <!-- Contact and Stepper -->
+  <section class="reveal-item section">
+    <div class="container">
+      <div class="contact-grid reveal-item">
+        <div class="form-wrap-epica">
+          <h2>Cotiza tu Evento</h2>
+          <form id="contact-form">
+            <div class="form-group">
+              <label for="nombre">Nombre / Empresa</label>
+              <input type="text" id="nombre" required placeholder="Ej. Juan Pérez - Marketing S.A.">
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" required placeholder="Ej. jperez@empresa.com">
+            </div>
+            <div class="form-group">
+              <label for="tipo">Tipo de Evento</label>
+              <input type="text" id="tipo" required placeholder="Ej. Lanzamiento de producto o Fiesta de Fin de Año">
+            </div>
+            <div class="form-group">
+              <label for="mensaje">Detalles de la Idea</label>
+              <textarea id="mensaje" required placeholder="Indica número aproximado de asistentes, fecha tentativa y objetivos clave del evento..."></textarea>
+            </div>
+            <button type="submit" class="btn-gradient" style="width: 100%;">Enviar Solicitud</button>
+          </form>
+        </div>
+
+        <div class="stepper-wrap">
+          <h3>Nuestro Flujo Creativo</h3>
+          
+          <div class="step-item">
+            <span class="step-dot">1</span>
+            <div class="step-text">
+              <h4>Breve y Reunión</h4>
+              <p>Nos reunimos para entender las metas y el público objetivo del evento.</p>
+            </div>
+          </div>
+
+          <div class="step-item">
+            <span class="step-dot">2</span>
+            <div class="step-text">
+              <h4>Propuesta y Presupuesto</h4>
+              <p>Te enviamos una maqueta conceptual y el desglose de cotizaciones.</p>
+            </div>
+          </div>
+
+          <div class="step-item">
+            <span class="step-dot">3</span>
+            <div class="step-text">
+              <h4>Producción y Logística</h4>
+              <p>Reservas de locaciones, contratación de técnica y armado escenográfico.</p>
+            </div>
+          </div>
+
+          <div class="step-item">
+            <span class="step-dot">4</span>
+            <div class="step-text">
+              <h4>Ejecución (El Gran Día)</h4>
+              <p>Coordinamos al milímetro cada minuto del evento para que disfrutes del éxito.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="main-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <h3>Épica Eventos</h3>
+        <p>Productora General de Eventos</p>
+      </div>
+      <div class="footer-dev">
+        <span>Desarrollado por</span>
+        <a href="../index.html" class="footer-logo-link" aria-label="Ir a Blyp">
+          <img src="../blyp_logotipo.svg" alt="Blyp Logo" class="footer-logo">
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

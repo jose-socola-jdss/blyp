@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto Privado | Horizonte Cero</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&family=Raleway:wght@400;600&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Preloader -->
+  <div class="preloader"><div class="preloader-spinner"></div></div>
+
+
+  <!-- Navigation -->
+  <nav class="main-nav">
+    <div class="container nav-inner">
+      <a href="index.html" class="nav-logo">Horizonte Cero</a>
+      <ul class="nav-links">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="servicios.html">Servicios</a></li>
+        <li><a href="contacto.html" class="active">Contacto</a></li>
+      </ul>
+      <button class="hamburger" aria-label="Menú">
+        <i data-lucide="menu"></i>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Page Banner -->
+  <section class="reveal-item page-banner">
+    <div class="container">
+      <h1>Consulta Privada</h1>
+      <p>Establezca contacto directo con nuestros asesores de inversión inmobiliaria de lujo.</p>
+    </div>
+  </section>
+
+  <!-- Contact Grid -->
+  <section class="reveal-item section">
+    <div class="container">
+      <div class="contact-grid reveal-item">
+        <div class="dark-form-wrap">
+          <h2>Formulario de Contacto</h2>
+          <form id="contact-form">
+            <div class="form-group">
+              <label for="nombre">Nombre Completo</label>
+              <input type="text" id="nombre" required placeholder="Ej. Roberto García">
+            </div>
+            <div class="form-group">
+              <label for="email">Correo Electrónico Privado</label>
+              <input type="email" id="email" required placeholder="Ej. roberto@empresa.com">
+            </div>
+            <div class="form-group">
+              <label for="asunto">Materia de Interés</label>
+              <input type="text" id="asunto" required placeholder="Ej. Adquisición Penthouse o Inversiones">
+            </div>
+            <div class="form-group">
+              <label for="mensaje">Consulta Específica</label>
+              <textarea id="mensaje" required placeholder="Describa de forma confidencial su solicitud..."></textarea>
+            </div>
+            <button type="submit" class="btn-gold" style="width: 100%;">Enviar Solicitud Privada</button>
+          </form>
+        </div>
+
+        <div class="private-sidebar-wrap">
+          <div class="private-sidebar">
+            <h3>Información Confidencial</h3>
+            
+            <div class="private-item">
+              <h4>Atención Inmobiliaria</h4>
+              <p>privado@horizontecero.com</p>
+            </div>
+
+            <div class="private-item">
+              <h4>Línea Telefónica Exclusiva</h4>
+              <p>+56 2 2900 8800</p>
+            </div>
+
+            <div class="private-item">
+              <h4>Oficinas Administrativas</h4>
+              <p>Av. Nueva Costanera 3900, Piso 12, Vitacura, Santiago.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="main-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <h3>Horizonte Cero</h3>
+        <p>Inmobiliaria de Lujo</p>
+      </div>
+      <div class="footer-dev">
+        <span>Desarrollado por</span>
+        <a href="../index.html" class="footer-logo-link" aria-label="Ir a Blyp">
+          <img src="../blyp_logotipo.svg" alt="Blyp Logo" class="footer-logo">
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

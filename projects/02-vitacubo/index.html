@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VitaCubo | Clínica Médica Virtual 24/7</title>
+  <meta name="description" content="Especialistas médicos disponibles 24/7 desde la comodidad de tu hogar. Teleconsulta y presencial.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700;800&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Preloader -->
+  <div class="preloader"><div class="preloader-spinner"></div></div>
+
+
+  <!-- Navigation -->
+  <header class="main-header">
+    <div class="container header-container">
+      <a href="index.html" class="logo">
+        <i data-lucide="activity" style="color: var(--primary);"></i>
+        Vita<span>Cubo</span>
+      </a>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="index.html" class="active">Inicio</a></li>
+          <li><a href="servicios.html">Servicios</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+          <li>
+            <div class="status-badge">
+              <span class="status-dot"></span>
+              En línea 24/7
+            </div>
+          </li>
+        </ul>
+      </nav>
+      <button class="hamburger" aria-label="Menú">
+        <i data-lucide="menu"></i>
+      </button>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="reveal-item hero-center">
+    <div class="container">
+      <h1>Salud al alcance de un clic</h1>
+      <p>Especialistas de la salud listos para atenderte a ti y a tu familia mediante consultas en línea inmediatas, recetas electrónicas y agendamiento ágil.</p>
+      <div class="hero-actions">
+        <a href="contacto.html" class="btn btn-primary">Agendar Cita</a>
+        <a href="servicios.html" class="btn btn-outline">Ver Especialidades</a>
+      </div>
+
+      <!-- Stats row -->
+      <div class="stats-row">
+        <article class="stat-card">
+          <span class="stat-num">500+</span>
+          <span class="stat-label">Médicos Certificados</span>
+        </article>
+        <article class="stat-card">
+          <span class="stat-num">24/7</span>
+          <span class="stat-label">Disponibilidad Inmediata</span>
+        </article>
+        <article class="stat-card">
+          <span class="stat-num">98%</span>
+          <span class="stat-label">Satisfacción en Pacientes</span>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- How It Works Section -->
+  <section class="reveal-item section section-bg">
+    <div class="container">
+      <h2 class="section-title">Cómo Funciona</h2>
+      <div class="process-timeline">
+        <div class="process-step">
+          <div class="step-num-circle">
+            <i data-lucide="user-plus" style="width: 32px; height: 32px;"></i>
+          </div>
+          <h3>1. Regístrate</h3>
+          <p>Crea tu perfil médico en 2 minutos ingresando tus antecedentes básicos.</p>
+        </div>
+        <div class="process-step">
+          <div class="step-num-circle">
+            <i data-lucide="stethoscope" style="width: 32px; height: 32px;"></i>
+          </div>
+          <h3>2. Elige Especialista</h3>
+          <p>Selecciona tu especialidad o solicita una consulta general al instante.</p>
+        </div>
+        <div class="process-step">
+          <div class="step-num-circle">
+            <i data-lucide="video" style="width: 32px; height: 32px;"></i>
+          </div>
+          <h3>3. Consulta en Línea</h3>
+          <p>Realiza la videollamada y recibe tu diagnóstico, receta y orden médica.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Specialties Section -->
+  <section class="reveal-item section">
+    <div class="container">
+      <h2 class="section-title">Especialidades Médicas</h2>
+      <div class="specialties-grid">
+        <div class="specialty-card">
+          <div class="spec-icon"><i data-lucide="activity"></i></div>
+          <h3>Medicina General</h3>
+          <p>Consultas de atención primaria, resfríos, dolores generales y chequeos preventivos.</p>
+        </div>
+        <div class="specialty-card">
+          <div class="spec-icon"><i data-lucide="smile"></i></div>
+          <h3>Pediatría</h3>
+          <p>Cuidado médico comprensivo e inmediato para bebés, niños y adolescentes.</p>
+        </div>
+        <div class="specialty-card">
+          <div class="spec-icon"><i data-lucide="brain"></i></div>
+          <h3>Psicología</h3>
+          <p>Terapia en línea con profesionales empáticos para tu bienestar de salud mental.</p>
+        </div>
+        <div class="specialty-card">
+          <div class="spec-icon"><i data-lucide="apple"></i></div>
+          <h3>Nutrición</h3>
+          <p>Planes personalizados y acompañamiento nutricional para metas saludables sostenibles.</p>
+        </div>
+        <div class="specialty-card">
+          <div class="spec-icon"><i data-lucide="sparkles"></i></div>
+          <h3>Dermatología</h3>
+          <p>Consultas sobre afecciones cutáneas, alergias, acné y cuidado de la piel.</p>
+        </div>
+        <div class="specialty-card">
+          <div class="spec-icon"><i data-lucide="heart-pulse"></i></div>
+          <h3>Cardiología</h3>
+          <p>Monitoreo preventivo, lectura de exámenes cardiovasculares y consejería experta.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section class="reveal-item section section-bg">
+    <div class="container">
+      <h2 class="section-title">Testimonios de Pacientes</h2>
+      <div class="carousel-container">
+        <div class="carousel-slide">
+          <blockquote>Me salvaron de una urgencia pediátrica con mi hija a las 3 de la mañana. En 5 minutos ya estábamos hablando con una doctora excelente.</blockquote>
+          <div class="author">Lucía P. - Madre de Sofía</div>
+        </div>
+        <div class="carousel-slide">
+          <blockquote>Muy fácil de usar, incluso para mí que no soy bueno con la tecnología. La receta electrónica llegó directo a mi celular y la aceptaron sin problemas.</blockquote>
+          <div class="author">Andrés F. - Paciente Crónico</div>
+        </div>
+        <div class="carousel-slide">
+          <blockquote>Excelente atención en psicología en línea. Los horarios flexibles me permiten ir a terapia sin interrumpir mi jornada laboral.</blockquote>
+          <div class="author">Clara M. - Terapeuta Ocupacional</div>
+        </div>
+        <div class="carousel-nav">
+          <button class="carousel-dot active"></button>
+          <button class="carousel-dot"></button>
+          <button class="carousel-dot"></button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="reveal-item section">
+    <div class="container">
+      <h2 class="section-title">Preguntas Frecuentes</h2>
+      <div class="faq-container">
+        <div class="faq-item">
+          <div class="faq-header">
+            <h3>¿Cómo funcionan las recetas médicas y órdenes de examen?</h3>
+            <span class="faq-icon"><i data-lucide="chevron-down"></i></span>
+          </div>
+          <div class="faq-body">
+            <p>Al término de tu videoconsulta, el médico emitirá una receta electrónica y órdenes de examen firmadas digitalmente. Recibirás un enlace de descarga en tu correo electrónico y un PDF vía WhatsApp, listo para ser presentado en cualquier farmacia o laboratorio del país.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-header">
+            <h3>¿Qué ocurre si requiero atención física en consulta?</h3>
+            <span class="faq-icon"><i data-lucide="chevron-down"></i></span>
+          </div>
+          <div class="faq-body">
+            <p>Si el médico de telemedicina evalúa que tu caso amerita un examen físico urgente, te derivará al centro de salud u hospital más cercano y te entregará un informe médico de derivación digital para agilizar tu ingreso a urgencias.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-header">
+            <h3>¿Están certificados los médicos de VitaCubo?</h3>
+            <span class="faq-icon"><i data-lucide="chevron-down"></i></span>
+          </div>
+          <div class="faq-body">
+            <p>Sí, absolutamente. Todos los médicos y especialistas de VitaCubo están debidamente titulados y registrados en la Superintendencia de Salud. Pasamos por un estricto proceso de validación de credenciales antes de habilitar su atención.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="main-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <h3>VitaCubo</h3>
+        <p>Telemedicina Integral 24/7</p>
+      </div>
+      <div class="footer-dev">
+        <span>Desarrollado por</span>
+        <a href="../index.html" class="footer-logo-link" aria-label="Ir a Blyp">
+          <img src="../blyp_logotipo.svg" alt="Blyp Logo" class="footer-logo">
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
