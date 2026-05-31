@@ -3,6 +3,9 @@
 ## Objetivo
 Crear un sitio web responsive para **Blyp**, una marca que desarrolla páginas web con inteligencia artificial.
 
+## Repositorio
+- Repositorio GitHub del sitio web: https://github.com/jose-socola-jdss/blyp.git
+
 ## Páginas implementadas
 - `index.html`: página de inicio basada en `references/reference_inicio.html`.
 - `portfolio.html`: página de portafolio basada en `references/reference_portafolio.html`.
