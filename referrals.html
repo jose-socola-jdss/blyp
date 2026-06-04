@@ -1,0 +1,746 @@
+<!DOCTYPE html>
+<html class="light" lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Red de Referidos Blyp | Gana S/200 por cada compra con pago confirmado</title>
+  <meta
+    name="description"
+    content="Únete a la Red de Referidos Blyp. Recomienda nuestros servicios, tu referido obtiene 10% de descuento y tú ganas S/200 por cada compra con pago parcial o total confirmado."
+  />
+  <link rel="icon" type="image/svg+xml" href="blyp_favicon.svg" />
+  <link rel="stylesheet" href="assets/fonts/fonts.css" />
+  <link rel="stylesheet" href="assets/fonts/material-symbols.css" />
+  <script src="assets/vendor/tailwindcdn.js"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#0050d4",
+            "primary-dim": "#0046bb",
+            "primary-container": "#7b9cff",
+            "tertiary": "#702ae1",
+            "tertiary-container": "#c0a0ff",
+            "surface": "#f5f6f7",
+            "surface-container-low": "#eff1f2",
+            "surface-container-lowest": "#ffffff",
+            "surface-container-high": "#e0e3e4",
+            "outline-variant": "#abadae",
+            "on-surface": "#2c2f30",
+            "on-surface-variant": "#595c5d",
+            "on-primary": "#f1f2ff"
+          },
+          fontFamily: {
+            headline: ["Plus Jakarta Sans", "sans-serif"],
+            body: ["Be Vietnam Pro", "sans-serif"]
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="assets/site.css" />
+  <style>
+    #calc-slider::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      appearance: none;
+      width: 24px;
+      height: 24px;
+      border-radius: 50%;
+      background: #0050d4;
+      cursor: pointer;
+      box-shadow: 0 4px 10px rgba(0, 80, 212, 0.4);
+      transition: transform 0.15s ease, background-color 0.15s ease;
+    }
+    #calc-slider::-webkit-slider-thumb:hover {
+      transform: scale(1.15);
+      background: #0046bb;
+    }
+    #calc-slider::-moz-range-thumb {
+      width: 24px;
+      height: 24px;
+      border-radius: 50%;
+      background: #0050d4;
+      cursor: pointer;
+      border: none;
+      box-shadow: 0 4px 10px rgba(0, 80, 212, 0.4);
+      transition: transform 0.15s ease, background-color 0.15s ease;
+    }
+    #calc-slider::-moz-range-thumb:hover {
+      transform: scale(1.15);
+      background: #0046bb;
+    }
+    
+    /* Custom timeline connector and background track */
+    #como-funciona .step-connector {
+      top: 2.5rem; /* Center vertically with w-20 icons (80px / 2 = 2.5rem) */
+      height: 6px;
+      background: linear-gradient(90deg, #0050d4 0%, #702ae1 100%);
+      border-radius: 9999px;
+      box-shadow: 0 0 15px rgba(0, 80, 212, 0.25);
+    }
+    
+    #como-funciona .relative.grid::before {
+      content: '';
+      position: absolute;
+      top: 2.5rem;
+      left: 15%;
+      right: 15%;
+      height: 6px;
+      background: #e2e8f0; /* Soft background track underneath */
+      border-radius: 9999px;
+      display: none;
+    }
+    
+    @media (min-width: 768px) {
+      #como-funciona .relative.grid::before {
+        display: block;
+      }
+    }
+  </style>
+</head>
+<body class="selection-brand bg-surface font-body text-on-surface overflow-x-hidden">
+  <div class="page-curtain" aria-hidden="true"></div>
+
+  <header class="site-header sticky top-0 z-50 w-full bg-white/70 backdrop-blur-md shadow-sm shadow-blue-500/5">
+    <nav class="site-nav max-w-7xl mx-auto px-4 sm:px-6 h-20 flex items-center justify-between gap-4">
+      <a href="index.html" class="inline-flex items-center" aria-label="Blyp">
+        <img src="blyp_logotipo.svg" alt="Blyp" class="h-8 w-auto sm:h-9 site-logo" />
+      </a>
+
+      <div class="hidden md:flex gap-10 items-center">
+        <a href="index.html" class="nav-link font-headline font-medium text-sm tracking-tight text-slate-600 hover:text-blue-500 transition-colors">Inicio</a>
+        <a href="portfolio.html" class="nav-link font-headline font-medium text-sm tracking-tight text-slate-600 hover:text-blue-500 transition-colors">Portafolio</a>
+        <a href="referrals.html" class="nav-link is-active font-headline text-sm tracking-tight">Red de Referidos</a>
+        <a href="contact.html" class="nav-link font-headline font-medium text-sm tracking-tight text-slate-600 hover:text-blue-500 transition-colors">Contacto</a>
+      </div>
+
+      <div class="flex items-center gap-3">
+        <a href="https://forms.gle/blyp-referidos" target="_blank" rel="noopener noreferrer" class="button-premium hidden sm:inline-flex bg-gradient-to-r from-primary to-tertiary-container text-white px-6 lg:px-8 py-3 rounded-full font-headline font-bold text-sm hover:opacity-90 transition-all duration-300 active:scale-95">
+          Unirme ahora
+        </a>
+        <button
+          type="button"
+          class="md:hidden inline-flex items-center justify-center w-11 h-11 rounded-full bg-surface-container-lowest text-on-surface"
+          aria-expanded="false"
+          aria-label="Abrir menú"
+          aria-controls="mobile-menu"
+          data-menu-toggle
+        >
+          <span class="material-symbols-outlined">menu</span>
+        </button>
+      </div>
+    </nav>
+
+    <div id="mobile-menu" class="mobile-menu md:hidden px-4 pb-4" data-mobile-menu data-open="false">
+      <div class="glass-card rounded-[24px] p-4 shadow-lg">
+        <div class="flex flex-col gap-3 font-headline text-sm">
+          <a href="index.html" class="px-4 py-3 rounded-2xl bg-surface-container-low text-on-surface">Inicio</a>
+          <a href="portfolio.html" class="px-4 py-3 rounded-2xl bg-surface-container-low text-on-surface">Portafolio</a>
+          <a href="referrals.html" class="px-4 py-3 rounded-2xl bg-primary text-white font-bold">Red de Referidos</a>
+          <a href="contact.html" class="px-4 py-3 rounded-2xl bg-surface-container-low text-on-surface">Contacto</a>
+          <a href="https://forms.gle/blyp-referidos" target="_blank" rel="noopener noreferrer" class="button-premium px-4 py-3 rounded-2xl bg-gradient-to-r from-primary to-tertiary-container text-white text-center font-bold">
+          Unirme ahora
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section with Simulator -->
+    <section class="hero-gradient relative overflow-hidden pt-16 sm:pt-24 pb-20 sm:pb-28">
+      <div class="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(0,80,212,0.04),transparent_45%)] pointer-events-none"></div>
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+        
+        <!-- Hero Copy (Left Column) -->
+        <div class="z-10 text-left lg:col-span-7">
+          <span data-reveal class="inline-block py-1.5 px-4 rounded-full bg-primary-container/10 border border-primary-container/20 text-primary font-body font-semibold text-xs tracking-[0.18em] uppercase mb-6">
+            Programa de Referidos
+          </span>
+
+          <h1 data-reveal data-delay="90" class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tighter text-on-surface mb-6 leading-[1.05] font-headline">
+            Recomienda a Blyp y gana <span class="hero-gradient-text text-transparent bg-clip-text bg-gradient-to-r from-primary to-tertiary">S/ 200 en efectivo</span>
+          </h1>
+
+          <p data-reveal data-delay="180" class="text-lg lg:text-xl text-on-surface-variant leading-relaxed max-w-2xl mb-8">
+            Comparte la calidad digital de Blyp con tu red. Completa el formulario de inscripción, escríbenos para validar tus datos y gana <strong class="text-primary font-bold">S/ 200</strong> por cada compra confirmada de tu referido. ¡Ellos obtienen <strong class="text-on-surface font-semibold">10% de descuento</strong>!
+          </p>
+
+          <div data-reveal data-delay="260" class="flex flex-wrap gap-4 items-center">
+            <a href="https://forms.gle/blyp-referidos" target="_blank" rel="noopener noreferrer" class="button-premium inline-flex items-center gap-2 bg-gradient-to-br from-primary to-primary-dim text-white px-8 sm:px-10 py-4 sm:py-5 rounded-full font-headline font-bold hover:scale-[1.02] transition-transform duration-300 shadow-xl shadow-primary/20">
+              <span class="material-symbols-outlined text-xl">assignment</span>
+              Completar Formulario de Inscripción
+            </a>
+            <a href="https://wa.me/51994883370?text=Hola%20Blyp!%20Acabo%20de%20completar%20el%20formulario%20de%20inscripci%C3%B3n%20de%20referidos%20y%20quiero%20validar%20mi%20registro%20para%20activar%20mi%20c%C3%B3digo." target="_blank" rel="noopener noreferrer" class="button-premium ghost-border text-on-surface px-8 sm:px-10 py-4 sm:py-5 rounded-full font-headline font-bold hover:bg-surface-container-low transition-colors duration-300 flex items-center gap-2">
+              <span class="material-symbols-outlined text-xl">chat</span>
+              Validar por WhatsApp
+            </a>
+          </div>
+
+          <div data-reveal data-delay="320" class="mt-10 pt-6 border-t border-slate-200/60 flex flex-wrap gap-x-6 gap-y-3 text-sm text-on-surface-variant font-medium">
+            <div class="flex items-center gap-2">
+              <span class="material-symbols-outlined text-primary text-xl" style="font-variation-settings: 'FILL' 1">check_circle</span>
+              Paso 1: Formulario de Inscripción
+            </div>
+            <div class="flex items-center gap-2">
+              <span class="material-symbols-outlined text-primary text-xl" style="font-variation-settings: 'FILL' 1">check_circle</span>
+              Paso 2: Validación WhatsApp
+            </div>
+            <div class="flex items-center gap-2">
+              <span class="material-symbols-outlined text-primary text-xl" style="font-variation-settings: 'FILL' 1">check_circle</span>
+              S/200 por venta confirmada
+            </div>
+          </div>
+        </div>
+
+        <!-- Calculator Simulator (Right Column) -->
+        <div data-reveal data-delay="160" class="relative lg:col-span-5 w-full max-w-md mx-auto lg:mx-0">
+          <div class="glass-card rounded-[32px] p-6 sm:p-8 shadow-2xl border border-white/40 relative">
+            <div class="absolute -top-6 -right-6 w-24 h-24 bg-primary/10 rounded-full blur-xl pointer-events-none"></div>
+            <div class="absolute -bottom-6 -left-6 w-28 h-28 bg-tertiary/10 rounded-full blur-xl pointer-events-none"></div>
+            
+            <div class="bg-surface-container-lowest rounded-[28px] p-6 sm:p-8 cloud-shadow relative z-10">
+              <div class="flex items-center gap-3 mb-6">
+                <div class="w-12 h-12 rounded-2xl bg-gradient-to-br from-primary to-primary-dim flex items-center justify-center shadow-lg shadow-primary/20">
+                  <span class="material-symbols-outlined text-white text-2xl">calculate</span>
+                </div>
+                <div>
+                  <p class="font-headline font-bold text-lg">Simulador de Ganancias</p>
+                  <p class="text-xs text-on-surface-variant">Descubre cuánto puedes generar al mes</p>
+                </div>
+              </div>
+
+              <!-- Ganancia Digital Counter -->
+              <div class="text-center py-6 bg-gradient-to-br from-surface to-surface-container-low rounded-2xl mb-6 border border-slate-100">
+                <p class="text-xs font-semibold uppercase tracking-wider text-on-surface-variant mb-1">Tu ganancia estimada</p>
+                <div class="flex items-baseline justify-center gap-1">
+                  <span class="text-2xl font-black text-primary">S/</span>
+                  <span id="calc-amount" class="text-5xl sm:text-6xl font-black text-on-surface tracking-tight transition-all duration-300">600</span>
+                </div>
+                <p id="calc-referrals-text" class="text-sm font-headline font-bold text-primary mt-2">3 referidos concretados</p>
+              </div>
+
+              <!-- Slider Control -->
+              <div class="space-y-4 mb-6">
+                <div class="flex justify-between items-center text-xs font-bold text-on-surface-variant">
+                  <span>1 referido</span>
+                  <span>15 referidos</span>
+                </div>
+                
+                <!-- Range input -->
+                <div class="relative group">
+                  <input 
+                    id="calc-slider" 
+                    type="range" 
+                    min="1" 
+                    max="15" 
+                    value="3" 
+                    class="w-full h-2 bg-surface-container-high rounded-lg appearance-none cursor-pointer focus:outline-none"
+                  />
+                </div>
+              </div>
+
+              <!-- Dynamic feedback card -->
+              <div id="calc-feedback" class="rounded-2xl bg-primary/5 border border-primary/10 p-4 min-h-[4.5rem] flex items-center transition-all duration-300">
+                <!-- Se llenará vía JS -->
+              </div>
+
+              <!-- Mini Referral Code Demo -->
+              <div class="mt-6 pt-6 border-t border-slate-100 space-y-3">
+                <p class="text-xs font-bold text-on-surface-variant text-center">Así funciona tu código en la práctica:</p>
+                <div class="flex items-center justify-between gap-3 text-xs bg-slate-50 p-3 rounded-xl border border-dashed border-slate-200">
+                  <div class="text-left">
+                    <p class="text-[10px] text-on-surface-variant uppercase font-bold">Código compartido</p>
+                    <p class="font-headline font-black text-primary tracking-wide">BLYP-TU-NOMBRE</p>
+                  </div>
+                  <div class="text-right">
+                    <p class="text-[10px] text-on-surface-variant uppercase font-bold">Descuento de tu amigo</p>
+                    <p class="font-headline font-black text-tertiary">10% DESCUENTO</p>
+                  </div>
+                </div>
+              </div>
+              
+              <a href="https://forms.gle/blyp-referidos" target="_blank" rel="noopener noreferrer" class="button-premium mt-6 w-full text-center bg-gradient-to-r from-primary to-tertiary-container text-white py-4 rounded-xl font-headline font-bold text-sm hover:opacity-95 flex items-center justify-center gap-2">
+                <span class="material-symbols-outlined text-lg">assignment</span>
+                Completar Formulario de Inscripción
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección "Cómo funciona" -->
+    <section id="como-funciona" class="py-20 bg-white relative scroll-mt-20">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6">
+        <div data-reveal class="text-center max-w-3xl mx-auto mb-16">
+          <span class="inline-block py-1 px-3 rounded-full bg-primary/10 text-primary font-body font-semibold text-xs tracking-wider uppercase mb-3">
+            Paso a Paso
+          </span>
+          <h2 class="text-3xl sm:text-4xl font-extrabold tracking-tight text-on-surface mb-4 font-headline">
+            ¿Cómo empezar a ganar?
+          </h2>
+          <p class="text-on-surface-variant text-lg">
+            El proceso es transparente, rápido y sin trámites complicados. Sigue estos pasos para activar tu código y empezar a recomendar.
+          </p>
+        </div>
+
+        <!-- Timeline Steps (adapted from index.html process) -->
+        <div class="relative grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-16">
+          <div class="hidden md:block step-connector" data-reveal></div>
+          
+          <!-- Step 1 -->
+          <div data-reveal data-delay="0" class="relative z-10 flex flex-col items-center text-center group">
+            <div class="w-20 h-20 bg-white rounded-full flex items-center justify-center shadow-lg shadow-blue-500/8 border-2 border-blue-100/80 relative z-10 transition-all duration-300 group-hover:scale-110 group-hover:border-primary ring-8 ring-blue-50/50 group-hover:ring-primary/10 mb-6">
+              <div class="w-14 h-14 bg-gradient-to-br from-primary/10 to-primary/5 rounded-full flex items-center justify-center">
+                <span class="material-symbols-outlined text-primary text-2xl font-bold">assignment</span>
+              </div>
+            </div>
+            <h3 class="text-xl font-bold mb-3 font-headline">1. Completa el formulario</h3>
+            <p class="text-on-surface-variant text-sm leading-relaxed max-w-xs mb-3">
+              Completa el formulario de inscripción con tus datos básicos de contacto.
+            </p>
+            <a href="https://forms.gle/blyp-referidos" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 text-xs font-extrabold text-primary hover:text-primary-dim transition-colors">
+              Abrir Formulario de Inscripción
+              <span class="material-symbols-outlined text-sm transition-transform group-hover:translate-x-1">open_in_new</span>
+            </a>
+          </div>
+          
+          <!-- Step 2 -->
+          <div data-reveal data-delay="100" class="relative z-10 flex flex-col items-center text-center group">
+            <div class="w-20 h-20 bg-white rounded-full flex items-center justify-center shadow-lg shadow-indigo-500/8 border-2 border-indigo-100/80 relative z-10 transition-all duration-300 group-hover:scale-110 group-hover:border-indigo-500 ring-8 ring-indigo-50/50 group-hover:ring-indigo-500/10 mb-6">
+              <div class="w-14 h-14 bg-gradient-to-br from-indigo-500/10 to-indigo-500/5 rounded-full flex items-center justify-center">
+                <span class="material-symbols-outlined text-indigo-600 text-2xl font-bold">chat</span>
+              </div>
+            </div>
+            <h3 class="text-xl font-bold mb-3 font-headline">2. Valida por WhatsApp</h3>
+            <p class="text-on-surface-variant text-sm leading-relaxed max-w-xs mb-3">
+              Escríbenos para confirmar tus datos. Si la solicitud es conforme, generaremos tu código personal.
+            </p>
+            <a href="https://wa.me/51994883370?text=Hola%20Blyp!%20Acabo%20de%20completar%20el%20formulario%20de%20inscripci%C3%B3n%20de%20referidos%20y%20quiero%20validar%20mi%20registro%20para%20activar%20mi%20c%C3%B3digo." target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 text-xs font-extrabold text-primary hover:text-primary-dim transition-colors">
+              Validar por WhatsApp
+              <span class="material-symbols-outlined text-sm transition-transform group-hover:translate-x-1">chat</span>
+            </a>
+          </div>
+          
+          <!-- Step 3 -->
+          <div data-reveal data-delay="200" class="relative z-10 flex flex-col items-center text-center group">
+            <div class="w-20 h-20 bg-white rounded-full flex items-center justify-center shadow-lg shadow-purple-500/8 border-2 border-purple-100/80 relative z-10 transition-all duration-300 group-hover:scale-110 group-hover:border-tertiary ring-8 ring-purple-50/50 group-hover:ring-tertiary/10 mb-6">
+              <div class="w-14 h-14 bg-gradient-to-br from-tertiary/10 to-tertiary/5 rounded-full flex items-center justify-center">
+                <span class="material-symbols-outlined text-tertiary text-2xl font-bold">payments</span>
+              </div>
+            </div>
+            <h3 class="text-xl font-bold mb-3 font-headline">3. Recomienda y gana</h3>
+            <p class="text-on-surface-variant text-sm leading-relaxed max-w-xs">
+              Comparte tu código. Tu referido obtiene 10% de descuento directo y tú recibes tu pago de S/ 200 a las 24 horas de que tu referido realice el primer pago de la venta concretada.
+            </p>
+          </div>
+        </div>
+
+        <!-- Importante Info Card -->
+        <div data-reveal data-delay="300" class="mt-16 max-w-3xl mx-auto rounded-3xl bg-surface-container-low border border-slate-200/50 p-6 flex flex-col sm:flex-row gap-4 items-start">
+          <div class="w-10 h-10 rounded-2xl bg-amber-500/10 flex items-center justify-center shrink-0">
+            <span class="material-symbols-outlined text-amber-600">info</span>
+          </div>
+          <div class="space-y-1">
+            <h4 class="font-headline font-bold text-on-surface text-base">Información clave sobre la atribución:</h4>
+            <p class="text-sm text-on-surface-variant leading-relaxed">
+              La comisión se activa cuando el referido nos contacta de forma directa e indica tu código de recomendación. Esto nos permite garantizar la trazabilidad del pago. No se validarán códigos reclamados después de cerrado el contrato o iniciada la prospección comercial independiente por Blyp.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección de Beneficios -->
+    <section class="py-20 bg-surface">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6">
+        <div data-reveal class="text-center max-w-3xl mx-auto mb-16">
+          <span class="inline-block py-1 px-3 rounded-full bg-primary/10 text-primary font-body font-semibold text-xs tracking-wider uppercase mb-3">
+            Ventajas del programa
+          </span>
+          <h2 class="text-3xl sm:text-4xl font-extrabold tracking-tight text-on-surface mb-4 font-headline">
+            Una recomendación valiosa para tu red y rentable para ti
+          </h2>
+          <p class="text-on-surface-variant text-lg">
+            No buscamos contactos fríos. Premiamos a quienes ayudan a su red a acceder a diseño y desarrollo web de primer nivel.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          
+          <!-- Beneficio 1 -->
+          <article data-reveal data-delay="0" class="benefit-card bg-surface-container-lowest p-8 rounded-[24px] cloud-shadow border border-slate-100/50 transition-all duration-300 hover:-translate-y-2">
+            <div class="w-14 h-14 bg-primary/5 rounded-2xl flex items-center justify-center mb-6">
+              <span class="material-symbols-outlined text-primary text-3xl">sell</span>
+            </div>
+            <h3 class="text-xl font-bold mb-3 font-headline text-on-surface">Beneficio para tu referido</h3>
+            <p class="text-on-surface-variant text-sm leading-relaxed">
+              La persona o empresa que use tu código obtiene un <strong class="text-on-surface font-semibold">10% de descuento inmediato</strong> en su cotización. Le estás regalando una ventaja económica real al recomendarnos.
+            </p>
+          </article>
+
+          <!-- Beneficio 2 -->
+          <article data-reveal data-delay="90" class="benefit-card bg-surface-container-lowest p-8 rounded-[24px] cloud-shadow border border-slate-100/50 transition-all duration-300 hover:-translate-y-2">
+            <div class="w-14 h-14 bg-primary/5 rounded-2xl flex items-center justify-center mb-6">
+              <span class="material-symbols-outlined text-primary text-3xl">payments</span>
+            </div>
+            <h3 class="text-xl font-bold mb-3 font-headline text-on-surface">Ingreso en efectivo directo</h3>
+            <p class="text-on-surface-variant text-sm leading-relaxed">
+              Ganas <strong class="text-on-surface font-semibold">S/ 200 en efectivo</strong> por cada compra validada. Sin fórmulas raras, sin cupones restrictivos y sin tener que hacer tú el trabajo comercial o el seguimiento técnico.
+            </p>
+          </article>
+
+          <!-- Beneficio 3 -->
+          <article data-reveal data-delay="180" class="benefit-card bg-surface-container-lowest p-8 rounded-[24px] cloud-shadow border border-slate-100/50 transition-all duration-300 hover:-translate-y-2">
+            <div class="w-14 h-14 bg-primary/5 rounded-2xl flex items-center justify-center mb-6">
+              <span class="material-symbols-outlined text-primary text-3xl">all_inclusive</span>
+            </div>
+            <h3 class="text-xl font-bold mb-3 font-headline text-on-surface">Sin límite de comisiones</h3>
+            <p class="text-on-surface-variant text-sm leading-relaxed">
+              Puedes recomendar todas las veces que quieras. Incluso si tu referido ya ha sido cliente de Blyp antes y regresa para contratar un nuevo servicio independiente, la comisión vuelve a aplicar.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección Términos y Condiciones -->
+    <section id="terms" class="py-20 bg-surface-container-low overflow-hidden">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6">
+        <div data-reveal class="text-center max-w-3xl mx-auto mb-14">
+          <span class="inline-flex items-center gap-2 rounded-full bg-white px-4 py-2 text-xs font-semibold uppercase tracking-[0.18em] text-primary shadow-sm">
+            <span class="material-symbols-outlined text-base">gavel</span>
+            Reglas del Programa
+          </span>
+          <h2 class="text-3xl sm:text-4xl font-extrabold tracking-tight text-on-surface mt-5 mb-4 font-headline">
+            Condiciones de la red de referidos
+          </h2>
+          <p class="text-on-surface-variant text-lg leading-relaxed">
+            Mantener el programa justo y ordenado es clave. Aquí tienes un resumen de las reglas principales y el detalle de los términos.
+          </p>
+        </div>
+
+        <!-- Tarjetas Resumen -->
+        <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-4 mb-8">
+          <article data-reveal data-delay="0" class="rounded-[24px] bg-white p-5 border border-slate-100 shadow-sm hover:shadow-md transition-shadow">
+            <p class="font-headline text-xs font-extrabold uppercase tracking-[0.12em] text-primary mb-2">Validación</p>
+            <p class="text-sm text-on-surface-variant leading-relaxed">La compra es válida únicamente si el cliente nos escribe y menciona tu código activado.</p>
+          </article>
+          <article data-reveal data-delay="60" class="rounded-[24px] bg-white p-5 border border-slate-100 shadow-sm hover:shadow-md transition-shadow">
+            <p class="font-headline text-xs font-extrabold uppercase tracking-[0.12em] text-primary mb-2">Comisión</p>
+            <p class="text-sm text-on-surface-variant leading-relaxed">El pago de S/ 200 en efectivo se realizará 24 horas después de que tu referido haga el primer pago de la venta concretada.</p>
+          </article>
+          <article data-reveal data-delay="120" class="rounded-[24px] bg-white p-5 border border-slate-100 shadow-sm hover:shadow-md transition-shadow">
+            <p class="font-headline text-xs font-extrabold uppercase tracking-[0.12em] text-primary mb-2">Descuento</p>
+            <p class="text-sm text-on-surface-variant leading-relaxed">Tu referido obtiene un 10% de descuento directo en el valor del proyecto.</p>
+          </article>
+          <article data-reveal data-delay="180" class="rounded-[24px] bg-white p-5 border border-slate-100 shadow-sm hover:shadow-md transition-shadow">
+            <p class="font-headline text-xs font-extrabold uppercase tracking-[0.12em] text-primary mb-2">Sin Retroactivos</p>
+            <p class="text-sm text-on-surface-variant leading-relaxed">Si el cliente no menciona tu código en el primer contacto, la comisión no se reconocerá después.</p>
+          </article>
+        </div>
+
+        <!-- Acordeón Detalles completos -->
+        <div class="rounded-[32px] bg-white p-6 sm:p-8 shadow-sm border border-slate-100">
+          <div class="mb-6 px-2">
+            <p class="font-headline text-xl sm:text-2xl font-extrabold text-on-surface">Detalle de condiciones</p>
+            <p class="text-sm text-on-surface-variant mt-2">
+              Haz clic en cada sección para revisar la letra chica del programa.
+            </p>
+          </div>
+
+          <div class="space-y-4">
+            
+            <details data-reveal class="group rounded-[24px] bg-surface hover:bg-slate-50 border border-transparent open:bg-white open:border-slate-100 open:shadow-lg open:shadow-blue-500/5 p-5 sm:p-6 transition-all duration-300">
+              <summary class="list-none cursor-pointer flex items-center justify-between gap-4 select-none">
+                <div>
+                  <p class="font-headline text-base sm:text-lg font-extrabold text-on-surface">1. Registro y activación del código</p>
+                  <p class="text-xs sm:text-sm text-on-surface-variant mt-1">Cómo se activa tu participación oficial.</p>
+                </div>
+                <span class="material-symbols-outlined text-primary transition-transform group-open:rotate-45">add</span>
+              </summary>
+              <div class="mt-4 space-y-3 text-sm sm:text-base text-on-surface-variant leading-relaxed border-t border-slate-100 pt-4">
+                <p>Para participar en el programa, debes registrarte completando el formulario de inscripción y luego escribirnos por WhatsApp para validar tu solicitud.</p>
+                <p>Una vez confirmada la inscripción, Blyp te enviará tu código exclusivo de referido. Solo podrás recomendar y acumular comisiones con un código formalmente activo.</p>
+              </div>
+            </details>
+
+            <details data-reveal data-delay="60" class="group rounded-[24px] bg-surface hover:bg-slate-50 border border-transparent open:bg-white open:border-slate-100 open:shadow-lg open:shadow-blue-500/5 p-5 sm:p-6 transition-all duration-300">
+              <summary class="list-none cursor-pointer flex items-center justify-between gap-4 select-none">
+                <div>
+                  <p class="font-headline text-base sm:text-lg font-extrabold text-on-surface">2. Criterios de atribución válida</p>
+                  <p class="text-xs sm:text-sm text-on-surface-variant mt-1">La regla principal para garantizar tu pago.</p>
+                </div>
+                <span class="material-symbols-outlined text-primary transition-transform group-open:rotate-45">add</span>
+              </summary>
+              <div class="mt-4 space-y-3 text-sm sm:text-base text-on-surface-variant leading-relaxed border-t border-slate-100 pt-4">
+                <p>Un referido se considera válido solo cuando la persona o empresa interesada contacta por sí misma a Blyp y presenta tu código dentro de la conversación comercial inicial.</p>
+                <p>El programa premia recomendaciones activas. No es válido pasarnos una lista de números o perfiles para que Blyp haga prospección en frío.</p>
+                <p>Si el cliente no nos escribe o no menciona tu código antes del primer presupuesto oficial, la atribución de referido no se podrá configurar de forma retroactiva.</p>
+              </div>
+            </details>
+
+            <details data-reveal data-delay="120" class="group rounded-[24px] bg-surface hover:bg-slate-50 border border-transparent open:bg-white open:border-slate-100 open:shadow-lg open:shadow-blue-500/5 p-5 sm:p-6 transition-all duration-300">
+              <summary class="list-none cursor-pointer flex items-center justify-between gap-4 select-none">
+                <div>
+                  <p class="font-headline text-base sm:text-lg font-extrabold text-on-surface">3. Comisiones, descuentos y pagos</p>
+                  <p class="text-xs sm:text-sm text-on-surface-variant mt-1">Montos, plazos y cómo cobras.</p>
+                </div>
+                <span class="material-symbols-outlined text-primary transition-transform group-open:rotate-45">add</span>
+              </summary>
+              <div class="mt-4 space-y-3 text-sm sm:text-base text-on-surface-variant leading-relaxed border-t border-slate-100 pt-4">
+                <p>El recomendador gana S/ 200 en efectivo (mediante transferencia bancaria, Yape o Plin) por cada proyecto que contrate su referido usando su código.</p>
+                <p>El referido obtiene un 10% de descuento directo sobre la cotización final del desarrollo del sitio web.</p>
+                <p>La comisión se pagará 24 horas después de que el referido realice el primer pago (ya sea adelanto del 50% o pago completo) de la venta concretada. No es necesario esperar a que el proyecto esté 100% finalizado.</p>
+                <p>No existe límite de comisiones: ganas S/ 200 por cada venta concretada de manera válida.</p>
+              </div>
+            </details>
+
+            <details data-reveal data-delay="180" class="group rounded-[24px] bg-surface hover:bg-slate-50 border border-transparent open:bg-white open:border-slate-100 open:shadow-lg open:shadow-blue-500/5 p-5 sm:p-6 transition-all duration-300">
+              <summary class="list-none cursor-pointer flex items-center justify-between gap-4 select-none">
+                <div>
+                  <p class="font-headline text-base sm:text-lg font-extrabold text-on-surface">4. Clientes existentes y recurrencia</p>
+                  <p class="text-xs sm:text-sm text-on-surface-variant mt-1">Reglas sobre contactos recurrentes.</p>
+                </div>
+                <span class="material-symbols-outlined text-primary transition-transform group-open:rotate-45">add</span>
+              </summary>
+              <div class="mt-4 space-y-3 text-sm sm:text-base text-on-surface-variant leading-relaxed border-t border-slate-100 pt-4">
+                <p>El programa es aplicable tanto para nuevos contactos como para clientes previos de Blyp que regresen para comprar un nuevo servicio independiente, siempre que no estén en medio de una negociación vigente.</p>
+                <p>Cada compra independiente se evalúa por separado; la comisión no se aplica automáticamente a futuros proyectos del cliente a menos que se presente el código correspondiente para cada compra individual.</p>
+              </div>
+            </details>
+
+            <details data-reveal data-delay="240" class="group rounded-[24px] bg-surface hover:bg-slate-50 border border-transparent open:bg-white open:border-slate-100 open:shadow-lg open:shadow-blue-500/5 p-5 sm:p-6 transition-all duration-300">
+              <summary class="list-none cursor-pointer flex items-center justify-between gap-4 select-none">
+                <div>
+                  <p class="font-headline text-base sm:text-lg font-extrabold text-on-surface">5. Exclusiones y resolución de controversias</p>
+                  <p class="text-xs sm:text-sm text-on-surface-variant mt-1">Casos no cubiertos y políticas adicionales.</p>
+                </div>
+                <span class="material-symbols-outlined text-primary transition-transform group-open:rotate-45">add</span>
+              </summary>
+              <div class="mt-4 space-y-3 text-sm sm:text-base text-on-surface-variant leading-relaxed border-t border-slate-100 pt-4">
+                <p>No se reconocerá la comisión si el referido cancela la compra antes de realizar el primer pago o si el pago es rechazado/no confirmado.</p>
+                <p>No se pueden acumular múltiples códigos de recomendación para un único proyecto (máximo un código por compra).</p>
+                <p>En caso de conflicto de atribución (dos personas reclaman al mismo referido), se considerará válido el código que haya sido registrado primero en la conversación comercial por el cliente final.</p>
+              </div>
+            </details>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Preguntas Frecuentes (FAQ Grid en 2 Columnas) -->
+    <section id="faq" class="py-20 bg-white">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6">
+        <div data-reveal class="text-center max-w-3xl mx-auto mb-16">
+          <span class="inline-block py-1 px-3 rounded-full bg-primary/10 text-primary font-body font-semibold text-xs tracking-wider uppercase mb-3">
+            Preguntas Frecuentes
+          </span>
+          <h2 class="text-3xl sm:text-4xl font-extrabold tracking-tight text-on-surface mb-4 font-headline">
+            Resuelve tus dudas
+          </h2>
+          <p class="text-on-surface-variant text-lg">
+            Todo lo que necesitas saber sobre la Red de Referidos Blyp.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 items-start">
+          
+          <!-- Columna 1 -->
+          <div class="space-y-4">
+            
+            <!-- FAQ 1 -->
+            <details data-reveal class="group bg-surface-container-low hover:bg-surface-container-high rounded-[24px] p-6 transition-colors duration-300">
+              <summary class="list-none cursor-pointer flex items-center justify-between gap-4 font-headline font-bold text-base sm:text-lg select-none">
+                <span>¿Qué gano si recomiendo a alguien?</span>
+                <span class="material-symbols-outlined text-primary transition-transform group-open:rotate-45">add</span>
+              </summary>
+              <p class="mt-4 text-on-surface-variant leading-relaxed text-sm sm:text-base border-t border-slate-200/50 pt-4">
+                Ganas S/ 200 en efectivo directo por cada compra de sitio web o landing page que complete tu referido usando tu código. El pago se transfiere a tu cuenta bancaria o Yape/Plin.
+              </p>
+            </details>
+
+            <!-- FAQ 2 -->
+            <details data-reveal data-delay="60" class="group bg-surface-container-low hover:bg-surface-container-high rounded-[24px] p-6 transition-colors duration-300">
+              <summary class="list-none cursor-pointer flex items-center justify-between gap-4 font-headline font-bold text-base sm:text-lg select-none">
+                <span>¿Qué gana la persona que use mi código?</span>
+                <span class="material-symbols-outlined text-primary transition-transform group-open:rotate-45">add</span>
+              </summary>
+              <p class="mt-4 text-on-surface-variant leading-relaxed text-sm sm:text-base border-t border-slate-200/50 pt-4">
+                Obtiene un 10% de descuento directo en el presupuesto final de su proyecto digital con Blyp. Es un beneficio exclusivo que solo se activa al usar tu código.
+              </p>
+            </details>
+
+            <!-- FAQ 3 -->
+            <details data-reveal data-delay="120" class="group bg-surface-container-low hover:bg-surface-container-high rounded-[24px] p-6 transition-colors duration-300">
+              <summary class="list-none cursor-pointer flex items-center justify-between gap-4 font-headline font-bold text-base sm:text-lg select-none">
+                <span>¿Basta con que yo les pase el contacto de un amigo?</span>
+                <span class="material-symbols-outlined text-primary transition-transform group-open:rotate-45">add</span>
+              </summary>
+              <p class="mt-4 text-on-surface-variant leading-relaxed text-sm sm:text-base border-t border-slate-200/50 pt-4">
+                No. Para que sea trazable y válido, tu referido debe ser quien nos contacte a nosotros y mencione tu código. No hacemos prospección invasiva ni llamadas en frío a partir de números de terceros.
+              </p>
+            </details>
+
+            <!-- FAQ 4 -->
+            <details data-reveal data-delay="180" class="group bg-surface-container-low hover:bg-surface-container-high rounded-[24px] p-6 transition-colors duration-300">
+              <summary class="list-none cursor-pointer flex items-center justify-between gap-4 font-headline font-bold text-base sm:text-lg select-none">
+                <span>¿El programa aplica solo para clientes nuevos?</span>
+                <span class="material-symbols-outlined text-primary transition-transform group-open:rotate-45">add</span>
+              </summary>
+              <p class="mt-4 text-on-surface-variant leading-relaxed text-sm sm:text-base border-t border-slate-200/50 pt-4">
+                No. Si una empresa que ya trabajó con Blyp en el pasado decide contratar un nuevo desarrollo o proyecto independiente y presenta tu código antes del inicio, la comisión vuelve a ser totalmente válida.
+              </p>
+            </details>
+          </div>
+
+          <!-- Columna 2 -->
+          <div class="space-y-4">
+            
+            <!-- FAQ 5 -->
+            <details data-reveal class="group bg-surface-container-low hover:bg-surface-container-high rounded-[24px] p-6 transition-colors duration-300">
+              <summary class="list-none cursor-pointer flex items-center justify-between gap-4 font-headline font-bold text-base sm:text-lg select-none">
+                <span>¿Hay algún límite en las comisiones que puedo ganar?</span>
+                <span class="material-symbols-outlined text-primary transition-transform group-open:rotate-45">add</span>
+              </summary>
+              <p class="mt-4 text-on-surface-variant leading-relaxed text-sm sm:text-base border-t border-slate-200/50 pt-4">
+                Ninguno. Puedes recomendar a tantas personas o empresas como quieras y cobrar S/ 200 por cada venta calificada de manera indefinida.
+              </p>
+            </details>
+
+            <!-- FAQ 6 -->
+            <details data-reveal data-delay="60" class="group bg-surface-container-low hover:bg-surface-container-high rounded-[24px] p-6 transition-colors duration-300">
+              <summary class="list-none cursor-pointer flex items-center justify-between gap-4 font-headline font-bold text-base sm:text-lg select-none">
+                <span>¿Cuándo y cómo recibo mi pago?</span>
+                <span class="material-symbols-outlined text-primary transition-transform group-open:rotate-45">add</span>
+              </summary>
+              <p class="mt-4 text-on-surface-variant leading-relaxed text-sm sm:text-base border-t border-slate-200/50 pt-4">
+                La comisión se pagará 24 horas después de que tu referido realice el primer pago (ya sea adelanto del 50% o pago completo) de la venta concretada. Nos comunicamos contigo para coordinar el depósito bancario.
+              </p>
+            </details>
+
+            <!-- FAQ 7 -->
+            <details data-reveal data-delay="120" class="group bg-surface-container-low hover:bg-surface-container-high rounded-[24px] p-6 transition-colors duration-300">
+              <summary class="list-none cursor-pointer flex items-center justify-between gap-4 font-headline font-bold text-base sm:text-lg select-none">
+                <span>¿Qué servicios de Blyp aplican para referir?</span>
+                <span class="material-symbols-outlined text-primary transition-transform group-open:rotate-45">add</span>
+              </summary>
+              <p class="mt-4 text-on-surface-variant leading-relaxed text-sm sm:text-base border-t border-slate-200/50 pt-4">
+                El programa aplica principalmente para el diseño y desarrollo de sitios web corporativos, tiendas virtuales (e-commerce), landing pages de conversión y aplicaciones web a medida.
+              </p>
+            </details>
+
+            <!-- FAQ 8 -->
+            <details data-reveal data-delay="180" class="group bg-surface-container-low hover:bg-surface-container-high rounded-[24px] p-6 transition-colors duration-300">
+              <summary class="list-none cursor-pointer flex items-center justify-between gap-4 font-headline font-bold text-base sm:text-lg select-none">
+                <span>¿Qué sucede si un cliente llega sin el código?</span>
+                <span class="material-symbols-outlined text-primary transition-transform group-open:rotate-45">add</span>
+              </summary>
+              <p class="mt-4 text-on-surface-variant leading-relaxed text-sm sm:text-base border-t border-slate-200/50 pt-4">
+                Para mantener la claridad del programa, el referido debe indicar el código durante su primer contacto comercial. Si la negociación ya está cerrada o el proyecto en marcha sin mención del código, no podrá agregarse retroactivamente.
+              </p>
+            </details>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Bottom CTA Banner Section -->
+    <section class="max-w-6xl mx-auto px-4 sm:px-6 py-16 sm:py-20">
+      <div data-reveal class="bg-gradient-to-br from-primary to-primary-dim rounded-[40px] sm:rounded-[48px] p-10 sm:p-14 lg:p-20 text-center relative overflow-hidden shadow-2xl shadow-primary/30">
+        <div class="absolute top-0 right-0 w-64 h-64 bg-white/10 rounded-full -translate-y-1/2 translate-x-1/2 blur-3xl"></div>
+        <div class="absolute bottom-0 left-0 w-96 h-96 bg-tertiary/20 rounded-full translate-y-1/2 -translate-x-1/2 blur-3xl"></div>
+
+        <div class="relative z-10 max-w-3xl mx-auto">
+          <h2 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white mb-6 tracking-tight font-headline">
+            ¿Listo para empezar a generar ingresos extras?
+          </h2>
+          <p class="text-on-primary text-lg lg:text-xl mb-10 opacity-90">
+            Completa el formulario de inscripción, escríbenos para validar tu registro y obtén tu código exclusivo para empezar a recomendar.
+          </p>
+          <div class="flex flex-col items-center gap-4">
+            <div class="flex flex-wrap justify-center gap-4 items-center">
+              <a href="https://forms.gle/blyp-referidos" target="_blank" rel="noopener noreferrer" class="button-premium inline-flex items-center gap-3 bg-white text-primary px-10 sm:px-12 py-5 sm:py-6 rounded-full font-headline font-extrabold text-lg hover:scale-105 transition-transform duration-300 shadow-xl shadow-black/10">
+                Completar Formulario de Inscripción
+                <span class="material-symbols-outlined">assignment</span>
+              </a>
+              <a href="https://wa.me/51994883370?text=Hola%20Blyp!%20Acabo%20de%20completar%20el%20formulario%20de%20inscripci%C3%B3n%20de%20referidos%20y%20quiero%20validar%20mi%20registro%20para%20activar%20mi%20c%C3%B3digo." target="_blank" rel="noopener noreferrer" class="button-premium inline-flex items-center gap-3 bg-transparent text-white border border-white/30 hover:border-white px-10 sm:px-12 py-5 sm:py-6 rounded-full font-headline font-bold text-lg hover:scale-105 transition-transform duration-300">
+                Validar por WhatsApp
+                <span class="material-symbols-outlined">chat</span>
+              </a>
+            </div>
+            <span class="text-xs text-white/80 font-medium tracking-wide">✓ Registro 100% gratuito · Sin requisitos comerciales</span>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer bg-slate-50 w-full rounded-t-[32px]">
+    <div class="flex flex-col md:flex-row justify-between items-center px-6 sm:px-8 py-12 max-w-7xl mx-auto gap-8">
+      <div class="flex flex-col gap-4 items-center md:items-start">
+        <img src="blyp_logotipo.svg" alt="Blyp" class="h-8 w-auto" />
+        <p class="text-sm leading-relaxed text-slate-500 max-w-xs text-center md:text-left">
+          Diseñamos y desarrollamos experiencias digitales con claridad, velocidad y criterio comercial.
+        </p>
+      </div>
+
+      <div class="flex gap-6 sm:gap-8 text-sm leading-relaxed">
+        <a href="index.html" class="text-slate-500 hover:text-blue-600 underline-offset-4 hover:underline transition-all">Inicio</a>
+        <a href="portfolio.html" class="text-slate-500 hover:text-blue-600 underline-offset-4 hover:underline transition-all">Portafolio</a>
+        <a href="referrals.html" class="text-blue-600 font-semibold underline-offset-4 hover:underline transition-all">Red de Referidos</a>
+        <a href="contact.html" class="text-slate-500 hover:text-blue-600 underline-offset-4 hover:underline transition-all">Contacto</a>
+      </div>
+
+      <div class="text-slate-500 text-sm">© <span data-current-year></span> Blyp. Todos los derechos reservados.</div>
+    </div>
+  </footer>
+
+  <script src="assets/site.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      /* ── Range Slider Simulator ── */
+      const slider = document.getElementById("calc-slider");
+      const amountEl = document.getElementById("calc-amount");
+      const textEl = document.getElementById("calc-referrals-text");
+      const feedbackEl = document.getElementById("calc-feedback");
+
+      if (slider && amountEl && textEl && feedbackEl) {
+        const updateCalculator = () => {
+          const referrals = parseInt(slider.value, 10);
+          const commission = referrals * 200;
+
+          // Update amount with formatted string
+          amountEl.textContent = commission.toLocaleString("es-PE");
+
+          // Update text
+          textEl.textContent = `${referrals} ${referrals === 1 ? 'referido concretado' : 'referidos concretados'}`;
+
+          // Update dynamic feedback
+          let feedback = "";
+          if (referrals <= 2) {
+            feedback = "💡 ¡Ideal para pagar tus suscripciones favoritas (Netflix, Spotify, Internet)!";
+          } else if (referrals <= 5) {
+            feedback = "🚀 ¡Excelente ingreso extra! Suficiente para cubrir tus compras del mes.";
+          } else if (referrals <= 9) {
+            feedback = "✈️ ¡Perfecto! Con esto puedes financiar un viaje de fin de semana o renovar tus gadgets.";
+          } else {
+            feedback = "💼 ¡Ingresos excepcionales! Recomendando Blyp de forma constante como un profesional.";
+          }
+          feedbackEl.innerHTML = `<p class="text-sm text-primary font-bold w-full text-center leading-relaxed">${feedback}</p>`;
+          
+          // Dynamic slider progress track background styling
+          const percentage = ((slider.value - slider.min) / (slider.max - slider.min)) * 100;
+          slider.style.background = `linear-gradient(to right, #0050d4 0%, #0050d4 ${percentage}%, #e2e8f0 ${percentage}%, #e2e8f0 100%)`;
+        };
+
+        // Initialize background track on startup and register event listener
+        slider.addEventListener("input", updateCalculator);
+        updateCalculator();
+      }
+    });
+  </script>
+</body>
+</html>
