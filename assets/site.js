@@ -4,6 +4,8 @@ document.addEventListener("DOMContentLoaded", () => {
   const menu = document.querySelector("[data-mobile-menu]");
   const yearNodes = document.querySelectorAll("[data-current-year]");
   const revealNodes = document.querySelectorAll("[data-reveal]");
+  const portfolioFilterButtons = document.querySelectorAll("[data-portfolio-filter]");
+  const portfolioItems = document.querySelectorAll("[data-portfolio-item]");
   const reducedMotion = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
   /* ── Scroll state ── */
@@ -276,26 +278,67 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   }
 
+  const computePortfolioGridPosition = () => {
+    const grid = document.querySelector("[data-portfolio-grid]");
+    if (!grid) return;
+
+    const visibleItems = Array.from(grid.querySelectorAll(".masonry-item")).filter(
+      (item) => !item.hasAttribute("hidden")
+    );
+
+    const templateColumns = getComputedStyle(grid).gridTemplateColumns;
+    const cols = templateColumns ? templateColumns.split(" ").length : 1;
+
+    visibleItems.forEach((item, index) => {
+      const col = index % cols;
+      const row = Math.floor(index / cols);
+      const cascadeDelay = (row + col) * 70;
+      item.style.setProperty("--reveal-delay", `${cascadeDelay}ms`);
+    });
+  };
+
   /* ── 7a. Cascade diagonal reveal for portfolio ── */
   if (!reducedMotion) {
     const masonryItems = document.querySelectorAll(".masonry-grid .masonry-item");
     if (masonryItems.length > 0) {
-      const computeGridPosition = () => {
-        const grid = document.querySelector(".masonry-grid");
-        if (!grid) return;
-        const gridRect = grid.getBoundingClientRect();
-        const cols = getComputedStyle(grid).gridTemplateColumns.split(" ").length;
-
-        masonryItems.forEach((item, index) => {
-          const col = index % cols;
-          const row = Math.floor(index / cols);
-          const cascadeDelay = (row + col) * 70;
-          item.style.setProperty("--reveal-delay", `${cascadeDelay}ms`);
-        });
-      };
-      computeGridPosition();
-      window.addEventListener("resize", computeGridPosition);
+      computePortfolioGridPosition();
+      window.addEventListener("resize", computePortfolioGridPosition);
     }
+  }
+
+  /* ── 7d. Portfolio category filter ── */
+  if (portfolioFilterButtons.length > 0 && portfolioItems.length > 0) {
+    const applyPortfolioFilter = (category) => {
+      portfolioFilterButtons.forEach((button) => {
+        const isActive = button.getAttribute("data-portfolio-filter") === category;
+        button.classList.toggle("is-active", isActive);
+        button.setAttribute("aria-selected", isActive ? "true" : "false");
+        button.setAttribute("aria-pressed", isActive ? "true" : "false");
+      });
+
+      portfolioItems.forEach((item) => {
+        const isMatch = item.getAttribute("data-category") === category;
+        item.hidden = !isMatch;
+        if (isMatch) {
+          item.classList.add("is-visible");
+        }
+      });
+
+      computePortfolioGridPosition();
+    };
+
+    portfolioFilterButtons.forEach((button) => {
+      button.addEventListener("click", () => {
+        const category = button.getAttribute("data-portfolio-filter");
+        if (!category) return;
+        applyPortfolioFilter(category);
+      });
+    });
+
+    applyPortfolioFilter(
+      document.querySelector("[data-portfolio-filter].is-active")?.getAttribute("data-portfolio-filter") ||
+      portfolioFilterButtons[0].getAttribute("data-portfolio-filter")
+    );
   }
 
   /* ── Init ── */

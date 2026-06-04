@@ -74,229 +74,478 @@
       <div class="absolute inset-0 dot-grid opacity-40"></div>
       <div class="relative max-w-7xl mx-auto px-4 sm:px-6 text-center">
         <h1 data-reveal class="font-headline text-4xl sm:text-5xl md:text-6xl font-extrabold tracking-tight text-on-surface mb-6">Nuestro trabajo</h1>
-        <p data-reveal data-delay="90" class="text-lg md:text-xl text-on-surface-variant max-w-2xl mx-auto leading-relaxed">Una selección de sitios web creados para marcas que necesitan claridad, personalidad y una experiencia digital memorable.</p>
+        <p data-reveal data-delay="90" class="text-lg md:text-xl text-on-surface-variant max-w-2xl mx-auto leading-relaxed">Una selección de proyectos digitales creados para marcas que necesitan claridad, personalidad y una experiencia online memorable.</p>
       </div>
     </section>
 
     <section class="max-w-7xl mx-auto px-4 sm:px-6 py-12">
-      <div class="masonry-grid [column-gap:24px]">
-        <div data-reveal data-delay="0" class="masonry-item">
+      <div data-reveal class="max-w-3xl mx-auto text-center mb-10 sm:mb-12">
+        <div class="portfolio-filter-panel bg-surface-container-low rounded-[28px] p-3 sm:p-4 inline-flex flex-wrap items-center justify-center gap-3" role="tablist" aria-label="Categorías del portafolio">
+          <button type="button" class="portfolio-filter is-active" role="tab" aria-selected="true" aria-pressed="true" data-portfolio-filter="sitios-web">Sitios web</button>
+          <button type="button" class="portfolio-filter" role="tab" aria-selected="false" aria-pressed="false" data-portfolio-filter="landing-pages">Landing pages</button>
+          <button type="button" class="portfolio-filter" role="tab" aria-selected="false" aria-pressed="false" data-portfolio-filter="productos-digitales">Productos digitales</button>
+        </div>
+      </div>
+      <div class="masonry-grid [column-gap:24px]" data-portfolio-grid>
+        <div data-reveal data-delay="0" class="masonry-item" data-portfolio-item data-category="sitios-web">
           <article class="project-card relative group overflow-hidden rounded-2xl bg-surface-container-lowest shadow-blue-500/5 hover:shadow-2xl">
             <img src="assets/images/portfolio/invest-in-latam.jpg" alt="Captura de la web de Invest in Latam." class="portfolio-card-image" />
             <div class="overlay absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/40 to-transparent flex flex-col justify-end p-8 transition-opacity duration-300">
-              <span class="overlay-category text-[10px] tracking-[0.3em] font-bold text-white mb-2">INVERSIÓN INTERNACIONAL</span>
               <h3 class="overlay-title font-headline text-2xl font-bold text-white mb-2">Invest in Latam</h3>
               <p class="overlay-desc text-white/80 text-sm mb-6">Plataforma corporativa para atraer inversión, explicar oportunidades y transmitir confianza regional.</p>
               <a href="https://investinlatam.es/" target="_blank" rel="noreferrer" class="overlay-cta button-premium inline-flex items-center justify-center bg-white text-primary font-bold px-6 py-3 rounded-full hover:bg-on-primary transition-colors text-sm">Ver sitio web <span class="ml-2">→</span></a>
             </div>
           </article>
         </div>
-        <div data-reveal data-delay="40" class="masonry-item">
+        <div data-reveal data-delay="40" class="masonry-item" data-portfolio-item data-category="sitios-web">
           <article class="project-card relative group overflow-hidden rounded-2xl bg-surface-container-lowest shadow-blue-500/5 hover:shadow-2xl">
             <img src="assets/images/portfolio/lumina-tueste.jpg" alt="Captura de la web de Lúmina Tueste." class="portfolio-card-image" />
             <div class="overlay absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/40 to-transparent flex flex-col justify-end p-8 transition-opacity duration-300">
-              <span class="overlay-category text-[10px] tracking-[0.3em] font-bold text-white mb-2">CAFÉ DE ESPECIALIDAD</span>
               <h3 class="overlay-title font-headline text-2xl font-bold text-white mb-2">Lúmina Tueste</h3>
               <p class="overlay-desc text-white/80 text-sm mb-6">Marca sensorial de café con una home cuidada para producto, origen y ritual de consumo.</p>
               <a href="https://lumina-tueste.vercel.app/" target="_blank" rel="noreferrer" class="overlay-cta button-premium inline-flex items-center justify-center bg-white text-primary font-bold px-6 py-3 rounded-full hover:bg-on-primary transition-colors text-sm">Ver sitio web <span class="ml-2">→</span></a>
             </div>
           </article>
         </div>
-        <div data-reveal data-delay="80" class="masonry-item">
+        <div data-reveal data-delay="80" class="masonry-item" data-portfolio-item data-category="sitios-web">
           <article class="project-card relative group overflow-hidden rounded-2xl bg-surface-container-lowest shadow-blue-500/5 hover:shadow-2xl">
             <img src="assets/images/portfolio/vitacubo.jpg" alt="Captura de la web de VitaCubo." class="portfolio-card-image" />
             <div class="overlay absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/40 to-transparent flex flex-col justify-end p-8 transition-opacity duration-300">
-              <span class="overlay-category text-[10px] tracking-[0.3em] font-bold text-white mb-2">SALUD DIGITAL</span>
               <h3 class="overlay-title font-headline text-2xl font-bold text-white mb-2">VitaCubo</h3>
               <p class="overlay-desc text-white/80 text-sm mb-6">Clínica virtual 24/7 diseñada para explicar servicios, agilizar consultas y generar seguridad.</p>
               <a href="https://vitacubo.vercel.app/" target="_blank" rel="noreferrer" class="overlay-cta button-premium inline-flex items-center justify-center bg-white text-primary font-bold px-6 py-3 rounded-full hover:bg-on-primary transition-colors text-sm">Ver sitio web <span class="ml-2">→</span></a>
             </div>
           </article>
         </div>
-        <div data-reveal data-delay="120" class="masonry-item">
+        <div data-reveal data-delay="120" class="masonry-item" data-portfolio-item data-category="sitios-web">
           <article class="project-card relative group overflow-hidden rounded-2xl bg-surface-container-lowest shadow-blue-500/5 hover:shadow-2xl">
             <img src="assets/images/portfolio/kognivia.jpg" alt="Captura de la web de Kognivia." class="portfolio-card-image" />
             <div class="overlay absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/40 to-transparent flex flex-col justify-end p-8 transition-opacity duration-300">
-              <span class="overlay-category text-[10px] tracking-[0.3em] font-bold text-white mb-2">EDUCACIÓN TECNOLÓGICA</span>
               <h3 class="overlay-title font-headline text-2xl font-bold text-white mb-2">Kognivia</h3>
               <p class="overlay-desc text-white/80 text-sm mb-6">Academia digital orientada a habilidades del futuro, oferta formativa y conversión educativa.</p>
               <a href="https://kognivia.vercel.app/" target="_blank" rel="noreferrer" class="overlay-cta button-premium inline-flex items-center justify-center bg-white text-primary font-bold px-6 py-3 rounded-full hover:bg-on-primary transition-colors text-sm">Ver sitio web <span class="ml-2">→</span></a>
             </div>
           </article>
         </div>
-        <div data-reveal data-delay="0" class="masonry-item">
+        <div data-reveal data-delay="0" class="masonry-item" data-portfolio-item data-category="sitios-web">
           <article class="project-card relative group overflow-hidden rounded-2xl bg-surface-container-lowest shadow-blue-500/5 hover:shadow-2xl">
             <img src="assets/images/portfolio/auralino.jpg" alt="Captura de la web de Aura & Lino." class="portfolio-card-image" />
             <div class="overlay absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/40 to-transparent flex flex-col justify-end p-8 transition-opacity duration-300">
-              <span class="overlay-category text-[10px] tracking-[0.3em] font-bold text-white mb-2">MODA SOSTENIBLE</span>
               <h3 class="overlay-title font-headline text-2xl font-bold text-white mb-2">Aura &amp; Lino</h3>
               <p class="overlay-desc text-white/80 text-sm mb-6">Marca de moda con tono premium, narrativa consciente y énfasis en colección y valores.</p>
               <a href="https://auralino.vercel.app/" target="_blank" rel="noreferrer" class="overlay-cta button-premium inline-flex items-center justify-center bg-white text-primary font-bold px-6 py-3 rounded-full hover:bg-on-primary transition-colors text-sm">Ver sitio web <span class="ml-2">→</span></a>
             </div>
           </article>
         </div>
-        <div data-reveal data-delay="40" class="masonry-item">
+        <div data-reveal data-delay="40" class="masonry-item" data-portfolio-item data-category="sitios-web">
           <article class="project-card relative group overflow-hidden rounded-2xl bg-surface-container-lowest shadow-blue-500/5 hover:shadow-2xl">
             <img src="assets/images/portfolio/nexoflow.jpg" alt="Captura de la web de NexoFlow." class="portfolio-card-image" />
             <div class="overlay absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/40 to-transparent flex flex-col justify-end p-8 transition-opacity duration-300">
-              <span class="overlay-category text-[10px] tracking-[0.3em] font-bold text-white mb-2">SOFTWARE B2B</span>
               <h3 class="overlay-title font-headline text-2xl font-bold text-white mb-2">NexoFlow</h3>
               <p class="overlay-desc text-white/80 text-sm mb-6">Sistema operativo para proyectos con propuesta clara, integraciones visibles y foco comercial.</p>
               <a href="https://nexoflow-pi.vercel.app/" target="_blank" rel="noreferrer" class="overlay-cta button-premium inline-flex items-center justify-center bg-white text-primary font-bold px-6 py-3 rounded-full hover:bg-on-primary transition-colors text-sm">Ver sitio web <span class="ml-2">→</span></a>
             </div>
           </article>
         </div>
-        <div data-reveal data-delay="80" class="masonry-item">
+        <div data-reveal data-delay="80" class="masonry-item" data-portfolio-item data-category="sitios-web">
           <article class="project-card relative group overflow-hidden rounded-2xl bg-surface-container-lowest shadow-blue-500/5 hover:shadow-2xl">
             <img src="assets/images/portfolio/valera-montes.jpg" alt="Captura de la web de Valera & Montes." class="portfolio-card-image" />
             <div class="overlay absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/40 to-transparent flex flex-col justify-end p-8 transition-opacity duration-300">
-              <span class="overlay-category text-[10px] tracking-[0.3em] font-bold text-white mb-2">FIRMA LEGAL</span>
               <h3 class="overlay-title font-headline text-2xl font-bold text-white mb-2">Valera &amp; Montes</h3>
               <p class="overlay-desc text-white/80 text-sm mb-6">Sitio jurídico corporativo que prioriza autoridad, claridad de servicios y posicionamiento premium.</p>
               <a href="https://valera-montes.vercel.app/" target="_blank" rel="noreferrer" class="overlay-cta button-premium inline-flex items-center justify-center bg-white text-primary font-bold px-6 py-3 rounded-full hover:bg-on-primary transition-colors text-sm">Ver sitio web <span class="ml-2">→</span></a>
             </div>
           </article>
         </div>
-        <div data-reveal data-delay="120" class="masonry-item">
+        <div data-reveal data-delay="120" class="masonry-item" data-portfolio-item data-category="sitios-web">
           <article class="project-card relative group overflow-hidden rounded-2xl bg-surface-container-lowest shadow-blue-500/5 hover:shadow-2xl">
             <img src="assets/images/portfolio/brisas-paramo.jpg" alt="Captura de la web de Brisas del Páramo." class="portfolio-card-image" />
             <div class="overlay absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/40 to-transparent flex flex-col justify-end p-8 transition-opacity duration-300">
-              <span class="overlay-category text-[10px] tracking-[0.3em] font-bold text-white mb-2">ECO-LODGE</span>
               <h3 class="overlay-title font-headline text-2xl font-bold text-white mb-2">Brisas del Páramo</h3>
               <p class="overlay-desc text-white/80 text-sm mb-6">Experiencia de hospedaje sustentable con narrativa de destino, reservas y conexión con naturaleza.</p>
               <a href="https://brisas-paramo.vercel.app/" target="_blank" rel="noreferrer" class="overlay-cta button-premium inline-flex items-center justify-center bg-white text-primary font-bold px-6 py-3 rounded-full hover:bg-on-primary transition-colors text-sm">Ver sitio web <span class="ml-2">→</span></a>
             </div>
           </article>
         </div>
-        <div data-reveal data-delay="0" class="masonry-item">
+        <div data-reveal data-delay="0" class="masonry-item" data-portfolio-item data-category="sitios-web">
           <article class="project-card relative group overflow-hidden rounded-2xl bg-surface-container-lowest shadow-blue-500/5 hover:shadow-2xl">
             <img src="assets/images/portfolio/serenoespacio.jpg" alt="Captura de la web de SerenoEspacio." class="portfolio-card-image" />
             <div class="overlay absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/40 to-transparent flex flex-col justify-end p-8 transition-opacity duration-300">
-              <span class="overlay-category text-[10px] tracking-[0.3em] font-bold text-white mb-2">BIENESTAR INTEGRAL</span>
               <h3 class="overlay-title font-headline text-2xl font-bold text-white mb-2">SerenoEspacio</h3>
               <p class="overlay-desc text-white/80 text-sm mb-6">Marca de yoga con una interfaz calmada para clases, filosofía de marca y captación de alumnos.</p>
               <a href="https://serenoespacio.vercel.app/" target="_blank" rel="noreferrer" class="overlay-cta button-premium inline-flex items-center justify-center bg-white text-primary font-bold px-6 py-3 rounded-full hover:bg-on-primary transition-colors text-sm">Ver sitio web <span class="ml-2">→</span></a>
             </div>
           </article>
         </div>
-        <div data-reveal data-delay="40" class="masonry-item">
+        <div data-reveal data-delay="40" class="masonry-item" data-portfolio-item data-category="sitios-web">
           <article class="project-card relative group overflow-hidden rounded-2xl bg-surface-container-lowest shadow-blue-500/5 hover:shadow-2xl">
             <img src="assets/images/portfolio/horizonte-cero.jpg" alt="Captura de la web de Horizonte Cero." class="portfolio-card-image" />
             <div class="overlay absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/40 to-transparent flex flex-col justify-end p-8 transition-opacity duration-300">
-              <span class="overlay-category text-[10px] tracking-[0.3em] font-bold text-white mb-2">INMOBILIARIA DE LUJO</span>
               <h3 class="overlay-title font-headline text-2xl font-bold text-white mb-2">Horizonte Cero</h3>
               <p class="overlay-desc text-white/80 text-sm mb-6">Web inmobiliaria de alto ticket pensada para destacar propiedades y elevar percepción de marca.</p>
               <a href="https://horizonte-cero.vercel.app/" target="_blank" rel="noreferrer" class="overlay-cta button-premium inline-flex items-center justify-center bg-white text-primary font-bold px-6 py-3 rounded-full hover:bg-on-primary transition-colors text-sm">Ver sitio web <span class="ml-2">→</span></a>
             </div>
           </article>
         </div>
-        <div data-reveal data-delay="80" class="masonry-item">
+        <div data-reveal data-delay="80" class="masonry-item" data-portfolio-item data-category="sitios-web">
           <article class="project-card relative group overflow-hidden rounded-2xl bg-surface-container-lowest shadow-blue-500/5 hover:shadow-2xl">
             <img src="assets/images/portfolio/epica-eventos.jpg" alt="Captura de la web de Épica Eventos." class="portfolio-card-image" />
             <div class="overlay absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/40 to-transparent flex flex-col justify-end p-8 transition-opacity duration-300">
-              <span class="overlay-category text-[10px] tracking-[0.3em] font-bold text-white mb-2">EVENTOS CORPORATIVOS</span>
               <h3 class="overlay-title font-headline text-2xl font-bold text-white mb-2">Épica Eventos</h3>
               <p class="overlay-desc text-white/80 text-sm mb-6">Sitio para producción de eventos con presentación clara de propuestas, impacto y experiencia.</p>
               <a href="https://epica-eventos.vercel.app/" target="_blank" rel="noreferrer" class="overlay-cta button-premium inline-flex items-center justify-center bg-white text-primary font-bold px-6 py-3 rounded-full hover:bg-on-primary transition-colors text-sm">Ver sitio web <span class="ml-2">→</span></a>
             </div>
           </article>
         </div>
-        <div data-reveal data-delay="120" class="masonry-item">
+        <div data-reveal data-delay="120" class="masonry-item" data-portfolio-item data-category="sitios-web">
           <article class="project-card relative group overflow-hidden rounded-2xl bg-surface-container-lowest shadow-blue-500/5 hover:shadow-2xl">
             <img src="assets/images/portfolio/trama-textura.jpg" alt="Captura de la web de Trama & Textura." class="portfolio-card-image" />
             <div class="overlay absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/40 to-transparent flex flex-col justify-end p-8 transition-opacity duration-300">
-              <span class="overlay-category text-[10px] tracking-[0.3em] font-bold text-white mb-2">DECORACIÓN ARTESANAL</span>
               <h3 class="overlay-title font-headline text-2xl font-bold text-white mb-2">Trama &amp; Textura</h3>
               <p class="overlay-desc text-white/80 text-sm mb-6">E-commerce con estética cálida y narrativa de producto hecha para inspirar y convertir.</p>
               <a href="https://trama-textura.vercel.app/" target="_blank" rel="noreferrer" class="overlay-cta button-premium inline-flex items-center justify-center bg-white text-primary font-bold px-6 py-3 rounded-full hover:bg-on-primary transition-colors text-sm">Ver sitio web <span class="ml-2">→</span></a>
             </div>
           </article>
         </div>
-        <div data-reveal data-delay="0" class="masonry-item">
+        <div data-reveal data-delay="0" class="masonry-item" data-portfolio-item data-category="sitios-web">
           <article class="project-card relative group overflow-hidden rounded-2xl bg-surface-container-lowest shadow-blue-500/5 hover:shadow-2xl">
             <img src="assets/images/portfolio/sebastian-varela.jpg" alt="Captura de la web de Sebastián Varela." class="portfolio-card-image" />
             <div class="overlay absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/40 to-transparent flex flex-col justify-end p-8 transition-opacity duration-300">
-              <span class="overlay-category text-[10px] tracking-[0.3em] font-bold text-white mb-2">FOTOGRAFÍA ARTÍSTICA</span>
               <h3 class="overlay-title font-headline text-2xl font-bold text-white mb-2">Sebastián Varela</h3>
               <p class="overlay-desc text-white/80 text-sm mb-6">Portafolio visual para exhibir obra, estilo autoral y contacto profesional con presencia elegante.</p>
               <a href="https://sebastian-varela.vercel.app/" target="_blank" rel="noreferrer" class="overlay-cta button-premium inline-flex items-center justify-center bg-white text-primary font-bold px-6 py-3 rounded-full hover:bg-on-primary transition-colors text-sm">Ver sitio web <span class="ml-2">→</span></a>
             </div>
           </article>
         </div>
-        <div data-reveal data-delay="40" class="masonry-item">
+        <div data-reveal data-delay="40" class="masonry-item" data-portfolio-item data-category="sitios-web">
           <article class="project-card relative group overflow-hidden rounded-2xl bg-surface-container-lowest shadow-blue-500/5 hover:shadow-2xl">
             <img src="assets/images/portfolio/horno-mila.jpg" alt="Captura de la web de El Horno de Mila." class="portfolio-card-image" />
             <div class="overlay absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/40 to-transparent flex flex-col justify-end p-8 transition-opacity duration-300">
-              <span class="overlay-category text-[10px] tracking-[0.3em] font-bold text-white mb-2">PANADERÍA ARTESANAL</span>
               <h3 class="overlay-title font-headline text-2xl font-bold text-white mb-2">El Horno de Mila</h3>
               <p class="overlay-desc text-white/80 text-sm mb-6">Sitio gastronómico enfocado en tradición, frescura diaria y reservas con tono humano.</p>
               <a href="https://horno-mila.vercel.app/" target="_blank" rel="noreferrer" class="overlay-cta button-premium inline-flex items-center justify-center bg-white text-primary font-bold px-6 py-3 rounded-full hover:bg-on-primary transition-colors text-sm">Ver sitio web <span class="ml-2">→</span></a>
             </div>
           </article>
         </div>
-        <div data-reveal data-delay="80" class="masonry-item">
+        <div data-reveal data-delay="80" class="masonry-item" data-portfolio-item data-category="sitios-web">
           <article class="project-card relative group overflow-hidden rounded-2xl bg-surface-container-lowest shadow-blue-500/5 hover:shadow-2xl">
             <img src="assets/images/portfolio/hierro-ferreo.jpg" alt="Captura de la web de Hierro Férreo." class="portfolio-card-image" />
             <div class="overlay absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/40 to-transparent flex flex-col justify-end p-8 transition-opacity duration-300">
-              <span class="overlay-category text-[10px] tracking-[0.3em] font-bold text-white mb-2">CROSSFIT Y FUERZA</span>
               <h3 class="overlay-title font-headline text-2xl font-bold text-white mb-2">Hierro Férreo</h3>
               <p class="overlay-desc text-white/80 text-sm mb-6">Landing potente para captar alumnos, comunicar disciplina y reforzar comunidad de entrenamiento.</p>
               <a href="https://hierro-ferreo.vercel.app/" target="_blank" rel="noreferrer" class="overlay-cta button-premium inline-flex items-center justify-center bg-white text-primary font-bold px-6 py-3 rounded-full hover:bg-on-primary transition-colors text-sm">Ver sitio web <span class="ml-2">→</span></a>
             </div>
           </article>
         </div>
-        <div data-reveal data-delay="120" class="masonry-item">
+        <div data-reveal data-delay="120" class="masonry-item" data-portfolio-item data-category="sitios-web">
           <article class="project-card relative group overflow-hidden rounded-2xl bg-surface-container-lowest shadow-blue-500/5 hover:shadow-2xl">
             <img src="assets/images/portfolio/raices-vivas.jpg" alt="Captura de la web de Raíces Vivas." class="portfolio-card-image" />
             <div class="overlay absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/40 to-transparent flex flex-col justify-end p-8 transition-opacity duration-300">
-              <span class="overlay-category text-[10px] tracking-[0.3em] font-bold text-white mb-2">IMPACTO AMBIENTAL</span>
               <h3 class="overlay-title font-headline text-2xl font-bold text-white mb-2">Raíces Vivas</h3>
               <p class="overlay-desc text-white/80 text-sm mb-6">Fundación de reforestación con relato de impacto, métricas visibles y llamado claro a colaborar.</p>
               <a href="https://raices-vivas.vercel.app/" target="_blank" rel="noreferrer" class="overlay-cta button-premium inline-flex items-center justify-center bg-white text-primary font-bold px-6 py-3 rounded-full hover:bg-on-primary transition-colors text-sm">Ver sitio web <span class="ml-2">→</span></a>
             </div>
           </article>
         </div>
-        <div data-reveal data-delay="0" class="masonry-item">
+        <div data-reveal data-delay="0" class="masonry-item" data-portfolio-item data-category="sitios-web">
           <article class="project-card relative group overflow-hidden rounded-2xl bg-surface-container-lowest shadow-blue-500/5 hover:shadow-2xl">
             <img src="assets/images/portfolio/arcobase.jpg" alt="Captura de la web de ArcoBase." class="portfolio-card-image" />
             <div class="overlay absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/40 to-transparent flex flex-col justify-end p-8 transition-opacity duration-300">
-              <span class="overlay-category text-[10px] tracking-[0.3em] font-bold text-white mb-2">ARQUITECTURA</span>
               <h3 class="overlay-title font-headline text-2xl font-bold text-white mb-2">ArcoBase</h3>
               <p class="overlay-desc text-white/80 text-sm mb-6">Estudio brutalista con una web sobria para método, proyectos y posicionamiento visual distintivo.</p>
               <a href="https://arcobase.vercel.app/" target="_blank" rel="noreferrer" class="overlay-cta button-premium inline-flex items-center justify-center bg-white text-primary font-bold px-6 py-3 rounded-full hover:bg-on-primary transition-colors text-sm">Ver sitio web <span class="ml-2">→</span></a>
             </div>
           </article>
         </div>
-        <div data-reveal data-delay="40" class="masonry-item">
+        <div data-reveal data-delay="40" class="masonry-item" data-portfolio-item data-category="sitios-web">
           <article class="project-card relative group overflow-hidden rounded-2xl bg-surface-container-lowest shadow-blue-500/5 hover:shadow-2xl">
             <img src="assets/images/portfolio/voltruta.jpg" alt="Captura de la web de VoltRuta." class="portfolio-card-image" />
             <div class="overlay absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/40 to-transparent flex flex-col justify-end p-8 transition-opacity duration-300">
-              <span class="overlay-category text-[10px] tracking-[0.3em] font-bold text-white mb-2">MOVILIDAD ELÉCTRICA</span>
               <h3 class="overlay-title font-headline text-2xl font-bold text-white mb-2">VoltRuta</h3>
               <p class="overlay-desc text-white/80 text-sm mb-6">Propuesta tecnológica para carga inteligente con mensaje claro, innovación y visión de futuro.</p>
               <a href="https://voltruta.vercel.app/" target="_blank" rel="noreferrer" class="overlay-cta button-premium inline-flex items-center justify-center bg-white text-primary font-bold px-6 py-3 rounded-full hover:bg-on-primary transition-colors text-sm">Ver sitio web <span class="ml-2">→</span></a>
             </div>
           </article>
         </div>
-        <div data-reveal data-delay="80" class="masonry-item">
+        <div data-reveal data-delay="80" class="masonry-item" data-portfolio-item data-category="sitios-web">
           <article class="project-card relative group overflow-hidden rounded-2xl bg-surface-container-lowest shadow-blue-500/5 hover:shadow-2xl">
             <img src="assets/images/portfolio/canis-fel.jpg" alt="Captura de la web de Canis & Fel." class="portfolio-card-image" />
             <div class="overlay absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/40 to-transparent flex flex-col justify-end p-8 transition-opacity duration-300">
-              <span class="overlay-category text-[10px] tracking-[0.3em] font-bold text-white mb-2">CLÍNICA VETERINARIA</span>
               <h3 class="overlay-title font-headline text-2xl font-bold text-white mb-2">Canis &amp; Fel</h3>
               <p class="overlay-desc text-white/80 text-sm mb-6">Sitio cercano y profesional para servicios veterinarios, confianza familiar y atención especializada.</p>
               <a href="https://canis-fel.vercel.app/" target="_blank" rel="noreferrer" class="overlay-cta button-premium inline-flex items-center justify-center bg-white text-primary font-bold px-6 py-3 rounded-full hover:bg-on-primary transition-colors text-sm">Ver sitio web <span class="ml-2">→</span></a>
             </div>
           </article>
         </div>
-        <div data-reveal data-delay="120" class="masonry-item">
+        <div data-reveal data-delay="120" class="masonry-item" data-portfolio-item data-category="sitios-web">
           <article class="project-card relative group overflow-hidden rounded-2xl bg-surface-container-lowest shadow-blue-500/5 hover:shadow-2xl">
             <img src="assets/images/portfolio/croma-digital.jpg" alt="Captura de la web de Croma Digital." class="portfolio-card-image" />
             <div class="overlay absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/40 to-transparent flex flex-col justify-end p-8 transition-opacity duration-300">
-              <span class="overlay-category text-[10px] tracking-[0.3em] font-bold text-white mb-2">BRANDING CREATIVO</span>
               <h3 class="overlay-title font-headline text-2xl font-bold text-white mb-2">Croma Digital</h3>
               <p class="overlay-desc text-white/80 text-sm mb-6">Agencia de diseño experimental pensada para mostrar enfoque crítico, servicios y personalidad visual.</p>
               <a href="https://croma-digital.vercel.app/" target="_blank" rel="noreferrer" class="overlay-cta button-premium inline-flex items-center justify-center bg-white text-primary font-bold px-6 py-3 rounded-full hover:bg-on-primary transition-colors text-sm">Ver sitio web <span class="ml-2">→</span></a>
+            </div>
+          </article>
+        </div>
+        <!-- NEXO DENTAL -->
+        <div data-reveal data-delay="0" class="masonry-item" data-portfolio-item data-category="landing-pages" hidden>
+          <article class="project-card relative group overflow-hidden rounded-2xl bg-surface-container-lowest shadow-blue-500/5 hover:shadow-2xl">
+            <img src="assets/images/portfolio/clinica-nexo-dental.png" alt="Captura de la landing page de Clínica Nexo Dental." class="portfolio-card-image" />
+            <div class="overlay absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/40 to-transparent flex flex-col justify-end p-8 transition-opacity duration-300">
+              <h3 class="overlay-title font-headline text-2xl font-bold text-white mb-2">Clínica Nexo Dental</h3>
+              <p class="overlay-desc text-white/80 text-sm mb-6">Optimización de captación de leads médicos y calculadora de fuga de pacientes en tiempo real.</p>
+              <a href="https://clinica-nexo-dental.vercel.app/" target="_blank" rel="noreferrer" class="overlay-cta button-premium inline-flex items-center justify-center bg-white text-primary font-bold px-6 py-3 rounded-full hover:bg-on-primary transition-colors text-sm">Ver landing page <span class="ml-2">→</span></a>
+            </div>
+          </article>
+        </div>
+
+        <!-- VOLTIVA SOLAR -->
+        <div data-reveal data-delay="40" class="masonry-item" data-portfolio-item data-category="landing-pages" hidden>
+          <article class="project-card relative group overflow-hidden rounded-2xl bg-surface-container-lowest shadow-blue-500/5 hover:shadow-2xl">
+            <img src="assets/images/portfolio/voltiva-solar.png" alt="Captura de la landing page de Voltiva Solar." class="portfolio-card-image" />
+            <div class="overlay absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/40 to-transparent flex flex-col justify-end p-8 transition-opacity duration-300">
+              <h3 class="overlay-title font-headline text-2xl font-bold text-white mb-2">Voltiva Solar</h3>
+              <p class="overlay-desc text-white/80 text-sm mb-6">Simulador técnico de paneles solares, retorno de inversión y almacenamiento en baterías.</p>
+              <a href="https://voltiva-solar.vercel.app/" target="_blank" rel="noreferrer" class="overlay-cta button-premium inline-flex items-center justify-center bg-white text-primary font-bold px-6 py-3 rounded-full hover:bg-on-primary transition-colors text-sm">Ver landing page <span class="ml-2">→</span></a>
+            </div>
+          </article>
+        </div>
+
+        <!-- CUMBRE LEGAL -->
+        <div data-reveal data-delay="80" class="masonry-item" data-portfolio-item data-category="landing-pages" hidden>
+          <article class="project-card relative group overflow-hidden rounded-2xl bg-surface-container-lowest shadow-blue-500/5 hover:shadow-2xl">
+            <img src="assets/images/portfolio/cumbre-legal.png" alt="Captura de la landing page de Cumbre Legal." class="portfolio-card-image" />
+            <div class="overlay absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/40 to-transparent flex flex-col justify-end p-8 transition-opacity duration-300">
+              <h3 class="overlay-title font-headline text-2xl font-bold text-white mb-2">Cumbre Legal</h3>
+              <p class="overlay-desc text-white/80 text-sm mb-6">Asesoría jurídica corporativa con un cuestionario interactivo de vulnerabilidad legal.</p>
+              <a href="https://cumbre-legal.vercel.app/" target="_blank" rel="noreferrer" class="overlay-cta button-premium inline-flex items-center justify-center bg-white text-primary font-bold px-6 py-3 rounded-full hover:bg-on-primary transition-colors text-sm">Ver landing page <span class="ml-2">→</span></a>
+            </div>
+          </article>
+        </div>
+
+        <!-- AURALIA STUDIO -->
+        <div data-reveal data-delay="120" class="masonry-item" data-portfolio-item data-category="landing-pages" hidden>
+          <article class="project-card relative group overflow-hidden rounded-2xl bg-surface-container-lowest shadow-blue-500/5 hover:shadow-2xl">
+            <img src="assets/images/portfolio/auralia-studio.png" alt="Captura de la landing page de Auralia Studio." class="portfolio-card-image" />
+            <div class="overlay absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/40 to-transparent flex flex-col justify-end p-8 transition-opacity duration-300">
+              <h3 class="overlay-title font-headline text-2xl font-bold text-white mb-2">Auralia Studio</h3>
+              <p class="overlay-desc text-white/80 text-sm mb-6">Estudio creativo de vanguardia con un moodboard dinámico para previsualizar estilos gráficos.</p>
+              <a href="https://auralia-studio.vercel.app/" target="_blank" rel="noreferrer" class="overlay-cta button-premium inline-flex items-center justify-center bg-white text-primary font-bold px-6 py-3 rounded-full hover:bg-on-primary transition-colors text-sm">Ver landing page <span class="ml-2">→</span></a>
+            </div>
+          </article>
+        </div>
+
+        <!-- FERROPEAK -->
+        <div data-reveal data-delay="160" class="masonry-item" data-portfolio-item data-category="landing-pages" hidden>
+          <article class="project-card relative group overflow-hidden rounded-2xl bg-surface-container-lowest shadow-blue-500/5 hover:shadow-2xl">
+            <img src="assets/images/portfolio/ferropeak.png" alt="Captura de la landing page de Ferropeak." class="portfolio-card-image" />
+            <div class="overlay absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/40 to-transparent flex flex-col justify-end p-8 transition-opacity duration-300">
+              <h3 class="overlay-title font-headline text-2xl font-bold text-white mb-2">Ferropeak</h3>
+              <p class="overlay-desc text-white/80 text-sm mb-6">Gimnasio de halterofilia de alta exigencia equipado con calculadoras de carga física.</p>
+              <a href="https://ferropeak.vercel.app/" target="_blank" rel="noreferrer" class="overlay-cta button-premium inline-flex items-center justify-center bg-white text-primary font-bold px-6 py-3 rounded-full hover:bg-on-primary transition-colors text-sm">Ver landing page <span class="ml-2">→</span></a>
+            </div>
+          </article>
+        </div>
+
+        <!-- VERDERAIZ -->
+        <div data-reveal data-delay="200" class="masonry-item" data-portfolio-item data-category="landing-pages" hidden>
+          <article class="project-card relative group overflow-hidden rounded-2xl bg-surface-container-lowest shadow-blue-500/5 hover:shadow-2xl">
+            <img src="assets/images/portfolio/verderaiz.png" alt="Captura de la landing page de Verderaíz." class="portfolio-card-image" />
+            <div class="overlay absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/40 to-transparent flex flex-col justify-end p-8 transition-opacity duration-300">
+              <h3 class="overlay-title font-headline text-2xl font-bold text-white mb-2">Verderaíz</h3>
+              <p class="overlay-desc text-white/80 text-sm mb-6">Proyecto biofílico con un simulador estacional de crecimiento y floración de plantas nativas.</p>
+              <a href="https://verderaiz-jade.vercel.app/" target="_blank" rel="noreferrer" class="overlay-cta button-premium inline-flex items-center justify-center bg-white text-primary font-bold px-6 py-3 rounded-full hover:bg-on-primary transition-colors text-sm">Ver landing page <span class="ml-2">→</span></a>
+            </div>
+          </article>
+        </div>
+
+        <!-- LUMINA WEALTH -->
+        <div data-reveal data-delay="240" class="masonry-item" data-portfolio-item data-category="landing-pages" hidden>
+          <article class="project-card relative group overflow-hidden rounded-2xl bg-surface-container-lowest shadow-blue-500/5 hover:shadow-2xl">
+            <img src="assets/images/portfolio/lumina-wealth.png" alt="Captura de la landing page de Lúmina Wealth." class="portfolio-card-image" />
+            <div class="overlay absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/40 to-transparent flex flex-col justify-end p-8 transition-opacity duration-300">
+              <h3 class="overlay-title font-headline text-2xl font-bold text-white mb-2">Lúmina Wealth</h3>
+              <p class="overlay-desc text-white/80 text-sm mb-6">Asesoría patrimonial y simulador automatizado de asignación presupuestaria estratégica.</p>
+              <a href="https://lumina-wealth-psi.vercel.app/" target="_blank" rel="noreferrer" class="overlay-cta button-premium inline-flex items-center justify-center bg-white text-primary font-bold px-6 py-3 rounded-full hover:bg-on-primary transition-colors text-sm">Ver landing page <span class="ml-2">→</span></a>
+            </div>
+          </article>
+        </div>
+
+        <!-- HABITA NORTE -->
+        <div data-reveal data-delay="280" class="masonry-item" data-portfolio-item data-category="landing-pages" hidden>
+          <article class="project-card relative group overflow-hidden rounded-2xl bg-surface-container-lowest shadow-blue-500/5 hover:shadow-2xl">
+            <img src="assets/images/portfolio/habita-norte.png" alt="Captura de la landing page de Hábita Norte." class="portfolio-card-image" />
+            <div class="overlay absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/40 to-transparent flex flex-col justify-end p-8 transition-opacity duration-300">
+              <h3 class="overlay-title font-headline text-2xl font-bold text-white mb-2">Hábita Norte</h3>
+              <p class="overlay-desc text-white/80 text-sm mb-6">Estudio espacial con un visualizador interactivo de planos, materialidad y flujo habitacional.</p>
+              <a href="https://habita-norte.vercel.app/" target="_blank" rel="noreferrer" class="overlay-cta button-premium inline-flex items-center justify-center bg-white text-primary font-bold px-6 py-3 rounded-full hover:bg-on-primary transition-colors text-sm">Ver landing page <span class="ml-2">→</span></a>
+            </div>
+          </article>
+        </div>
+
+        <!-- MAREA GOURMET -->
+        <div data-reveal data-delay="320" class="masonry-item" data-portfolio-item data-category="landing-pages" hidden>
+          <article class="project-card relative group overflow-hidden rounded-2xl bg-surface-container-lowest shadow-blue-500/5 hover:shadow-2xl">
+            <img src="assets/images/portfolio/marea-gourmet.png" alt="Captura de la landing page de Marea Gourmet." class="portfolio-card-image" />
+            <div class="overlay absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/40 to-transparent flex flex-col justify-end p-8 transition-opacity duration-300">
+              <h3 class="overlay-title font-headline text-2xl font-bold text-white mb-2">Marea Gourmet</h3>
+              <p class="overlay-desc text-white/80 text-sm mb-6">Catering de autor con un simulador interactivo para la estructuración de menús Michelin y bodas.</p>
+              <a href="https://marea-gourmet.vercel.app/" target="_blank" rel="noreferrer" class="overlay-cta button-premium inline-flex items-center justify-center bg-white text-primary font-bold px-6 py-3 rounded-full hover:bg-on-primary transition-colors text-sm">Ver landing page <span class="ml-2">→</span></a>
+            </div>
+          </article>
+        </div>
+
+        <!-- NUBIA SYSTEMS -->
+        <div data-reveal data-delay="360" class="masonry-item" data-portfolio-item data-category="landing-pages" hidden>
+          <article class="project-card relative group overflow-hidden rounded-2xl bg-surface-container-lowest shadow-blue-500/5 hover:shadow-2xl">
+            <img src="assets/images/portfolio/nubia-systems.png" alt="Captura de la landing page de Nubia Systems." class="portfolio-card-image" />
+            <div class="overlay absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/40 to-transparent flex flex-col justify-end p-8 transition-opacity duration-300">
+              <h3 class="overlay-title font-headline text-2xl font-bold text-white mb-2">Nubia Systems</h3>
+              <p class="overlay-desc text-white/80 text-sm mb-6">Orquestador de procesos automatizados con IA y simulador interactivo de pipelines de datos.</p>
+              <a href="https://nubia-systems.vercel.app/" target="_blank" rel="noreferrer" class="overlay-cta button-premium inline-flex items-center justify-center bg-white text-primary font-bold px-6 py-3 rounded-full hover:bg-on-primary transition-colors text-sm">Ver landing page <span class="ml-2">→</span></a>
+            </div>
+          </article>
+        </div>
+
+        <!-- SENDERO VIVO -->
+        <div data-reveal data-delay="400" class="masonry-item" data-portfolio-item data-category="landing-pages" hidden>
+          <article class="project-card relative group overflow-hidden rounded-2xl bg-surface-container-lowest shadow-blue-500/5 hover:shadow-2xl">
+            <img src="assets/images/portfolio/sendero-vivo.png" alt="Captura de la landing page de Sendero Vivo." class="portfolio-card-image" />
+            <div class="overlay absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/40 to-transparent flex flex-col justify-end p-8 transition-opacity duration-300">
+              <h3 class="overlay-title font-headline text-2xl font-bold text-white mb-2">Sendero Vivo</h3>
+              <p class="overlay-desc text-white/80 text-sm mb-6">Consulta de psicoterapia clínica con una guía interactiva de respiración para la regulación corporal.</p>
+              <a href="https://sendero-vivo.vercel.app/" target="_blank" rel="noreferrer" class="overlay-cta button-premium inline-flex items-center justify-center bg-white text-primary font-bold px-6 py-3 rounded-full hover:bg-on-primary transition-colors text-sm">Ver landing page <span class="ml-2">→</span></a>
+            </div>
+          </article>
+        </div>
+
+        <!-- ORBIT CARGO -->
+        <div data-reveal data-delay="440" class="masonry-item" data-portfolio-item data-category="landing-pages" hidden>
+          <article class="project-card relative group overflow-hidden rounded-2xl bg-surface-container-lowest shadow-blue-500/5 hover:shadow-2xl">
+            <img src="assets/images/portfolio/orbit-cargo.png" alt="Captura de la landing page de Orbit Cargo." class="portfolio-card-image" />
+            <div class="overlay absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/40 to-transparent flex flex-col justify-end p-8 transition-opacity duration-300">
+              <h3 class="overlay-title font-headline text-2xl font-bold text-white mb-2">Orbit Cargo</h3>
+              <p class="overlay-desc text-white/80 text-sm mb-6">Operador logístico e-commerce equipado con un calculador interactivo de tarifas, tiempos y CO2.</p>
+              <a href="https://orbit-cargo-beta.vercel.app/" target="_blank" rel="noreferrer" class="overlay-cta button-premium inline-flex items-center justify-center bg-white text-primary font-bold px-6 py-3 rounded-full hover:bg-on-primary transition-colors text-sm">Ver landing page <span class="ml-2">→</span></a>
+            </div>
+          </article>
+        </div>
+        <!-- BOLSA LABORAL CORPORATIVA -->
+        <div data-reveal class="masonry-item" data-portfolio-item data-category="productos-digitales" hidden>
+          <article class="project-card relative group overflow-hidden rounded-2xl bg-surface-container-lowest shadow-blue-500/5 hover:shadow-2xl">
+            <img src="assets/images/portfolio/bolsa-laboral-corporativa.png" alt="Captura de la aplicación Bolsa Laboral Corporativa." class="portfolio-card-image" />
+            <div class="overlay absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/40 to-transparent flex flex-col justify-end p-8 transition-opacity duration-300">
+              <h3 class="overlay-title font-headline text-2xl font-bold text-white mb-2">Bolsa laboral corporativa</h3>
+              <p class="overlay-desc text-white/80 text-sm mb-6">Plataforma interna para postulación a vacantes, convocatorias internas y crecimiento profesional en la empresa.</p>
+              <a href="https://bolsa-laboral-corporativa.vercel.app/" target="_blank" rel="noreferrer" class="overlay-cta button-premium inline-flex items-center justify-center bg-white text-primary font-bold px-6 py-3 rounded-full hover:bg-on-primary transition-colors text-sm">Ver prototipo <span class="ml-2">→</span></a>
+            </div>
+          </article>
+        </div>
+
+        <!-- CHATBOT REGLAMENTO INTERNO -->
+        <div data-reveal class="masonry-item" data-portfolio-item data-category="productos-digitales" hidden>
+          <article class="project-card relative group overflow-hidden rounded-2xl bg-surface-container-lowest shadow-blue-500/5 hover:shadow-2xl">
+            <img src="assets/images/portfolio/chatbot-reglamento-interno.png" alt="Captura del Chatbot Reglamento Interno." class="portfolio-card-image" />
+            <div class="overlay absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/40 to-transparent flex flex-col justify-end p-8 transition-opacity duration-300">
+              <h3 class="overlay-title font-headline text-2xl font-bold text-white mb-2">Chatbot reglamento interno</h3>
+              <p class="overlay-desc text-white/80 text-sm mb-6">Asistente virtual interactivo con IA que responde consultas en tiempo real sobre políticas y normas de la organización.</p>
+              <a href="https://chatbot-reglamento-interno.vercel.app/" target="_blank" rel="noreferrer" class="overlay-cta button-premium inline-flex items-center justify-center bg-white text-primary font-bold px-6 py-3 rounded-full hover:bg-on-primary transition-colors text-sm">Ver prototipo <span class="ml-2">→</span></a>
+            </div>
+          </article>
+        </div>
+
+        <!-- GALERIA EVENTOS INTERNA -->
+        <div data-reveal class="masonry-item" data-portfolio-item data-category="productos-digitales" hidden>
+          <article class="project-card relative group overflow-hidden rounded-2xl bg-surface-container-lowest shadow-blue-500/5 hover:shadow-2xl">
+            <img src="assets/images/portfolio/galeria-eventos-interna.png" alt="Captura de la Galería de Eventos Interna." class="portfolio-card-image" />
+            <div class="overlay absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/40 to-transparent flex flex-col justify-end p-8 transition-opacity duration-300">
+              <h3 class="overlay-title font-headline text-2xl font-bold text-white mb-2">Galería de eventos interna</h3>
+              <p class="overlay-desc text-white/80 text-sm mb-6">Espacio visual para compartir y revivir los mejores momentos de las actividades, integraciones y celebraciones de la empresa.</p>
+              <a href="https://galeria-eventos-interna.vercel.app/" target="_blank" rel="noreferrer" class="overlay-cta button-premium inline-flex items-center justify-center bg-white text-primary font-bold px-6 py-3 rounded-full hover:bg-on-primary transition-colors text-sm">Ver prototipo <span class="ml-2">→</span></a>
+            </div>
+          </article>
+        </div>
+
+        <!-- CREADOR PERFILES WEB -->
+        <div data-reveal class="masonry-item" data-portfolio-item data-category="productos-digitales" hidden>
+          <article class="project-card relative group overflow-hidden rounded-2xl bg-surface-container-lowest shadow-blue-500/5 hover:shadow-2xl">
+            <img src="assets/images/portfolio/creador-perfiles-web.png" alt="Captura del Creador de Perfiles Web." class="portfolio-card-image" />
+            <div class="overlay absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/40 to-transparent flex flex-col justify-end p-8 transition-opacity duration-300">
+              <h3 class="overlay-title font-headline text-2xl font-bold text-white mb-2">Creador de perfiles web</h3>
+              <p class="overlay-desc text-white/80 text-sm mb-6">Generador dinámico de perfiles digitales y firmas profesionales para estandarizar la identidad del equipo.</p>
+              <a href="https://creador-perfiles-web.vercel.app/" target="_blank" rel="noreferrer" class="overlay-cta button-premium inline-flex items-center justify-center bg-white text-primary font-bold px-6 py-3 rounded-full hover:bg-on-primary transition-colors text-sm">Ver prototipo <span class="ml-2">→</span></a>
+            </div>
+          </article>
+        </div>
+
+        <!-- BUZON IDEAS INTERNO -->
+        <div data-reveal class="masonry-item" data-portfolio-item data-category="productos-digitales" hidden>
+          <article class="project-card relative group overflow-hidden rounded-2xl bg-surface-container-lowest shadow-blue-500/5 hover:shadow-2xl">
+            <img src="assets/images/portfolio/buzon-ideas-interno.png" alt="Captura del Buzón de Ideas Interno." class="portfolio-card-image" />
+            <div class="overlay absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/40 to-transparent flex flex-col justify-end p-8 transition-opacity duration-300">
+              <h3 class="overlay-title font-headline text-2xl font-bold text-white mb-2">Buzón de ideas interno</h3>
+              <p class="overlay-desc text-white/80 text-sm mb-6">Canal participativo y anónimo para proponer iniciativas, mejoras y soluciones innovadoras dentro del equipo.</p>
+              <a href="https://buzon-ideas-interno.vercel.app/" target="_blank" rel="noreferrer" class="overlay-cta button-premium inline-flex items-center justify-center bg-white text-primary font-bold px-6 py-3 rounded-full hover:bg-on-primary transition-colors text-sm">Ver prototipo <span class="ml-2">→</span></a>
+            </div>
+          </article>
+        </div>
+
+        <!-- DIRECTORIO CORPORATIVO -->
+        <div data-reveal class="masonry-item" data-portfolio-item data-category="productos-digitales" hidden>
+          <article class="project-card relative group overflow-hidden rounded-2xl bg-surface-container-lowest shadow-blue-500/5 hover:shadow-2xl">
+            <img src="assets/images/portfolio/directorio-corporativo.png" alt="Captura del Directorio Corporativo." class="portfolio-card-image" />
+            <div class="overlay absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/40 to-transparent flex flex-col justify-end p-8 transition-opacity duration-300">
+              <h3 class="overlay-title font-headline text-2xl font-bold text-white mb-2">Directorio corporativo</h3>
+              <p class="overlay-desc text-white/80 text-sm mb-6">Catálogo interactivo de colaboradores con roles, departamentos, datos de contacto y estructura organizacional.</p>
+              <a href="https://directorio-corporativo.vercel.app/" target="_blank" rel="noreferrer" class="overlay-cta button-premium inline-flex items-center justify-center bg-white text-primary font-bold px-6 py-3 rounded-full hover:bg-on-primary transition-colors text-sm">Ver prototipo <span class="ml-2">→</span></a>
+            </div>
+          </article>
+        </div>
+
+        <!-- AGENDA EVENTOS INTERNA -->
+        <div data-reveal class="masonry-item" data-portfolio-item data-category="productos-digitales" hidden>
+          <article class="project-card relative group overflow-hidden rounded-2xl bg-surface-container-lowest shadow-blue-500/5 hover:shadow-2xl">
+            <img src="assets/images/portfolio/agenda-eventos-interna.png" alt="Captura de la Agenda de Eventos Interna." class="portfolio-card-image" />
+            <div class="overlay absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/40 to-transparent flex flex-col justify-end p-8 transition-opacity duration-300">
+              <h3 class="overlay-title font-headline text-2xl font-bold text-white mb-2">Agenda de eventos interna</h3>
+              <p class="overlay-desc text-white/80 text-sm mb-6">Calendario centralizado de reuniones clave, capacitaciones, hitos corporativos y festividades de la compañía.</p>
+              <a href="https://agenda-eventos-interna.vercel.app/" target="_blank" rel="noreferrer" class="overlay-cta button-premium inline-flex items-center justify-center bg-white text-primary font-bold px-6 py-3 rounded-full hover:bg-on-primary transition-colors text-sm">Ver prototipo <span class="ml-2">→</span></a>
+            </div>
+          </article>
+        </div>
+
+        <!-- PORTAL COMUNICADOS INTERNOS -->
+        <div data-reveal class="masonry-item" data-portfolio-item data-category="productos-digitales" hidden>
+          <article class="project-card relative group overflow-hidden rounded-2xl bg-surface-container-lowest shadow-blue-500/5 hover:shadow-2xl">
+            <img src="assets/images/portfolio/portal-comunicados-internos.png" alt="Captura del Portal de Comunicados Internos." class="portfolio-card-image" />
+            <div class="overlay absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/40 to-transparent flex flex-col justify-end p-8 transition-opacity duration-300">
+              <h3 class="overlay-title font-headline text-2xl font-bold text-white mb-2">Portal de comunicados internos</h3>
+              <p class="overlay-desc text-white/80 text-sm mb-6">Plataforma informativa centralizada para anuncios oficiales, noticias del sector y actualizaciones estratégicas.</p>
+              <a href="https://portal-comunicados-internos.vercel.app/" target="_blank" rel="noreferrer" class="overlay-cta button-premium inline-flex items-center justify-center bg-white text-primary font-bold px-6 py-3 rounded-full hover:bg-on-primary transition-colors text-sm">Ver prototipo <span class="ml-2">→</span></a>
+            </div>
+          </article>
+        </div>
+
+        <!-- GENERADOR ENCUESTAS -->
+        <div data-reveal class="masonry-item" data-portfolio-item data-category="productos-digitales" hidden>
+          <article class="project-card relative group overflow-hidden rounded-2xl bg-surface-container-lowest shadow-blue-500/5 hover:shadow-2xl">
+            <img src="assets/images/portfolio/generador-encuestas.png" alt="Captura del Generador de Encuestas." class="portfolio-card-image" />
+            <div class="overlay absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/40 to-transparent flex flex-col justify-end p-8 transition-opacity duration-300">
+              <h3 class="overlay-title font-headline text-2xl font-bold text-white mb-2">Generador de encuestas</h3>
+              <p class="overlay-desc text-white/80 text-sm mb-6">Creador intuitivo de cuestionarios y encuestas de clima laboral con tableros de análisis en tiempo real.</p>
+              <a href="https://generador-encuestas.vercel.app/" target="_blank" rel="noreferrer" class="overlay-cta button-premium inline-flex items-center justify-center bg-white text-primary font-bold px-6 py-3 rounded-full hover:bg-on-primary transition-colors text-sm">Ver prototipo <span class="ml-2">→</span></a>
+            </div>
+          </article>
+        </div>
+
+        <!-- BIBLIOTECA DOCUMENTAL -->
+        <div data-reveal class="masonry-item" data-portfolio-item data-category="productos-digitales" hidden>
+          <article class="project-card relative group overflow-hidden rounded-2xl bg-surface-container-lowest shadow-blue-500/5 hover:shadow-2xl">
+            <img src="assets/images/portfolio/biblioteca-documental.png" alt="Captura de la Biblioteca Documental." class="portfolio-card-image" />
+            <div class="overlay absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/40 to-transparent flex flex-col justify-end p-8 transition-opacity duration-300">
+              <h3 class="overlay-title font-headline text-2xl font-bold text-white mb-2">Biblioteca documental</h3>
+              <p class="overlay-desc text-white/80 text-sm mb-6">Repositorio inteligente para organizar, buscar y descargar recursos normativos, manuales y plantillas del equipo.</p>
+              <a href="https://biblioteca-documental.vercel.app/" target="_blank" rel="noreferrer" class="overlay-cta button-premium inline-flex items-center justify-center bg-white text-primary font-bold px-6 py-3 rounded-full hover:bg-on-primary transition-colors text-sm">Ver prototipo <span class="ml-2">→</span></a>
             </div>
           </article>
         </div>

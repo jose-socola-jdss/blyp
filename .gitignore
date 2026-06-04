@@ -2,5 +2,10 @@
 Thumbs.db
 desktop.ini
 
+# Dependency and build artifacts
+node_modules/
+dist/
+.vite/
+
 # Ignore nested Git repositories inside project samples
 **/.git/
